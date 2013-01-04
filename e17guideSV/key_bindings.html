@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi-Guiden till Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> Bodhi-Guiden till Enlightenment<br>
+Tangent Bindningar </h1>
+<hr>
+
+<ol>
+<li><a href="#Explore Key Binding Settings">Utforska inställningar för Tangent Bindningar</a></li>
+<li><a href="#Programming Keys">Programmera Tangenter</a></li>
+<li><a href="#Default Key Bindings">Standard Tangent Bindningar</a></li> 
+
+</ol>
+
+
+<p>På <strong>Enlightenment (E17)</strong> språk, syftar <strong>Tangent Bindningar</strong> på <em>Tangentbords-Genvägar</em> som du kan konfigurera för att underlätta navigering på skrivbordet och en hel rad med funktioner genom att endast använda tangentbordet.
+
+<p>Du kan t.o.m. konfigurera en tangentkombination som startar ett skript eller ett program.
+
+
+<p><strong>Tangent Bindningar</strong> kan konfigureras under <em>Main Menu -> Settings -> Settings Panel -> Input -> Keys</em>, som öppnar <strong>Key Bindings Settings</strong> dialogrutan:
+
+
+
+<p><center><img src="../images/keybindings.png"></center>
+
+
+<p>Det finns två spalter. Den vänstra spalten <strong>Key Bindings</strong>, listar individuella tangenter och tangentkombinationer. Den högra spalten <strong>Action</strong>, listar alla tillgängliga händelser som kan triggas. Många tangenter har redan en standardbindning (se tabellen längst ner på denna sida), men du kan ändra bindningen av vilken tangent som helst och lägga till nya kombinationer vid behov.
+
+<a name="Explore Key Binding Settings"><h2>Utforska inställningar för Tangent Bindningar</h2></a>
+
+<p>För att få en känsla för hur <strong>Key Binding Settings</strong> (inställningar för Tangent Bindningar) fungerar klicka på några av tangenterna i <strong>Key Bindings</strong> spalten och lägg märke till vad som händer i <strong>Action</strong> spalten till höger.
+
+
+<p>T.ex. till vänster under <strong>Single Key</strong>, finns en tangent som kallas <em>Menu</em>. Klicka på den i <strong>Key Bindings</strong>, så visas vad den är konfigurerad att göra, i högerspalten, <em>Show Main Menu</em>.
+(Meny tangenten är på många tangentbord märkt med en "Meny" symbol, och är oftast placerad mellan AltGr och högra Ctrl tangenterna).
+
+<p>Andra <strong>Ensamma Tangenter</strong> är listade nedanför <em>Menu</em>. XF86* serien av tangenter finns på många tangentbord för att styra hårdvarufunktioner som t.ex. högtalarvolym, ljusstyrka på skärm o.s.v. klicka på <em>XF86AudioMute</em>, så ser du att den är bunden till <em>Mute Volume</em>.
+
+
+<p>Under ensamma tangenterna grupperas resten av <strong>Tangent Bindningarna</strong> i olika kategorier:
+  <ul>  
+  <li>Shift</li>
+  <li>Ctrl</li>
+  <li>Alt</li>
+  <li>Win (Meta tangenten (oftast med Windows symbolen))</li>
+
+  <li>Ctrl+Shift</li>
+  <li>Alt+Shift</li>
+  <li>Ctrl+Alt</li>
+  </ul>
+ 
+<p>*OBS! att ovanstående tangenter och kombinationer (undantaget "Win" tangenten) kan inte prgrammeras till att utföra något själva utan måste paras med ytterligare en tangent.  
+  
+<p>I varje kategori ser du de tangenter som redan har en <strong>bindning</strong>, och genom att klicka på dem, visas vad de programmerats att göra. T.ex. under <strong>Shift</strong> kategorin, är kombinationen <em>Shift+F10</em> den enda <strong>Shift</strong> tangent- kombinationen som fördefinierats. Klickar du på <em>Shift+F10</em> i vänstra spalten, visas och väljs <em>Maximize Vertically</em> i högra spalten. Detta maximerar det fokuserade fönstrets lodräta höjd. Observera att det finns många andra möjliga kombinationer som kan programmeras med Shift tangenten inklusive (men inte begränsat till): Shift + A t.o.m. Ö, 1 t.o.m. 0, F1 t.o.m. F9, F11, och F12.
+
+
+<p>I den högra spalten finns en fullständig lista på tillgångliga kommandon. Vad som finns tillgängligt beror på vilka <a href="modules.html">Moduler</a> som är laddade och är grupperade i kategorier. Listan nedan är ett exempel på vanliga kategorier:
+<ul>
+  <li>Acpi</li>
+  <li>Calendar</li>
+  <li>Desktop</li>
+  <li>Enlightenment</li>
+
+  <li>Enlightenment Mode</li>
+  <li>Everything Launcher</li>
+  <li>Gadgets</li>
+  <li>Generic: Actions</li>
+  <li>Launch</li>
+  <li>Menu</li>
+
+  <li>Mixer</li>
+  <li>Pager</li>
+  <li>Screen</li>
+  <li>System</li>
+  <li>Window:Actions</li>
+  <li>Window:List</li>
+
+  <li>Window:Moving</li>
+  <li>Window:State</li>
+</ul>
+
+<p>Klickar man på någon <strong>Action</strong> visas <strong>inte</strong> om det redan finns en tangentkombination redan programmerad till att utföra detta. Du kan kolla i tabellen nedan efter vad som är förprogrammerat i <strong>Bodhi Linux</strong> installationen.
+
+<a name="Programming Keys"><h2>Programmera Tangenter</h2></a>
+
+<p>Låt oss gå igenom några enkla exempel som visar hur man ändrar existerande bindningar och hur man lägger till nya.
+
+<h3>Ändra Ctrl+Alt+S</h3>
+
+<p>Som synes i tabellen nedan, har kombinationen <em>Ctrl+Alt+S</em> programmerats att växla mellan <em>Sticky Mode</em> under <strong>Window:State</strong> kategorin. Du kanske hellre vill använda den kombinationen för att försätta datorn i viloläge (Suspend). <em>Suspend</em> finner du under <strong>System</strong> kategorin.
+
+
+<p>I vänstra spalten, klicka på <em>Ctrl+Alt+S</em>. I högra spalten, klicka på <em>Suspend</em> i <strong>System</strong> kategorin, sen klickar du <em>OK</em> eller <em>Apply</em>. Om du nu trycker på <em>Ctrl+Alt+S</em>, öppnas ett litet fönster som frågar om du vill försätta datorn i viloläge. Klicka <em>Yes</em> för att göra detta, eller <em>No</em> för att avbryta.
+
+
+<h3>Byt Tangent Bindning för Maximera Lodrätt</h3>
+
+<p>Låt oss säga att du inte gillar <em>Shift+F10</em> för att <em>Maximize Vertically</em> (Maximera lodrätt) och helre vill använda <em>Shift+0</em> för detta. Välj <em>Shift+F10</em> i <strong>Key Bindings</strong> spalten, klicka sen <em>Modify Binding</em> (ändra bindning). En liten ruta öppnas där du ombeds trycka in en tangentkombination. Tryck <em>Shift+0</em>, sen <em>OK</em> eller <em>Apply</em>. (När du skriver in tangentkombinationen märker du kanske att detta verkar ändra på vissa andra val i <strong>Key Bindings</strong> listan. Detta är en liten bug. Om du stänger <strong>Key Binding Settings</strong> dialogrutan och sen öppnar den igen, ser du att tangent-bindningen blev rätt).
+
+
+<p>OBS! om du skriver in en <strong>Tangent Bindning</strong> som redan finns, när du använder <em>Modify Binding</em>, ändrar den inte på bindningen utan hoppar istället till den befintliga <strong>Tangent Bindningen</strong> i vänstra spalten.
+
+<h3>Lägg till Alt+L</h3>
+
+<p>Vi säger att du vill programmera <em>Alt+L</em>, (som från början inte är bunden) att starta <strong>Leafpad</strong>.
+
+
+<p>I vänstra spalten, klicka på <em>Add Binding</em> (lägg till bindning). En liten ruta öppnas där du ombeds trycka in en tangentkombination. tryck på <em>Alt+L</em>. Detta skapar bindningen i <strong>Key Bindings</strong> sektionen. Se till att du har <strong>Tangent Bindningen</strong> du just skapade vald. I den högra spalten klickar du nu på  <em>Command</em> i <strong>Launch</strong> kategorin. Skriv <code>leafpad</code> i <strong>Action Params</strong> delen längst ner i högra spalten. Klicka <em>OK</em> eller <em>Apply</em>. Tryck nu <em>Alt+L</em>, så ser du att <strong>Leafpad</strong> öppnas. 
+
+
+<h3>Standard Tangent Bindningar</h3>
+
+<p>Om du någon gång finner att du skapat en salig röra bland dina <strong>Tangent Bindningar</strong> och vill återgå till ursprungsläget, öppna bara <strong>Key Bindings Settings</strong> dialogrutan och klicka på <em>Restore Default Bindings</em> (återställ ursprungliga bindningar) längst ner. Klicka <em>OK</em> eller <em>Apply</em> för att spara. 
+<br><strong>OBS!</strong>: Detta tar bort alla <strong>Tangent Bindningar</strong> du tidigare skapat.
+
+<a name="Default Key Bindings"><h2>Standard Tangent Bindningar</h2></a>
+
+<p>Dessa är standard tangentbords-genvägarna i <strong>Bodhi Linux</strong> 1.2.0. & 1.3.0.
+
+
+<table border="2" cellpadding="5">
+<tr><td><h2>tangentkombination</h2>
+<td><h2>Verkan</h2>
+</tr>
+ 
+<tr><td colspan="2" halign="center"><h3>Ensam tangent</h3></td></tr>
+<tr><td>Meny</td><td>Visa huvudmenyn</td></tr>
+
+ 
+<tr><td colspan="2" halign="center"><h3>Shift</h3></td></tr>
+<tr><td>Shift F10</td><td>Maximera Lodrätt</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Ctrl</h3></td></tr>
+<tr><td>Ctrl F10</td><td>Maximera Vågrätt</td></tr>
+<tr><td>Ctrl Meny</td><td>Visa Aktuella Programmets Meny</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Alt</h3></td></tr>
+
+<tr><td>Alt F1</td><td>Växla till Skrivbord 0</td></tr>
+<tr><td>Alt F2</td><td>Växla till Skrivbord 1</td></tr>
+<tr><td>Alt F3</td><td>Växla till Skrivbord 2</td></tr>
+<tr><td>Alt F4</td><td>Växla till Skrivbord 3</td></tr>
+<tr><td>Alt F5</td><td>Växla till Skrivbord 4</td></tr>
+<tr><td>Alt F6</td><td>Växla till Skrivbord 5</td></tr>
+
+<tr><td>Alt F7</td><td>Växla till Skrivbord 6</td></tr>
+<tr><td>Alt F8</td><td>Växla till Skrivbord 7</td></tr> 
+<tr><td>Alt F9</td><td>Växla till Skrivbord 8</td></tr>
+<tr><td>Alt F10</td><td>Växla till Skrivbord 9</td></tr>
+<tr><td>Alt F11</td><td>Växla till Skrivbord 10</td></tr>
+<tr><td>Alt F12</td><td>Växla till Skrivbord 11</td></tr>
+
+<tr><td>Alt Tab</td><td>Nästa Fönster</td></tr>
+<tr><td>Alt Menu</td><td>Visa Favoriter Menyn</td></tr> 
+<tr><td>Alt Esc</td><td>Run Everything</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Win</h3></td></tr>
+<tr><td>Win Mellanslag</td><td>Run Everything</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Ctrl + Shift</h3></td></tr>
+
+<tr><td>Ctrl Shift F1</td><td>Skicka Mus till Skärm 0</td></tr>
+<tr><td>Ctrl Shift F2</td><td>Skicka Mus till Skärm 1</td></tr>
+<tr><td>Ctrl Shift F3</td><td>Skicka Mus till Skärm 2</td></tr>
+<tr><td>Ctrl Shift F4</td><td>Skicka Mus till Skärm 3</td></tr>
+<tr><td>Ctrl Shift Left</td><td>Skicka Mus Bakåt 1 Skärm</td></tr>
+<tr><td>Ctrl Shift Right</td><td>Skicka Mus Framåt 1 Skärm</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Alt + Shift</h3></td></tr>
+<tr><td>Alt Shift PilUpp</td><td>Shifta Skrivbord Upp</td></tr>
+<tr><td>Alt Shift Tab</td><td>Föregående Fönster</td></tr>
+<tr><td>Alt Shift PilNer</td><td>Shifta Skrivbord Ner</td></tr>
+<tr><td>Alt Shift PilVänster</td><td>Shifta Skrivbord Vänster</td></tr>
+<tr><td>Alt Shift PilHöger</td><td>Shifta Skrivbord Höger</td></tr>
+
+<tr><td colspan="2" halign="center"><h3>Ctrl + Alt</h3></td></tr>
+<tr><td>Ctrl Alt A</td><td>Visa Favoriter Menyn</td></tr>
+<tr><td>Ctrl Alt D</td><td>Visa Skrivbord</td></tr>
+<tr><td>Ctrl Alt F</td><td>Maximera</td></tr>
+<tr><td>Ctrl Alt I</td><td>Växla Ikonläge</td></tr>
+<tr><td>Ctrl Alt K</td><td>Döda(applikation)</td></tr>
+
+<tr><td>Ctrl Alt L</td><td>Lås</td></tr>
+<tr><td>Ctrl Alt M</td><td>Visa Huvudmenyn</td></tr>
+<tr><td>Ctrl Alt R</td><td>Växla Rullgardin Up/Ner Läge</td></tr>
+<tr><td>Ctrl Alt S</td><td>Växla "Sticky Mode"</td></tr>
+<tr><td>Ctrl Alt W</td><td>Fönster Meny (öppnar menyn till max/min osv.)</td></tr>
+<tr><td>Ctrl Alt X</td><td>Stäng (samma som Alt F4 i windows)</td></tr>
+
+<tr><td>Ctrl Alt PilUpp</td><td>Höj Fönster (djupled)</td></tr>
+<tr><td>Ctrl Alt End</td><td>Starta om Enlightenment</td></tr>
+<tr><td>Ctrl Alt PilNer</td><td>Sänk Fönster (djupled)</td></tr>
+<tr><td>Ctrl Alt PilVänster</td><td>Shifta Skrivbord Linjärt Vänster</td></tr>
+<tr><td>Ctrl Alt PilHöger</td><td>Shifta Skrivbord Linjärt Höger</td></tr>
+<tr><td>Ctrl Alt Del</td><td>System Meny (Fönster för Stäng-ner/Logga-ut/Omstart mm.)</td></tr>
+
+<tr><td>Ctrl Alt Ins</td><td>Eterm (inte installerat som standard)</td></tr>
+</table>
+
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Föregående:</a></td>
+<td align="center" width="33%"> Innehåll:</td>
+<td align="right" width=33%">Nästa:</td>
+
+</tr>
+<tr>
+<td align="left" width="33%"><a href="composting.html">Compositing eller Sammansättning</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="settings.html">Inställningar</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi-Guiden till Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> Bodhi-Guiden till Enlightenment<br>
+Compositing eller "Sammansättning"</h1>
+<hr>
+
+
+<p>
+
+<strong>Compositing</strong> är en programfunktion som tillför ditt skrivbord lite “ögongodis”. Det finns två sätt att åstadkomma <strong>Compositing</strong> i <strong>Bodhi Linux Enlightenment (E17)</strong> fönsterhanteraren. Denna artikel kommer förkalra vad <strong>Compositing</strong> innebär och gör. Den kommer även beskriva de två metoderna för att utnytja detta i <strong>E17</strong>. 
+
+
+
+</p>
+
+
+<h3 id="what_is_compositing">Vad är Compositing?</h3>
+
+
+<p>
+
+Roten till ordet <strong>Compositing</strong> är “composite” eller komposit på svenska, av latinets compositus, vilket betyder sammansatt. Svenska Akademiens Ordbok definierar sammansatt; <em>om föremål som består av olika delar: vars olika delar satts samman, hopsatt; motsatt: isärtagen</em>. 
+</p>
+
+<p>
+Detta är tillämpligt på fönsterhanterare på så sätt att olikartade visuella element kan <em>sammansättas</em> och på så sätt skapa en mängd olika visuella effekter. De innefattar (men begränsas inte till): Genomsynlighet, 3D effekter, böjning, skalning och rotation. 
+</p>
+
+<p>
+Det finns en artikel om <strong>Compositing</strong> eller <strong>Sammansättning</strong> på <a href="http://sv.wikipedia.org/wiki/Kompositionshanterare" target="_blank" title="http://sv.wikipedia.org/wiki/Kompositionshanterare" rel="nofollow"> Wikipedia</a> för de som är intresserade. 
+</p>
+
+
+<h3 id="default_compositing">Standard Compositing</h3>
+
+
+<p>
+Det finns en <strong>E17</strong> <a href="modules.html">Modul</a> för <strong>Compositing</strong> som är installerad som standard i <strong>Bodhi Linux</strong>. Den heter märkligt nog <strong>Composite</strong>. <br />Den enda <a href="profiles.html"> Profilen</a> den <em>laddas</em> i som standard är <strong>Compositing Profilen</strong>, den kan dock läggas till vilken som helst genom; <em>Main Menu → Settings → Modules</em> sen finner du den under <em>Look</em> fliken.
+
+
+
+</p>
+
+<p>
+I detta fall gör <strong>Compositing</strong> främst två saker, först tillhandahåller det genomsynliga/ogenomskinliga effekter. Detta appliceras generellt på inaktiva/icke-i-fokus fönster. I bilden nedan kan du se att Midori inte är fönstret i fokus och att skrivbordet bakom delvis syns igenom (trädet och månen). 
+</p>
+
+<p>
+Dessutom, stödjer <strong>vissa</strong> applikationer (särskillt terminal-appar, fast inte alla) genomsynlighet medan de är aktiva/i fokus. Bilden visar även att LXTerminal körs och är i fokus men tillåter dig fortfarande att se det bakomliggande Midorifönstret och skrivbordet. “djupet” på genomsynligheten i en sådan applikation sätts i den applikationens inställningar (platsen därav kan variera per applikation) och <strong>inte</strong> i någon gemensam <strong>Compositing</strong> inställning.
+</p>
+
+<p>Obs! I <u>vissa</u> <strong>Teman</strong> måste <strong>Composite</strong> inställningarna växlas för att uppnå genomskinlighet. Gå till <em>Main Menu -> Settings -> All -> Look -> Composite</em>. Med <em>Default</em> fliken i nedre delen av fönstret aktiv, växla till "Still" inställningen, clicka <em>Apply</em> sen <em>OK</em>
+
+<center><img src="../images/transparent-desktop.png" width="800"></center>
+
+<p>
+<a href="/wiki/lib/exe/detail.php?id=e17_-_the_bodhi_guide_to_enlightenment_-_compositing&amp;media=transparent-desktop.png" class="media" title="transparent-desktop.png"><img src="/wiki/lib/exe/fetch.php?w=700&amp;media=transparent-desktop.png" class="media" alt="" width="700" /></a>
+</p>
+
+<p>
+Den andra effekten vilket inte kan visas i en stillbild, gör att fönstrena "darrar till" när man byter mellan dom. Detta ger en visuell vink om vilket fönster du bytt till om flera fönster är öppna. 
+</p>
+
+<h3>Göra sig av med "Darriga" Fönster</h3>
+<p>
+Många användare gillar de generella effekterna av Compositing men ogillar "darriga" fönster effekten vid fönsterbyte.
+
+<p>
+För att ändra på detta gå till <em>Main Menu → Settings → All → Look → Compositing</em>.
+
+<center><img src="../images/disable_bouncy.png"></center>
+
+I nedre delen av fönstret, välj vad som helst annat än <em>default</em>, klicka <em>Apply</em> så har du inte längre “darriga” fönster.
+<br><br>
+
+<h3 id="ecomorph">Ecomorph</h3>
+
+
+<p>
+<strong>Ecomorph</strong> är <strong>E17s</strong> portning av den populära "Kompositionshanteraren" <strong>Compiz</strong>. Då <strong>Ecomorph</strong> inte är en del av <strong>Bodhi Linux</strong> standardinstallation, och för att det skapar problem med viss hårdvaruinställningar tar denna artikel endast upp grunderna för att få <strong>Ecomorph</strong> installerat och att få igång det.
+
+
+
+</p>
+
+<p>
+<strong>Ecomorph</strong> är en <strong>E17</strong> <a href="modules.html">Modul</a>. Det kan installeras genom <strong>Synatic Package Manager</strong> eller med kommandot:
+</p>
+<pre class="code">sudo apt-get install ecomorph</pre>
+
+<p>
+Efter det installerats måste <strong>Ecomorph Modulen</strong> laddsa; gå till <em>Main Menu → Settings → Modules</em>, markera <em>Ecomorph</em> klicka på <em>Load</em> knappen.
+</p>
+
+<p>
+När <strong>Modulen</strong> är laddad måste du starta en  <strong>Ecomorph</strong> "session". Loga ut or <strong>E17</strong> (<em>Main Menu → System → Log Out</em>) och när du loggar in igen väljer du <em>E17 - Ecomorph</em> från <em>Desktop</em> menyn i nedra vänstra hörnet. Detta kommer att förbli grundläget för <em>Skrivbordet</em> tills du uttryckligen ändrar på det.
+
+
+
+</p>
+
+<p>
+Det finns en <em>oerhörd</em> mängd inställningsmöjligheter under <em>Main Menu → Settings → Ecomorph</em>.
+</p>
+
+<p>
+<a href="/wiki/lib/exe/detail.php?id=e17_-_the_bodhi_guide_to_enlightenment_-_compositing&amp;media=ecomorph_config.png" class="media" title="ecomorph_config.png"><img src="/wiki/lib/exe/fetch.php?w=700&amp;media=ecomorph_config.png" class="mediacenter" alt="" width="700" /></a>
+</p>
+
+<center><img src="../images/ecomorph_config.png" width="800"></center>
+
+<p>
+Då det finns så många val i <strong>Ecomorph</strong> inställningarna och då det inte är del av <strong>Bodhi Linux</strong> standardinstallation kommer denna artikel inte gå igenom dessa. Användare som är intresserade av mer information om <strong>Ecomorph</strong> rekommenderas läsa den relevanta avdelningen i <a href="http://pclosmag.com/html/Issues/201103/page09.html" target="_blank" title="http://pclosmag.com/html/Issues/201103/page09.html" rel="nofollow"> PCLinuxOS Guide</a> (anslutning till internet krävs för denna länk)
+
+
+
+</p>
+<hr />
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Föregående:</a></td>
+<td align="center" width="33%"> Innehåll:</td>
+<td align="right" width=33%">Nästa:</td>
+
+</tr>
+<tr>
+<td align="left" width="33%"><a href="everything.html">Everything Modulen</a></td>
+
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="key_bindings.html">Tangent Bindningar</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+

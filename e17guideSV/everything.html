@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi-Guiden till Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> Bodhi-Guiden till Enlightenment<br>
+Everything Modulen</h1>
+<br>
+<ol>
+<li><a href="#How to Run Everything">Hur man kör Everything</a></li>
+<li><a href="#Everything Does Anything">Everything Gör Vad Som Helst</a></li>
+<li><a href="#Plugins">Insticksmoduler<a/></li>
+<li><a href="#Beyond Everything">Bortom Everything</a></li>
+
+<li><a href="#Keyboard Navigation">Tangentbords-Navigering</a></li>
+</ol>
+<br>
+<p>
+När programutvecklarna på <strong>Enlightenment (E17)</strong> kläckte denna <a href="modules.html">Modul</a>, försökte de komma på ett namn som beskriver vad den gör. Det enda de kunde komma på var <strong>Everything</strong> (Allting).
+<p>
+I ett mycket litet nötskal, är <strong>Everything</strong> en fullt indexerad databas på alla applikationer och filer på din dator.
+
+
+<center><a href="../images/evry.png"><img src="../images/evry.png"></a></center>
+<p>
+Andra Operativsytem har liknande detaljer. Windows har "Desktop Search", Mac OS X har "Spotlight". Om du följt Linux, är du säkert bekant med "Gnome-Do". Det som skiljer <strong>Everything</strong> från mängden är dess arkitektur, uppbyggd kring insticksmoduler som tillåter den att göra saker utöver enbart finna applikationer och filer.
+
+<h2> <a name="How to Run Everything">Hur man kör Everything</a> </h2>
+<p>
+<strong>Everything</strong> är ganska rafinierad, inte enbart för allt den klarar att göra utan hur enkelt du kan göra det. Standardmetoden i <strong>E17</strong> för att starta <strong>Everything</strong> är att trycka <em>Alt+Esc</em>. Sen börjar du helt enkelt skriva in vad du vill. Allt eftersom du skriver, kommer <strong>Everything</strong> att börja visa förslag på vad den tror du vill göra. När du ser det du vill göra, kan du välja detta och trycka <em>Enter</em> eller dubbelklicka på det. Om du ångrar dig och vill gå ur <strong>Everything</strong>, trycker du bara på <em>Esc</em> eller klickar någonstans utanför <strong>Everything</strong> fönstret.
+
+<p>
+Som standard har även <strong>Bodhi Linux</strong> tilldelat <em>Meta(Win)+Mellanslag</em> som genväg till <strong>Everything</strong>. Du får även tillgång till den genom Huvudmenyn, <em>Main Menu -> Run Everything</em>.
+<p>
+<strong>Everything</strong> anpassar sig även till dina vanor. varje gång du använder <strong>Everything</strong> håller den koll på vad du gör ofta. Med tiden kommer de vanligast använda filerna och applikationerna att visas efter färre tangenttryckningar, t.ex. när du först använder <strong>Everything</strong> och trycker in bokstaven  <code>L</code>, kommer flera applikationer att visas så som <strong>Leafpad</strong>, <strong>LXAppearance</strong>, <strong>LXTerminal</strong>, osv. Om du nu fortsätter skriva <code>LXTerminal</code> , och startar denna, efter några gånger kommer <strong>LXTerminal</strong> att dyka upp som första val så fort du tryckt in <code>L</code>. 
+
+
+<h2> <a name="Everything Does Anything">Everything Gör Vad Som Helst</a> </h2>
+
+Vi säger att du har skrivit ett bash script som heter <code>mittscript</code> och du vill ändra i det. Du startar <strong>Everything</strong> och skriver in <code>mittscript</code>. När du nu väljer det, hur ska <strong>Everything</strong> veta om du vill göra ändringar i det eller köra det? 
+
+<p>
+Om du tittar i överkant på <strong>Everything</strong> fönstret ser du två flikar. Den första är grundvyn och listar möjliga motsvarigheter till din förfrågan. Den andra är sammanhangsberoende och ändrar sig beroende på vad som har valts. Typiskt beteende är att den visar olika <em>Handlingar</em> du kan utföra med det valda objektet.
+<p>
+Tillbaka till vårt <code>mittscript</code>  exempel, om du klickar på andra fliken kommer du se ett antal valmöjligheter på saker du kan göra med ditt skript som t.ex. <em>Öppna med...</em> eller <em>Kopiera till...</em>. Den kanske även listar en textredigerare som <em>Leafpad</em> och möjligheten att <em>Köra i Terminal</em>. Välj <em>Leafpad</em> så öppnas ditt skript för redigering.
+
+<p>
+Grädden på moset är att precis som <strong>Everything</strong> håller reda på vilka filer du oftast använder, håller den även reda på vad du brukar göra med dem. Så nästa gång du börjar skriva in <code>mittscript</code>  i <strong>Everything</strong> blir det första valet den väljer åt dig troligen öppna filen i <strong>Leafpad</strong>.
+
+<h2> <a name="Plugins">Insticksmoduler</a> </h2>
+
+<p>
+Som nämndes tidigare, en av <strong>Everything's</strong> kraftfullaste egenskaper är dess insticksmoduls-arkitektur. Allt du ser i <strong>Everything</strong> är resultatet av någon Insticksmodul. De vanligaste använda och förstådda är <strong>Applikationer</strong>, <strong>Filer</strong> och <strong>Senaste Filer</strong>. Om du öppnar <strong>Everything Settings</strong> (Everything-Inställningar) i <em>Main Menu -> Settings -> All -> Launcher -> Everything Configuration</em>, och väljer <em>Plugins</em> (Insticksmodul) fliken, ser du att det finns tre typer av Insticksmoduler: <em>Subject, Action(handling) </em>och <em>Object</em>. 
+
+
+<center><a href="../images/e17-guide-everything-settings-plugins.png"><img src="../images/e17-guide-everything-settings-plugins.png"></a></center>
+<p>
+Dessa hanteras av flikarna du ser överst i <strong>Everything</strong> fönstret. Första fliken visar resultaten av de applicerbara <em>Subject</em> Insticksmodulerna. Den andra fliken visar alla tillämpbara <em>Action</em> Insticksmoduler, saker du kan göra med ditt valda <em>Subject</em>. Vid behov finns det en tredje flik som visar alla applicerbara <em>Object</em> Insticksmoduler, vad vill man utföra den valda <em>Action(handlingen)</em> på. (T.ex. om du väljer <em>Kopiera Till...</em> <em>Action</em>, så måste den veta var den skall kopiera till). Den lilla texten i övre högra hörnet på varje flik visar vilken Insticksmodul som genererar det nuvarande utfallet.
+
+<center><a href="../images/e17-guide-everything-window-top-tabs.png"><img src="../images/e17-guide-everything-window-top-tabs.png"></a></center>
+<p>
+Längs botten av <strong>Everything</strong> fönstret kan du se fler flikar som visar de tillgängliga Insticksmodulerna för varje typ: <em>Subject, Action,</em> eller <em>Object</em>. Även dessa styrs av sammanhang, baserat på vad som fn. är valt. Som standard visas alla valmöjligheter från alla Insticksmoduler. Flikarna längs botten låter dig filtrera valen på Insticksmodul.
+
+<center><a href="../images/e17-guide-everything-window-bottom-tabs.png"><img src="../images/e17-guide-everything-window-bottom-tabs.png"></a></center>
+
+<h3> Standard-Insticksmoduler </h3>
+<p>
+<table border="1" cellpadding="5">
+<tr>
+<td><h3>Insticksmodul</h3></td>
+<td><h3>Beskrivning</h3></td>
+</tr>
+<tr>
+<td>Applications(Applikationer)</td>
+<td>Som sagts tidigare, en av de mest använda och förstådda Insticksmodulerna är Applikations-Insticksmodulen. Den låter <strong>Everything</strong> starta en applikation.</td>
+
+</tr>
+<tr>
+<td>Files/Recent Files(Filer/Senaste Filer)</td>
+<td>Även dessa är vanligt använda Insticksmoduler som låter <strong>Everything</strong> hitta filer och bläddra bland mappar i ditt filsystem.</td>
+</tr>
+<tr>
+<td>Windows(Fönster)</td>
+<td>Insticksmodul som låter dig manipulera öppna fönster.</td>
+</tr>
+<tr>
+
+<td>Settings(Inställningar)</td>
+<td>Insticksmodul för att hitta olika dialogrutor för inställnigar i E17.</td>
+</tr>
+<tr>
+<td>Exebuf</td>
+<td>Insticksmodul för att köra CLI kommandon.</td> 
+</tr>
+<tr>
+<td>Text</td>
+<td>Enkel Insticksmodul för att kopiera textsnuttar till urklipp.</td>
+</tr>
+
+<tr>
+<td>Plugins(Insticksmoduler)</td> 
+<td>En Insticksmodul för tillgång till Insticksmoduler!</td>
+</tr>
+</table>
+
+<br>
+<h3> Som en applikationsstartare </h3>
+
+I bilden ovan har användaren öppnat <strong>Everything</strong> genom genvägen <strong>Alt+Esc</strong> eller <strong>Meta(Win)+Mellanslag</strong>. Sen skrev användaren in <em>"E".</em>
+
+Att endast skriva "E" gör att <strong>Everything</strong> avsöker sin historik-sorterade databas för de oftast använda applikationerna som börjar på "E". Den hittar ett antal varav de första nio visas med deras ikoner i ett rutmönster.
+
+Men om användaren sen lägger till ett "v" så kommandoraden nu innehåller "Ev", minskar antalet utgångsmöjligheter, den mest troliga applikationen blir då "Everything Configuration", vilket markeras automatiskt. När väl en applikation är markerad kan den startas genom att dubbelklicka på den eller trycka "Enter". Pröva!
+
+
+<br><br>
+<h2> <a name="Beyond Everything">Bortom Everything</a> </h2>
+<p>
+Insticksmodulerna ovan är de som följer med som standard i <strong>Everything</strong>. Du kan installera ytterligare Insticksmoduler för att utöka <strong>Everythings</strong> användningsområden. Nedan följer några exempel.
+
+<h3> Miniräknare </h3>
+
+<p>
+Miniräknar Insticksmodulen låter <strong>Everything</strong> utföra grundläggande miniräknarfunktioner. Du ser förmodligen att den redan är installerad men det bakomliggande programmet den använder sig av <code>bc</code> , ett GNU "arbitrary precision calculator" språk, är inte installerat från början i <strong>Bodhi Linux</strong>. Installera <code>bc</code> via <strong>Synaptic</strong> eller 
+<p><code>sudo apt-get install bc</code>
+
+<p>Öppna sen <strong>Everything</strong> och tryck <code>=</code> för att starta miniräknaren. skriv <code>=1+2</code>  så visas <code>3</code> listat i <em>Subject</em> fliken.
+
+
+
+<h3> Sök på Webben </h3>
+<p>
+
+<strong>Websearch</strong> Insticksmodulen är igentligen en samling Insticksmoduler som låter dig söka snabbt på Internet. Istället för att öppna din webläsare, gå till google, klicka på sökrutan och skriva det du söker; starta <strong>Everything</strong> skriv in  
+<p><code>g (det du söker)</code> 
+<p>tryck <em>Enter</em>. Din webläsare öppnas automatiskt och visar det du sökte efter på Google.
+
+<p>Behöver du snabbt få fram YouTube videon av "Keyboard Cat"? Inga problem, öppna <strong>Everything</strong>, skriv in
+<p><code>y keyboard cat</code>
+
+<p>tryck <em>Enter</em>.
+
+<p>På liknande sätt kan du söka på Wikipedia med prefixet <code>w</code> , och Google translations med <code>t</code> .
+
+<p>För att installera <strong>websearch</strong>, sök efter <code>everything-websearch</code> i <strong>Synaptic</strong> eller använd
+
+<p><code>sudo apt-get install everything-websearch</code></p>
+<p>Glöm inte att Ladda <strong>Modulen</strong> efter installation.
+
+<h2> <a name="Keyboard Navigation">Tangentbords-Navigering</a> </h2>
+
+<p>Även om du kan använda musen för att navigera i <strong>Everything</strong>, är <strong>Everything</strong> utformad med "tangentbordsföraren" i åtanke. Här är grunderna.
+<p>
+<table border="1" cellpadding="5">
+<tr>
+
+<td><h3>Tangenter</h3></td>
+<td><h3>Verkan</h3></td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>Cykla genom övre flikarna (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+<td>upp/ner/vänster/höger</td>
+<td>Flytta genom möjliga val</td>
+</tr>
+
+<tr>
+<td>Enter</td>
+<td>Välj objekt/händelse</td>
+</tr>
+<tr>
+<td>Ctrl+vänster/höger</td>
+<td>flytta dig genom nedre flikarna (insticksmodul-filter)</td>
+</tr>
+</table>
+
+<p>Om du avskyr att sträcka dig till piltangenterna finns det två alternativ, Vi baserad (standard) och Emacs baserad, vilket kan ställas in i <strong>Everything Settings</strong> för snabbare navigering. 
+
+
+<p>
+<table border="1" cellpadding="5">
+<tr>
+<td><h3>Vi</h3></td>
+<td><h3>Emacs</h3></td>
+<td><h3>Verkan</h3></td>
+</tr>
+<tr>
+<td>Alt+h</td>
+<td>Alt+b</td>
+<td>Flytta vänster</td>
+
+</tr>
+<tr>
+<td>Alt+j</td>
+<td>Alt+n</td> 
+<td>Flytta ner</td>
+</tr>
+<tr>
+<td>Alt+k</td> 
+<td>Alt+p</td> 
+<td>Flytta upp</td>
+</tr>
+
+<tr>
+<td>Alt+l</td> 
+<td>Alt+f</td> 
+<td>Flytta höger</td>
+</tr>
+<tr>
+<td>Alt+i</td>
+<td>Alt+i</td> 
+<td>Cykla genom övre flikarna (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+
+<td>Alt+Shift+n</td>
+<td>Alt+Shift+f</td> 
+<td>Nästa insticksmodul-filter</td> 
+</tr>
+<tr>
+<td>Alt+Shift+p</td>
+<td>Alt+Shift+b</td> 
+<td>Föregående insticksmodul-filter</td> 
+</tr>
+</table>
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Föregående:</a></td>
+<td align="center" width="33%"> Innehåll:</td>
+<td align="right" width=33%">Nästa:</td>
+</tr>
+<tr>
+<td align="left" width="33%"><a href="profiles.html">Profiler</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+
+<td align="right" width="33%"><a href="compositing.html">Compositing</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>

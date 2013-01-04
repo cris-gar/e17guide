@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi-Guiden till Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> Bodhi-Guiden till Enlightenment<br>Gadgets</h1>
+<hr>
+
+<p>
+Denna artikel förklarar vad <strong>Enlightenment (E17) Gadgets</strong> är för något, beskriver en del användbara <strong>Gadgets</strong>, visar hur man lägger till nya <strong>Gadgets</strong> från <strong>E17</strong>'s repository, och berättar i korthet hur <strong>Gadgets</strong> förhåller sig till <a href="modules.html">Moduler</a> (Som finns beskrivet i en annan del av denna guide).
+
+
+
+<h2>Vad är Gadgets?</h2>
+<p>
+I <strong>E17</strong>, är en <strong>Gadget</strong> i stort sett allt du ser på skrivbordet. <strong>Gadgets</strong> är vad andra Operativsystem kallar för "Applets" eller "Widgets". Små program som gör en sak, och gör detta väl. Vissa tillhandahåller specifik information om din datormiljö. Många <strong>Gadgets</strong> finns förmodligen redan på ditt standard <strong>Bodhi Linux</strong> skrivbord beroende på vilken <a href="profiles.html">Profil</a> du valde när du installerade <strong>Bodhi Linux</strong>.
+
+
+<p>
+Observera att de flesta <strong>Gadgets</strong> kan placeras antingen direkt på skrivbordet eller i en <a href="shelves.html">Hylla</a>. Det finns en del <strong>Gadgets</strong> (som t.ex. <em>Systray</em>) som <strong>endast</strong> kan placeras i en <strong>Hylla</strong>.
+
+
+<h2>Exempel på Gadgets</h2>
+
+<table border="1" cellpadding="10">
+<tr>
+<td style="vertical-align:middle">Calendar <br>(En grafisk almanacka)</td>
+<td><a href="../images/calendar.png"><img src="../images/calendar.png" width="50"></a></td>
+</tr>
+<tr>
+<td style="vertical-align:middle">Clock <br>(En analog klocka)</td>
+<td><a href="../images/clock.png"><img src="../images/clock.png" width="50"></a></td>
+</tr>
+<tr>
+
+<td style="vertical-align:middle">Forecasts <br>(En grafisk visning av väderleken på angiven ort)</td>
+<td><a href="../images/forecasts.png"><img src="../images/forecasts.png" width="75"></a></td>
+</tr>
+<td style="vertical-align:middle">Pager <br>(En växlare mellan Virtuella skrivbord)</td>
+<td><a href="../images/pager.png"><img src="../images/pager.png" width="50"></a>
+</table>
+
+
+<br><br>
+<h2>Visade standard-Gadgets per Profil</h2>
+<p>Beroende på vilken <strong>Profil</strong> du valt, laddas ett antal <strong>Gadgets</strong> som standard:<br>
+
+<table border="1" cellpadding="5">
+<tr><td><h3>Bare</td><td><h3>Compositing</td><td><h3>Desktop</td><td><h3>Fancy</td><td><h3>Laptop</td><td><h3>Tablet**</td><td><h3>Tiling</td></tr>
+<tr><td>Places</td><td>Start</td><td>Start</td><td>Calendar</td><td>Cpufreq</td><td>Bodhi Close</td><td>Places</td></tr>
+<tr><td>Clock</td><td>IBar</td><td>Ibar</td><td>Places</td><td>Places</td><td>IBox</td><td>Mixer</td></tr>
+
+<tr><td>Settings</td><td>IBox</td><td>Clock</td><td>Taskbar</td><td>Taskbar</td><td>IBar</td><td>Pager</td></tr>
+<tr><td>Everything Starter</td><td>Clock</td><td>Pager</td><td>Mixer</td><td>Mixer</td><td>Places</td><td>Clock</td></tr>
+<tr><td>Shot*</td><td>Pager</td><td>Mixer</td><td>Pager</td><td>Pager</td><td>Mixer</td><td>IBar</td></tr>
+
+<tr><td> </td><td>Mixer</td><td>Taskbar</td><td>Clock</td><td>Battery</td><td>Cpufreq</td><td>Start</td></tr>
+<tr><td> </td><td>Places</td><td>Places</td><td>IBar</td><td>Clock</td><td>Battery</td><td>Settings</td></tr>
+<tr><td> </td><td>Scale Windows</td><td>Settings</td><td>Settings</td><td>Start</td><td>Illume-Home-Toggle</td><td>Everything Starter</td></tr>
+
+<tr><td> </td><td>Scale all Windows</td><td>Everything Starter</td><td>Everything Starter</td><td>Settings</td><td>Illume-Keyboard-Toggle</td><td>Shot*</td></tr>
+<tr><td> </td><td>Scale Pager</td><td>Shot*</td><td>Shot*</td><td>Everything Starter</td><td>Illume-Mode-Toggle</td><td></td></tr>
+<tr><td> </td><td>Settings</td><td> </td><td> </td><td>Shot*</td><td>Clock</td><td></td></tr>
+
+<tr><td> </td><td>Everything Starter</td><td> </td><td> </td><td></td><td>Settings</td><td></td></tr>
+<tr><td> </td><td>Shot*</td><td> </td><td> </td><td></td><td>Start</td><td></td></tr>
+<tr><td> </td><td></td><td> </td><td> </td><td></td><td>Everything Starter</td><td></td></tr>
+
+<tr><td> </td><td></td><td> </td><td> </td><td></td><td>Shot*</td><td></td></tr>
+
+</table>
+
+* <em>Shot</em> är inte en <strong>Gadget</strong> i vanlig mening men den är valbar i <em>Main Menu</em>.
+
+<p>**<strong>Tablet Profilen</strong> har inte <strong>Gadget Modulen</strong> laddad som standard.
+
+
+<h2>Lägg till nya Gadgets</h2>
+
+<p>För att lägga till en ny <strong>Gadget</strong> till skrivbordet, gå till <em>Main Menu -> Settings -> Gadgets</em> så öppnas <strong>Gadgets Manager</strong>. Välj en <strong>Gadget</strong> i listan och tryck på <em>Add Gadget</em>. Den nya <strong>Gadgeten</strong> syns överst till vänster på skrivbordet med blå skaffrering vilket indikerar att den är flyttbar och att dess storlek kan justeras efter dina önskemål. När <strong>Gadgeten</strong> är där du vill ha den, <em>höger-klicka</em> på den för att låsa den på plats.
+
+
+
+<br><center><img src="../images/gadget-move.png"></center>
+
+<h2>Gadget Inställningar</h2>
+
+<p>När de väl är placerade på skrivbordet eller i en <strong>Hylla</strong>, kan varje <strong>Gadget</strong> <em>höger-klickas</em> för att ändra dess utseende och beteende. T.ex. när man först installerar <em>Forecasts</em> <strong>Gadgeten</strong>, ger den dig vädret i Sofia, Bulgaria. Förmodligen inte vad du vill ha, såvida du inte bor där naturligtvis. Alltså <em>höger-klicka</em>, öppna menyn <em>Gadget Forecasts -> Forecasts Settings</em>. I dialogrutan som öppnas ser du instruktioner för att finna och skriva in koden för där du bor.
+
+
+
+<h2>Lägg till en Gadget i en Hylla</h2>
+
+<p>Att lägga till en <strong>Gadget</strong> i en <strong>Hylla</strong> kräver en lite anorlunda procedur. Se <a href="shelves.html">Hyllor Avsnittet</a> i denna guide för detaljer.
+
+<h2>Gadgets Kräver sina Moduler</h2>
+
+<p>Vilka <strong>Gadgets</strong> du har tillgängliga styrs av vilka <strong>Moduler</strong> du har <em>Laddade</em>. Att <em>Ladda</em> en <strong>Modul</strong> läser in den från disk till RAM, men den visas inte på skärmen innan du lägger till den som <strong>Gadget</strong> på skrivbordet eller i en <strong>Hylla</strong>. För att <em>Ladda/Ladda-Ur</em> <strong>Moduler</strong> gå till <em>Main Menu -> Settings -> Modules</em>. Se <a href="modules.html">Moduler Avsnittet</a> i denna guide för fler detaljer.
+
+
+<h2>Ytterligare Gadgets</h2>
+
+<p>För att hålla nedladdningen och installationen av <strong>Bodhi Linux</strong> så kompakt som möjligt, finns en hel del utmärkata <strong>Moduler</strong> inte med från början, dessa kan dock laddas ner genom <strong>Synaptic Package Manager</strong> precis som andra Linux program. 
+
+<p>För en fullständig förteckning över tillgängliga <strong>Gadgets</strong>, se <a href="module_reference.html">Modul Förteckning</a>.
+
+
+<p>Se <a href="modules.html">Modul Avsnittet</a>  i denna guide för fler detaljer.
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Föregående:</a></td>
+<td align="center" width="33%"> Innehåll:</td>
+<td align="right" width=33%">Nästa:</td>
+</tr>
+<tr>
+
+<td align="left" width="33%"><a href="shelves.html">Hyllor</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="profiles.html">Profiler</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>

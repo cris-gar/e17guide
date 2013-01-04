@@ -1,0 +1,689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi-Guiden till Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> Bodhi-Guiden till Enlightenment<br>
+Skapa Teman</h1>
+<hr>
+<p>
+<em>av Agustin J. Verdegal T (Agust)</em> <br/>
+<br/>
+
+</p>
+
+<p>
+Denna artikel, <a href="http://pclosmag.com/html/Issues/201104/page07.html" target="_blank" title="http://pclosmag.com/html/Issues/201104/page07.html" rel="nofollow">E17: Create Your Own Custom Themes</a>, publicerades ursprungligen i <a href="http://pclosmag.com/html/Issues/201104/links.html" target="_blank" title="http://pclosmag.com/html/Issues/201104/links.html"  rel="nofollow">PCLinuxOs Magazine,  Volym 51, April 2011</a> (Dessa länkar kräver anslutning till internet). 
+</p>
+
+<p>
+Stort tack till Agust för hans portning av sitt PcLinuxOs tema <em>A-LaNoche</em> till <strong>Bodhi</strong> och för att låta oss lägga upp en modifierad form av sin artikel här. 
+Innan du börjar, Om det inte redan är installerat, behöver du installera <em>A-LaNoche</em> temat: <br/>
+
+
+</p>
+<pre class="code">sudo apt-get install bodhi-theme-lanoche</pre>
+
+<p>
+<br/>
+
+För kännedom, <strong>Bodhi</strong> installerar <strong>E17</strong> teman i mappen <code>/usr/share/enlightenment/data/themes/</code> men teman kan även installeras lokalt för bruk endast av nuvarande användaren i <code>~/.e/e/themes</code>. För en introduktion till användandet av teman, se <a href="themes.html">Teman</a> avsnittet.<br/>
+
+<br/>
+
+
+</p>
+<ul>
+  <li><a href="#introduction">Inledning</a></li>
+  <li><a href="#part1">Del 1. Bakgrundsbild</a></li>
+  <li><a href="#part2">Del 2. Bilder och Deras Innebörd</a></li>
+  <li><a href="#part3">Del 3. Temats Beståndsdelar</a></li>
+  <li><a href="#part4">Del 4. Fler Bilder</a></li>
+  <li><a href="#part5">Del 5. Kompilera Temat</a></li>
+  <li><a href="#thanks">Tack</a></li>
+  <li><a href="#notes">Anteckningar</a></li>
+</ul>
+
+<p>
+
+<br/>
+
+
+</p>
+
+
+<h2 id="introduction">Inledning</h2>
+
+
+<p>
+
+<br/>
+Jag skall försöka förklara ett enkelt sätt att skapa ett E17 tema på genom att använda temat <em>A-LaNoche</em> som jag skapat. Det första som skall göras är att ta en kopia på temat och sen öppna kopian så vi kan börja jobba.
+</p>
+
+<p>
+För att öppna ett tema använder vi oss av följande kommando.
+
+</p>
+<pre class="code">edje_decc (filnamn.edj)</pre>
+
+<p>
+
+Själv delar jag upp tema-arbetet i tre moment: bakgrundsbilden i <code>.edj</code> formatet, bilder i <code>.png</code> formatet, och <code>.edc</code> filen.
+
+</p>
+
+
+<!-- EDIT2 SECTION "Introduction" [1332-1792] -->
+<h2 id="part1">Del 1. Bakgrundsbild</h2>
+
+
+<p>
+
+<br/>
+
+Så, Låt oss börja. När du öppnar temat, hitta <code>default.edc</code> filen och redigera denna för att ändra bakgrundsbild-filen.
+</p>
+
+<p>
+
+Bakgrundsblden formaterar jag som en <code>.edj</code> fil, detta fungerar visuellt bätte eftersom den skalar väl i alla upplösningar. Bakgrundsbilden består av sju bilder och de måste se ut som de gör här.
+</p>
+
+<p>
+<br/>
+
+
+</p>
+<pre class="code">/*** DEFAULT WALLPAPER ***/
+images { 
+	 image: &quot;bodhi-logo.png&quot; COMP;
+	 image: &quot;bodhi-logo-effect.png&quot; COMP; 
+	 image: &quot;bodhi-effect.png&quot; COMP;
+	 image: &quot;topleft.png&quot; COMP;
+	 image: &quot;topright.png&quot; COMP;
+	 image: &quot;bottomleft.png&quot; COMP;
+	 image: &quot;bottomright.png&quot; COMP;
+       }
+	  group { name: &quot;e/desktop/background&quot;;
+	   data { item: &quot;style&quot; &quot;2&quot;; 
+	        }
+    parts {
+	part {
+	       name: &quot;base&quot;; 
+	       type: RECT; 
+	       description { 
+	       state: &quot;default&quot; 0.0;
+	       min: 800 600;
+	       color: 0 0 0 255;
+		    }
+	         }
+	part {
+	      name: &quot;effect&quot;; 
+	      description {
+	      state: &quot;default&quot; 0.0;
+	      min: 230 800; 
+	      max: 230 800;
+	      align:    0.5 0.0;
+	      rel1 {
+		 to: &quot;cause&quot;;
+		 offset:   -40     179;
+	      }
+	      rel2 {
+		 to: &quot;cause&quot;;
+		 offset:   0     140;
+	      }
+	      image { 
+	      normal: &quot;bodhi-logo-effect.png&quot;; 
+                    }
+		 } 
+
+	      }
+	part {
+	      name: &quot;cause&quot;; 
+	      description {
+	      state: &quot;default&quot; 0.0;
+	      min: 400 400; 
+	      max: 400 400;
+	      image { 
+	      normal: &quot;bodhi-logo.png&quot;; 
+                    }
+		 } 
+	      }
+	part { 
+	      name: &quot;baseeffect&quot;; 
+	      description {
+	      state: &quot;default&quot; 0.0;
+	      min: 1680 1050; 
+	      image { 
+	      normal: &quot;bodhi-effect.png&quot;; 
+                    }
+		 } 
+	      } 
+	part {
+	      name: &quot;topleft&quot;; 
+	      description {
+	      state: &quot;default&quot; 0.0;
+	      max: 150 150;
+	      align: 0.0 0.0;
+	      rel1 {
+		 relative: 0.0  0.0;
+		 offset:   0     -1;
+	      }
+	      rel2 {
+		 relative: 1.0  1.0;
+		 offset:   0     -1;
+	      }
+	      image { 
+	      normal: &quot;topleft.png&quot;; 
+                    }
+		 } 
+	      } 
+	part {
+	      name: &quot;topright&quot;; 
+	      description {
+	      state: &quot;default&quot; 0.0;
+	      max: 150 150;
+	      align: 1.0 0.0;
+	      rel1 {
+		 relative: 0.0  0.0;
+		 offset:   -0     -1;
+	      }
+	      rel2 {
+		 relative: 1.0  1.0;
+		 offset:   -0     -1;
+	      }
+	      image { 
+	      normal: &quot;topright.png&quot;; 
+                    }
+		 } 
+	      } 
+	part {
+	      name: &quot;bottomleft&quot;; 
+	      description {
+	      state: &quot;default&quot; 0.0;
+	      max: 150 150;
+	      align: 0.0 1.0;
+	      rel1 {
+		 relative: 0.0  0.0;
+		 offset:   0     0;
+	      }
+	      rel2 {
+		 relative: 1.0  1.0;
+		 offset:   0     0;
+	      }
+	      image { 
+	      normal: &quot;bottomleft.png&quot;; 
+                    }
+		 } 
+	      } 
+	part {
+	      name: &quot;bottomright&quot;; 
+	      description {
+	      state: &quot;default&quot; 0.0;
+	      max: 150 150;
+	      align: 1.0 1.0;
+	      rel1 {
+		 relative: 0.0  0.0;
+		 offset:   -0     0;
+	      }
+	      rel2 {
+		 relative: 1.0  1.0;
+		 offset:   -0     0;
+	      }
+	      image { 
+	      normal: &quot;bottomright.png&quot;; 
+                    }
+		 } 
+	      } 
+	   } 
+        } </pre>
+
+<p>
+<br/>
+
+Om vi vill använda en enkel bakgrundsbild istället för en bakgrundsbild i <code>.edj</code> formatet, måste vi ändra <code>.edc</code> filen på detta vis.
+</p>
+
+<p>
+<br/>
+
+
+</p>
+<pre class="code">/*** DEFAULT WALLPAPER ***/
+/** wallpaper original realizado por Agust gracias **/
+images {
+	image: &quot;grill_dark_tiny_pattern.png&quot; COMP;
+}
+group {
+	name: &quot;e/desktop/background&quot;;
+	max: 1680 1050;
+	parts {
+		part {
+			name: &quot;background_image&quot;;
+			description {
+				state: &quot;default&quot; 0.0;
+				image {
+					normal: &quot;grill_dark_tiny_pattern.png&quot;;
+				}
+			}
+		}
+	}
+}</pre>
+
+<p>
+<br/>
+
+I detta exempel är den skalad till upplösningen 1680 x 1050. Döp om den till <code>grill_dark_tiny_pattern.png</code> och lägg den i tema mappen vi skapade.
+</p>
+
+<p>
+På detta sätt får vi bakgrundsbilden till vårat tema.
+</p>
+
+<p>
+<br/>
+
+</p>
+
+
+
+
+<h2 id="part2">Del 2. Bilder och Deras Innebörd</h2>
+
+
+<p>
+
+<br/>
+<center><img src="../images/e17theme-about.png"></center>
+
+</p>
+
+
+Ovan ser vi "Om Enlightenment" sidan som nås via <em>Menu -> Enlightenment -> About</em>. Den är uppbyggd av flera mindre bilder i <code>.png</code> format. I detta exempel ska jag försöka förklara de viktigaste.
+<p>
+<br/>
+
+Om du ser till bilden nedanför finner du <code>about_bot.png, about_mid.png</code> och <code>about_top.png</code>. De är bilderna som skapar bakgrunden till bilden ovan och utgör nedre delen, mitten och övre delen. Stäng knappen och krysset har även de .png filer.
+</p>
+
+<p>
+De andra filerna du hittar här ser man oftast tydligt deras funktion, pil - ner, vänster, höger och upp. Filerna som börjar på "bat", alldeles riktigt, de har med datorns batteristatus att göra.
+</p>
+
+<center><img src="../images/e17theme-battery.png"></center>
+
+<p>
+<br/>
+
+Nu kommer vi till en av de viktigaste bitarna i detta exempel, <code>image base_bg.png</code>. Detta är filen vi kommer att använda för huvudmenyn. Som du ser nedan är denna bild mycket mörk. För att texten skall få kontrast mot bakgrunden och synas, ändrar vi den till genomskinlig eller någon ljus färg. För att uppnå detta ändrar vi så här i  default.edc filen.
+</p>
+
+<p>
+<br/>
+
+
+</p>
+<pre class="code">color_class {
+name: &quot;menu_item&quot;;
+color: 221 221 221 255;
+color3: 0 0 0 64;
+}
+color_class {
+name: &quot;menu_item_active&quot;;
+color: 255 255 255 255;
+color3: 0 0 0 14;</pre>
+
+<center><img src="../images/e17theme-menu.png"></center>
+
+<p>
+<br/>
+
+Som du ser har jag använt vitt, men du kan använda vilken färg du vill.
+</p>
+
+<center><img src="../images/e17theme-bdbuttons.png"></center>
+
+<p>
+<br/>
+
+<code>bd_bottom.png</code> är bilden som används för nedre fönsterramen och <code>bd_top.png</code> för övre fönsterramen. <code>bd_title_bg.png</code> används av tittellisten när den är aktiv. Här har jag skapat en lätt genomskinlig glaseffekt.
+</p>
+
+<p>
+<code>bd_bottom</code> bilderna är de som används för att minimera eller expandera fönstren.
+</p>
+
+<center><img src="../images/e17theme-windows.png"></center>
+
+<p>
+<br/>
+
+Här ser vi ikonerna som används för bluetooth. Vi kan använda oss av vad vi vill bara vi håller oss till rätt bildstorlek så att vi slipper tvingas modifiera  <code>"default.edc"</code> filen. <br>
+<code>bnw.png</code> är bilden som visar information om temat, vem som bidragit, osv.
+</p>
+
+<center><img src="../images/e17theme-bluetooth.png"></center>
+
+<p>
+<br/>
+
+Knappar använder sig av bilderna <code>bt-base.png, base2.png</code> och <code>dis_base.png</code>. <br>
+
+<code>bt_sm_base1.png</code> är bilden som används när vi skall klicka på en knapp. <code>bt_sm_base2.png</code> används när man väljer en draglist.
+</p>
+
+<p>
+Här har du vårat exempel.
+</p>
+
+<center><img src="../images/e17theme-themeselector.png"></center>
+
+
+<h2 id="part3">Del 3. Temats Beståndsdelar</h2>
+
+<p>
+
+<br/>
+
+I följande bild ser vi utöver <code>.edc</code> filen, en av de viktigaste delarna i skapandet av ett tema. Detta är <code>build.sh</code> skriptet. Det här:
+</p>
+
+<p>
+<br/>
+
+
+</p>
+
+<pre class="code">
+ #!/bin/sh edje_cc $@ -id . -fd . default.edc -o A-Noche.edj</pre>
+
+<p>
+<br/>
+
+är skriptet som skapade temat vi tittar på. 
+Utöver själva byggandet, består temat av 10 bilder och fungerande fönster.
+</p>
+
+<center><img src="../images/e17theme-build.png"></center>
+
+En av de delar jag särskillt gillar är klockan, vi använder den som exempel.
+</p>
+
+<center><img src="../images/e17theme-clock1.png"></center>
+
+Jag utformade sekundvisaren som enbart en grön prick utan egentliga "pekare" så som de minut och timvisarna är.
+</p>
+
+<center><img src="../images/e17theme-clock2.png"></center>
+
+Vi ser att temat innehåller fler bildfiler, men den viktigaste är <code>default.edc</code> filen som innehåller alla delar av vårat tema och genom vilken vi kan modifiera nästan allt. 
+</p>
+
+<center><img src="../images/e17theme-cal.png"></center>
+
+Ett exempel är kalender modulen som jag lagt till temat genom att ändra i <code>default.edc</code> filen. För att använda kalendern, du ser den som (<code>E17_calendar.png</code>) måste du ändra så här:
+</p>
+
+<p>
+<br/>
+
+
+</p>
+<pre class="code">/*** MOD: CALENDAR ***/
+images {
+	image: &quot;E17_calendar.png&quot; COMP;
+}
+fonts {
+	font: &quot;VeraMono.ttf&quot; &quot;VeraMono&quot;;
+
+	font: &quot;VeraBd.ttf&quot; &quot;VeraBold&quot;;
+}
+group {
+	name: &quot;modules/calendar/main&quot;;
+	parts {
+		part {
+			name: &quot;calendar&quot;;
+			description {
+				state: &quot;default&quot; 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+				rel1 {
+					relative: 0.0 0.0;
+				}
+				rel2 {
+					relative: 1.0 1.0;
+				}
+				image {
+					normal: &quot;E17_calendar.png&quot;;
+				}
+			}
+		}
+		part {
+			name: &quot;monthday&quot;;
+			type: TEXT;
+			mouse_events: 0;
+			description {
+				state: &quot;default&quot; 0.0;
+				rel1 {
+					relative: 0.1 0.2;
+					offset: 0 0;
+					to: &quot;calendar&quot;;
+				}
+				rel2 {
+					relative: 1.0 0.7;
+					offset: -1 -1;
+					to: &quot;calendar&quot;;
+				}
+				color: 46 52 54 255;
+				color_class: &quot;module_label&quot;;
+				text {
+					text: &quot;??&quot;;
+					font: &quot;VeraBold&quot;;
+					size: 13;
+					min: 1 1;
+					fit: 1 1;
+					text_class: &quot;module_large&quot;;
+				}
+			}
+		}
+		part {
+			name: &quot;weekday&quot;;
+			type: TEXT;
+			mouse_events: 0;
+			description {
+				state: &quot;default&quot; 0.0;
+				rel1 {
+					relative: 0.4 0.7;
+					offset: 0 0;
+					to: &quot;calendar&quot;;
+				}
+				rel2 {
+					relative: 0.7 0.9;
+					offset: -1 -1;
+					to: &quot;calendar&quot;;
+				}
+				color: 46 52 54 255;
+				color_class: &quot;module_label&quot;;
+				text {
+					text: &quot;??&quot;;
+					font: &quot;VeraMono&quot;;
+					size: 9;
+					min: 1 1;
+					fit: 1 1;
+					text_class: &quot;module_large&quot;;
+				}
+			}
+		}
+	}
+}</pre>
+
+<p>
+<br/>
+
+Utöver att ändra i filen måste vi även lägga till bilden <code>e17_calendar.png</code>, teckensnitten <code>VeraMono.ttf</code> och <code>VeraBd.ttf</code>. Så, nu har vi vår kalender. 
+Värt att notera är även bildfilen <code>dia_grad.png</code>, den utgör grunden till detta tema. 
+Härnäst ser vi bildfilerna som används av temat under inloggning (login manager), <code>exq-bglight.png, exq-dot-glow.png, exq-dot.png</code> och <code>exq-logo.png</code>. Vi ser även <code>grill_dark_tiny_pattern.png</code> vilket är bilden som normalt används som bakgrund ifall man inte specificerat en särskilld bakgrundsbild (som visades i del 1).
+</p>
+
+<center><img src="../images/e17theme-grill.png"></center>
+
+<p>
+Följande bilder är temats ikoner. Du kan alltid byta ut dem mot andra som du kanske gillar bättre, bara du använder samma storlek och namn.
+</p>
+
+<center><img src="../images/e17theme-icon.png"></center>
+
+Här der vi bilderna för loggan i temat och även färgen som används vid markering av innehåll i huvudmenyn.
+
+
+<p>
+Bilden som används som standardlogga i temat är <code>logo_white_128.png</code>. När vi väljer något i huvudmenyn kommer första posten i undermenyn att byta till <code>logo_black_128.png</code>. Det ser ut så här:
+</p>
+
+<center><img src="../images/e17theme-start.png"></center>
+
+<p>
+<br/>
+
+
+</p>
+
+<h2 id="part4">Del 4. Fler Bilder</h2>
+
+<p>
+
+<br/>
+
+I denna bildsektion ser vi ikonen som används för volym kontrol. Vi ser även bilderna för "skrivbordsbytaren", de är genomskinliga med en mörk bård.
+</p>
+
+<center><img src="../images/e17theme-pager.png"></center>
+
+<p>
+<br/>
+
+För övergångseffekterna ser vi här bilderna för muspekaren och muspekareffekterna. dessa effekter kan se mucket bra ut.
+</p>
+
+<p>
+Powerikonen har med batteriet att göra, när den är synlig indikerar det att batteriet laddas och försvinner när batteriet är fulladdat.
+</p>
+
+<center><img src="../images/e17theme-power.png"></center>
+
+Nu tittar vi på färgen av hyllan som ska användas i temat. Notera att förvalda färgen på hyllan är densamma som den vi använde i huvudmenyn. E17 ger oss möjligheten att ändra så att färgen blir mer transparent, (det är vad jag gjorde). I det här exemplet har jag satt svart som val för hyllans färg.
+</p>
+
+<p>
+Tittar vi vidare ser vi bilderna för skjutreglage, <code>slider.png</code> och <code>slider_clicked.png</code>. Jag har lagt till en ljuseffekt som gör att skjutknappen lyses upp när reglaget används. Ikonerna <code>tacho_bg</code> och <code>tacho_dial_xx</code> hör till E17 modulen: Cpufreq.
+</p>
+
+<center><img src="../images/e17theme-cpu.png"></center>
+
+Slutligen ser vi bilderna som används för temperaturikonen. I temat används vgrad bilderna för E17 modulen: everything. Notera att ttf fonterna som används är samma som vi använde oss av i kalendern.
+</p>
+
+<center><img src="../images/e17theme-vera.png"></center>
+
+<h2 id="part5">Del 5. Kompilera Temat</h2>
+
+
+<p>
+
+<br/>
+
+När vårat tema är klart behöver vi bara kompilera det. Om du använder dig av detta tema som grund, är kompilering mycket lätt.
+</p>
+
+<p>
+Dubbelklicka på build.sh.
+</p>
+
+<p>
+Om allt har gått väl ska en <code>.edj</code> tema fil ha skapats. I detta fall kommer filen att heta <code>A-Noche.edj</code>. Om det blir fel och filen inte skapas, beror detta på att det finns ett fel någonstans i ingående delarna i temat.
+</p>
+
+<p>
+Det finns en del teman som använder enlightenment_remote. Dessa teman måste kompileras lite anorlunda. Öppna ett terminalfönster och skriv in följande.
+</p>
+<pre class="code">./build.sh
+./build.sh &amp;&amp; enlightenment_remote -restart</pre>
+
+<p>
+<br/>
+
+
+</p>
+
+<h2 id="thanks">Tack</h2>
+
+
+<p>
+
+<br/>
+
+Jag vill tacka de som tagit sig tid att lära mig det jag kan. De är:
+
+</p>
+<ul>
+<li>Toma (Tom Haste) , Team Enlightenment.
+</li>
+<li>Rui Pais , Team Enlightenment och Ledare OzO.
+</li>
+<li> Aubrey , Konstnär OzO.
+</li>
+<li> Luca di Marini (Darkmaster) , Konstnär and Ledare Open GE.
+</li>
+<li> och Roxville Prince AMD (Team Elive) på vilket jag baserat mycket av mina alster.
+</li>
+</ul>
+<p>
+Jag vill även tacka Parnote för sit intresse och hjälp med att skriva denna artikel. Jag hoppas den blir till nytta för honom som ett hjälpmedel i att skapa teman, men mest för att förstå hur E fungerar. Detta är särskillt tillägnad Texstar, och Smurfslover för deras utmärkta arbete och det intresse de visat i Enlightenment.
+</p>
+
+<p>
+<br/>
+
+
+</p>
+
+<h2 id="notes">Anteckningar</h2>
+<p>
+Bodhi Redaktörens Anteckningar: Särskillt tack till Agust för att skapandet av en <strong>Bodhi</strong> anpassning av sitt <em>A-LaNoche</em> tema och till både Agust och PCLinuxOS som låtit oss anpassa usprungliga artickeln till <strong>Bodhi&#039;s</strong> <em>A-LaNoche</em> tema.
+
+</p>
+
+<p>
+PCLinuxOS Redaktörens Anteckningar: Särskillt tack till Agust för att ha delat med sig av sin teknik för att skapa E17 Teman. Extra särskillt tack till min svärmor Lupe Warnock, för sin översättning av Agust&#039;s instruktioner och handledning från Spanska till Engelska åt The PCLinuxOS Magazine.
+</p>
+<hr />
+
+
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Föregående:</a></td>
+<td align="center" width="33%"> Innehåll:</td>
+<td align="right" width=33%">Nästa:</td>
+
+</tr>
+<tr>
+<td align="left" width="33%"><a href="other_settings.html">Andra Inställningar</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="appendix.html">Appendix</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>

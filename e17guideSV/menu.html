@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi-Guiden till Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+    </head>
+    <body>
+
+<div id="content">
+	<div id="maincontent">
+
+<h1> Bodhi-Guiden till Enlightenment<br>Huvudmeny</h1>
+<hr>
+
+This is a beginners Introduction to <strong>Bodhi Linux's</strong> Menus, it was created and tested for versions of <strong>Bodhi Linux</strong> 1.0.0 through 1.2.0.
+Detta är en introduktion för nybörjare till <strong>Bodhi Linux's</strong> Menyer, den har skapats och testats för <strong>Bodhi Linux</strong> versioner 1.0.0 t.o.m. 1.2.0
+
+    <ol>
+<li><a href="#Introduction">Inledning</a></li>
+
+<li><a href="#Where Did It Go?">Vart försvann det?</a></li>
+<li><a href="#Menu Structure">Menystruktur</a></li>
+<li><a href="#Favorite Applications">Favorit-Applikationer</a></li>
+<li><a href="#Customizing Bodhi Linux's Menu">Anpassa Bodhi Linux Menyn</a></li>
+<ol>
+    <li><a href="#Adding an Application">Lägg till en Applikation</a></li>
+    <li><a href="#Removing an Application">Ta bort en Applikation</a></li>
+</ol>
+<li><a href="#Enlightenment's Menu Settings">Enlightenment's Menyinställningar</a></li>
+
+<li><a href="#Further Information">Ytterligare Information</a></li>
+</ol>
+
+<h2><a name="Introduction">Inledning</a></h2>
+
+<p><strong>Menyn</strong> är en allmänt förekommande del av ett modernt Grafiskt Operativsystem och det åberopas vanligtvis genom att klicka på en knapp eller ikon på en panel eller aktivitetsfält. T.ex. den ökända windows Start knappen.
+
+
+<p><strong>Enlightenment (E17)</strong> tillhandahåller detta vanliga användargränssnitt genom att använda sig av en s.k. <strong>Start <a href="gadgets.html"></strong>Gadget</a> som kan placeras var som helst på skrivbordet - vanligtvis placeras denna i en <a href="shelves.html">Shelf</a> (hylla). De flesta <a href="profiles.html">Profiler</a> som installeras i <strong>Bodhi Linux</strong> innehåller en <em>”Start Knapp”</em> och i de flesta <a href="themes.html">Teman</a> ser den ut som ett <strong>Bodhi Linux</strong> blad.
+
+
+<p>Det är emellertid fullt möjligt att ta bort <strong>Start</strong> knappen. Att göra något sådant kan ju verka märkligt om man är obekant med <strong>E17</strong>. Ingen fara, detta tar inte bort menyn utan endast knappen. <strong>E17</strong>'s huvudmeny kan visas genom att klicka på vilken tom yta på skrivbordet som helst. Observera att <strong>E17</strong> har två menyer. Menyn du får fram genom att klicka på <strong>Start</strong> knappen eller vänsterklicka på en tom yta på <strong>Bodhi Linux</strong> skrivbordet är den så kallade <strong>Huvudmenyn</strong>, medan menyn som visas när man högerklickar på nogon tom yta på skrivbordet är <a href="#Favorite Applications">Favoriter Menyn</a>. På grundinstallationen av <strong>Bodhi Linux</strong>, är <strong>Favoriter Menyn</strong> tom, men som vi kommer att märka så är det enkelt att lägga till dina egna favorit-applikationer i denna meny.
+
+
+<p><img src="../images/shortcut-menu-key.png" align="right">Utöver åtkomst till <strong>E17's Huvudmeny</strong> från antingen <strong>Start</strong> knapp eller vänsterklick på skrivbordet finns det i <strong>Bodhi Linux</strong> även en förinställd <a href="key_bindings.html">key-binding</a> (tangent-bindning) som öppnar <strong>Huvudmenyn</strong> från tangentbordet. Det är Meny-Tangenten! På de flesta tangentbord finner du denna tangent till höger om mellanslag, mellan <em>AltGr</em> and <em>Ctrl</em> tangenterna och ser ut ungefär som på bilden till höger. Naturligtvis kan denna bindning ändras eller tas bort helt.
+
+
+<h2><a name="Where Did It Go?">Vart försvann det?</a></h2>
+
+
+<p>En liten egenhet med <strong>E17's Meny</strong> som kan förvirra nya användare av <strong>Bodhi Linux</strong>. Alltefter du skrollar ner för listan i <strong>Huvudmenyn</strong> kommer undermenyerna alltid att öppnas till höger om föregående meny. Vanligtvis skapar detta inga bekymmer, men vad händer om du öppnar <strong>huvudmenyn</strong> nära skärmens högerkant? I det här fallet kan undermenyerna hamna delvis eller helt utanför skärmen. Det är till synes något besynnerligt med <strong>E17</strong>'s implimentering av menyer, den tanken är dock något förhastad. I det här fallet behöver du bara flytta muspekaren åt höger så kommer hela menystrukturen att förflytta sig åt vänster och visa de tidigare dolda underliggande menyvalen. Som programmerare gärna säger, ”Det är ingen bug, det är ett särdrag.” Ännu ett exempel på hur elegant och vackert <strong>Enlightenment</strong> är.
+
+
+<h2><a name="Menu Structure">Menystruktur</a></h2>
+
+<p>Detta avsnitt ger en kort beskrivning av <strong>Bodhi Linux Huvudmeny's</strong> uppbyggnad, fast om sanningen skall fram så är det bästa sättet att bekanta sig med den att öppna den och utforska sjäv. I vilket fall som helst, <strong>Huvudmenyn</strong> på en grundinstallation av <strong>Bodhi Linux</strong> listar, uppifrån och ner:<br>
+
+
+<img src="../images/bodhi_menu.png" align="right">
+<ul>
+    <li><h6>Applikationer</h6>Innehåller de flesta GUI applikationerna installerade på ditt system, ordnade i undermenyer baserade på kategori. Kommandorad-applikationer visas inte i Applikations-menyn. De kan emellertid läggas till.</li>
+<br />
+    <li><h6>Platser</h6>Grundinstallationen av <strong>Bodhi Linux, Platser</strong> låter dig öppna Hemmakatalogen, Sopkorgen, (root) filsystemet, "mountade" filsystem och standard-Filhanterarens bokmärken. <strong>Platser</strong> är igentligen en <a href="modules.html">Module</a> och kan därför "laddas-ur" systemet och försvinner då ur menyn. Du kan även ändra grundinställningarna för <strong>Platser Modulen</strong>. För att göra detta från <strong>Huvudmenyn</strong> gå till <em>Settings → All → Files → Places</em>. Detta öppnar en <strong>Places Settings</strong> dialogruta där du kan ändra Platser till att visa eller inte visa följande: Home, Desktop, Trash, File system, Temp, och Favorites. Du kan även välja att inte alls visa Platser i <strong>Huvudmenyn</strong>.</li>
+<br />
+    <li><h6>Run everything</h6>Startar <a href="everything.html">Run Everything</a> Applikationen.</li>
+<br />    
+    <li><h6>Desktop</h6>Ett enkelt sätt att växla mellan <a href="virtual_desktops.html">virtuella skrivbord</a> Och snabb tillgång till <strong>Virtuella Skrivbord Inställningar</strong> och <strong>Shelves Inställningar</strong>. Du har även möjlighet att visa eller dölja alla öppna fönster på det aktuella skrivbordet.</li>
+<br />
+    <li><h6>Windows</h6>Ger snabbt tillgång till varje öppet fönster, möjlighet att rensa upp bland fönster och möjlighet att hitta borttappade fönster.</li>
+<br />    
+    <li><h6>Bodhi Linux</h6>Här finner du <strong>Bodhi Linux's</strong> utbyggnad på <strong>E17's Huvudmeny</strong>. Det finns fyra sektioner:</li>
+        <ul>
+	<li><h7>About</h7><br />Öppnar <strong>Om Bodhi Linux</strong> rutan.</li>
+
+        <li><h7>Quick Start</h7><br /> Öppnar en lokan version av <a href="http://www.bodhilinux.com/quickstart/quickstartEN/">Snabbstart</a> websidan i standard-webläsaren (engelsk version).</li>
+
+        <li><h7>Add Software</h7><br /> Öppnar <a href="http://appcenter.bodhilinux.com/">Bodhi Linux AppCenter</a> websidan i standard-webläsaren. Härifrån kan du enkelt och smidigt installera användbara applikationer mm.</li>
+
+        <li><h7>Artwork</h7><br /> Öppnar <a href="http://www.bodhilinux.com/art/doku.php">Bodhi Konst</a> websidan där du kan ladda hem extra page where you can get some extra "eye candy" (godis för ögonen) för ditt skrivbord. De flesta som bidrar med konst på denna sida är själva <strong>Bodhi Linux</strong> användare snarare än professionella grafiker/konstnärer.</li></ul>
+<br />
+    <li><h6>Enlightenment</h6></li>
+	<ul>
+        <li><h7>About</h7><br />Öppnar <strong>Om Enlightenment</strong> rutan.</li>
+
+        <li><h7>Theme</h7><br />Öppnar <strong>Om Thema</strong> rutan som visar uppgifter om det nuvarande <strong>E17</strong> temat.</li>
+
+        <li><h7>Restart</h7><br />Väljer du detta, startas <strong>E17</strong> om. Kan ibland vara nödvändigt om inställningar inte verkar vilja ändras, eller om man efter en applikationsinstallation inte finner denna i menyn, eller om mot förmodan <strong>E17</strong> inte verkar fungera som det ska.</li>
+
+        <li><h7>Quit</h7><br />Stänger ner <strong>E17</strong>.</li></ul>
+<br />
+    <li><h6>Settings</h6>Öppnar <strong>E17's Inställningar-Panel.</strong> Paradiset för de som vill anpassa allt i sitt system!</li>
+   <br />
+    <li><h6>System</h6>Här finns de välbekanta Shutdown (stäng av), Reboot (starta om), Suspend (viloläge), Lock (lås), mm. funktionerna.</li>
+</ul>
+
+<p>Värt att notera är att om man laddar vissa <strong>Moduler</strong> eller ändrar i vissa <strong>E17 Inställningar</strong> kan vissa menyobjekt tillkomma eller försvinna. Utöver detta, lägger man till applikationer i <strong>Favoriter Menyn</strong> tillkommer <strong>Favorit-Applikationer</strong> överst på <strong>Huvudmeny</strong> listan, Vilket leder oss in på nästa ämne.
+
+
+<h2><a name="Favorite Applications">Favorit-Applikationer</a></h2>
+
+<p><strong>Favoriter Menyn</strong> innehåller en lista på applikationer till vilka användaren vill ha snabb tillgång. Denna lista över favorit-applikationer återfinns antingen i <strong>Bodhi Linux's Huvudmeny</strong> eller genom högerklick på en tom del av skrvbordsytan. På grundinstallationen av <strong>Bodhi Linux</strong>, syns inte <strong>Favoriter Menyn</strong> i <strong>Bodhi Linux's Huvudmeny</strong>. Högerklick för att få tillgång till <strong>Favoriter Menyn</strong> fungerar inte heller. Detta kommer sig av att inga applikationer lagts i favoritlistan som standard.
+
+Det är del av <strong>Bodhi Linux</strong> filosofi att inte försöka förutspå vad användarna vill ha, behåll det minimalt och låt användarna själva få välja. 
+
+<div class="clearfix"></div>
+<img src="../images/fav00.png" align="right"><h3>Att lägga till Lxterminal i Favoriter</h3>
+<p>Det finns två metoder för att lägga till en applikation i <strong>Favoriter Menyn</strong>. Första metoden; öppna applikationen du vill lägga till, låt oss säga, Lxterminal. Vänsterklicka applikationens ikon i övre vänstra hörnet, välj applikationsnamnet och klicka sedan <em>Add to Favorites Menu</em> (lägg till i Favoriter Menyn) som bilden till höger visar. Lxterminal visas nu i din <strong>Favoriter Meny</strong>. Otroligt enkelt och verkligen elegant!
+<br />
+<div class="clearfix"></div>
+<img src="../images/fav02.png" align="left"><p>Andra metoden är inte mycket svårare. Från <strong>Bodhi Linux's Huvudmeny</strong>, välj <em>Settings → All → Apps → Favorite Applications</em>. Detta öppnar <strong>E17's Favorit-Applicationer</strong> ruta, under <em>Applications</em> skrolla ner i listan till du hittar applikationen du vill lägga till, klicka på den för att markera den, sen klickar du på <em>Add</em> knappen. En grön prick syns nu bredvid applikationsnamnet som för PCManFM på bilden till vänster. (<strong>OBS!</strong> Indikatorn kan vara något annat än en grön prick i vissa <strong>Profiler</strong>) Klicka <em>Apply</em> och sen <em>Ok</em>. Applikationen läggs nu till i din <strong>Favoriter</strong> lista och syns nu i menyn.<br>
+
+<div class="clearfix"></div>
+<img src="../images/fav03.png" align="right"><p>För att avlägsna en applikation ifrån <strong>Favoriter Menyn</strong>, öppna <strong>Favorit-Applicationer</strong> rutan som beskrivs ovan. Skrolla genom applikationslistan. Ha i åtanke att applikationer i <strong>Favoriter Menyn</strong> har en grön prick (eller annan indikator) vid sitt namn. Hitta applikationen du vill avlägsna, klicka på den för att markera den, sen klickar du på <em>Remove</em> knappen. Gröna pricken (eller annan indikator) vid applikationsnamnet försvinner. Klicka <em>Apply</em> och sen <em>Ok</em>. Applikationen tas nu bort från din <strong>Favoriter</strong> lista.
+
+<p>Om du är en flitig användare av <strong>Favoriter Menyn</strong> och ofta använder en mängd applikationer kan du finna att din </strong>Favoriter Meny</strong> blir rätt lång och att du kanske vill byta ordning på applikationerna, kanske lägga de mest använda applikationerna överst i listan. Självklart låter <strong>E17</strong> dig byta plats på applikationerna i listan. Åter igen, öppna <strong>E17's Favorit-Applicationer</strong>, denna gång klickar du på <em>Order</em> fliken, se bilden till höger. Hitta applikationen du vill flytta, klicka för att markera, sen klickar du antingen på <em>Up</em> eller <em>Down</em> knappen för att placera den där du vill ha den i menyn. Om så önskas kan du göra detta med en eller fler andra applikationer. När du väl är nöjd med ordningen, klicka <em>Apply</em> och sen <em>Ok</em>.<br>
+<div class="clearfix"></div><br />
+
+<h2><a name="Customizing Bodhi Linux's Menu">Anpassa Bodhi Linux Menyn</a></h2>
+
+<p><strong>E17</strong> har ett ganska unikt tillvägagångssätt när det kommer till redigering, tillägg eller avlägsnande av menyobjekt. Istället för att ha en separat applikation som låter användaren ändra i menyn, är funktionen att grafiskt redigera menyobjekt inbyggt i själva <strong>E17</strong>. För att se hur, låt oss titta på hur man lägger till en applikation i <strong>Huvudmenyn</strong>.
+
+<h2><a name="Adding an Application">Lägg till en Applikation</a></h2>
+
+<p>Ibland händer det att man installerar en applikation och så dyker den inte upp i menyn. Detta beror förmodlien på hur applikationen packeterades. För våra ändamål i denna guide kommer vi att använda oss av två applikationer som redan är installerade på <strong>Bodhi Linux</strong>. Dessa applikationer är Archive Manager (Arkivhanteraren) och xterm. På en grundinstallation av </strong>Bodhi Linux</strong>, ligger ingen av dessa applikationer i </strong>Huvudmenyn</strong>. De två procedurer som beskrivs nedan för att lägga till dessa applikationer skall vara tillämpbara på viken applikation du än installerar som av någon anledning inte lägger till en listning i <strong>Huvudmenyn</strong>.
+
+
+<p>Först tar vi oss an Arkivhanteraren. Nyckeln här är att starta applikationen. Det finns tre eller fler sätt att göra detta på. Ett sätt är att använda <strong>E17's Run Everything</strong>, ett annat är att starta applikationen från ett terminalfönster och det tredje att hitta applikationsfilen och starta genom att klicka på den.
+
+<p>För att visa detta med <strong>Run Everything</strong> applicationen, öppnar vi först <strong><a href="everything.html">Run Everything</a></strong>. Den hittar du i <strong>Huvudmenyn</strong> eller startar från kortkommandot, <em>Alt-Esc, Ctrl-Alt-Mellanslag</em> eller <em>Meta(Windows)-Mellanslag</em>. När den öppnats, börja skriva Archive Manager och så fort du ser att den visas dubbeklicka på ikonen för att starta den.
+
+
+<center><img src="../images/everything_ar.png"></center>
+
+<p>När Arkivhanteraren väl öppnat, högerklicka i arkivhanterarens tittellist eller på dess ikon överst till vänster på skärmen och välj <em>File-roller → Edit Icon</em>. Ett <strong>Desktop Entry Editor</strong> (Skrivbords-tilläggs-redigerings) fönster kommer att öppnas, se nedan. Klicka på <em>Options</em>, bocka sedan i <em>Show In Menus</em>, klicka <em>Apply</em> och <em>Close</em>. Du finner nu Arkivhanteraren i menyn under Accessories (Tillbehör).
+
+
+<center><img src="../images/desktopentry0.png"></center>
+
+<p>För den andra metoden låt oss lägga till <strong>xterm</strong> i menyn. Denna metod är igentligen bara ett annat sätt att öppna <strong>Desktop Entry Editor</strong> fönstret på. I <strong>Huvudmenyn</strong> välj <em>Settings → All → Apps → Create Launcher</em>. I <strong>Desktop Entry Editor</strong> rutan som öppnas fyll i följande poster:
+
+<ul>
+
+    <li><h6><em>Basic Fliken</em></h6>
+        Name: XTerm<br>
+        Comment: Använd kommandorad<br>
+        Application: xterm</li><br />
+    <li><h6><em>The Icon Tab</em></h6>
+        Icon: terminal</li><br />
+
+    <li><h6><em>General Fliken</em></h6>
+        Generic name: Terminal
+        Categories: GTK;Utility;TerminalEmulator;</li><br />
+    <li><h6><em>Options Fliken</em></h6>
+        Bocka i "Show in Menus"</li>
+</ul>
+
+<p>När du är klar, Klicka Apply och Close. Nu finns <strong>xterm</strong> i menyn under Accessories.
+
+
+<h2><a name="Removing an Application">Ta bort en Applikation</a></h2>
+
+<p>Nu när du har sett hur man använder <strong>Desktop Entry Editor</strong> verktyget borde det vara uppenbart hur man gör för att ta bort en applikation ur menyn. Starta applikationen du vill avlägsna, vänsterklicka dess ikon uppe till vänster på skrivbordet och välj <em>Applikationsnamn → Edit Icon</em>. En <strong>Desktop Entry Editor</strong> ruta kommer att öppnas. Klicka på <em>Options</em> och avbocka <em>Show In Menus</em>, sen klickar du <em>Apply</em> och <em>Close</em>. Applikationsnamn i detta fall är naturligtvis namnet på applikationen du vill ta bort och även det första menyobjektet i "vänsterklick på ikonen" menyn.
+
+
+<h2><a name="Enlightenment's Menu Settings">Enlightenment's Menyinställningar</a></h2>
+
+<img align="right" src="../images/e17_menu_settings.png">
+
+<p>Det finns ytterligare ett verktyg  att beakta för att ändra i <strong>Bodhi Linux's Meny</strong> gömd i <strong>E17's Settings</strong> (inställningar). Detta är <strong>Menu Settings</strong> (menyinställningar), dialogrutan som visas här till vänster. För att öppna denna ruta, öppnar du <strong>Huvudmenyn</strong> och väljer sen <em>Settings → All → Menus → Menu Settings.</em>
+
+<p><strong>Menu Settings</strong> fönstret har fyra flikar: <strong>Menus, Applications, Autoscroll, Miscellaneous,</strong> (Menyer, Applikationer, Autoskroll, Diverse). Den öppnas med <strong>Menus</strong> fliken förvald. Fliken är indelad i tre undersektioner:
+<ul>
+    <li><h6>Main Menu</h6> I eller ur-bockning av någon post här, visar eller döljer den valda undersektionen i <strong>Huvudmenyn</strong>.</li>
+<br />
+    <li><h6>Applications Display</h6> I eller ur-bockning av någon post här, ändrar sättet på vilket en applikation visas i <strong>E17</strong>'s menyer. du kan välja att visa (från exemplet ovan) en applikation's specifika namn (lxterm), dess generella namn (Terminal), och/eller applikationens kommentar (Använd Kommandorad). Dessa poster är samma som du finner i <strong>Desktop Entry Editor</strong> och kan naturlightvis ändras på där om så skulle behövas.</li>
+<br />    
+    <li><h6>Gadgets</h6> Denna funktion är utfasad, i eller ur-bockad, gör ingen skillnad.</li>
+
+</ul>
+
+
+<p>OBS! För att försäkra sig om att de ändringar som gjorts i <strong>Menu</strong> fliken eller någon annan flik i <strong>Menu Settings</strong> fönstret utförs, se till att alltid klicka <em>Apply</em> innan du går vidare, annars utförs/sparas inte ändringarna.
+
+<p>Att klicka på <strong>Applications</strong> fliken i <strong>Menu Setting</strong> fönstret, ger dig möjlighet att välja vilken menykälla systemet använder för att visa <strong>Applications sub-menu</strong> (Applikations-undermenyer). I en standardinstallation av <strong>Bodhi Linux</strong> är valen <strong>Enlightenment</strong> och <strong>Lxde (Applicationer)</strong>. Det är ingen skillnad på <strong>Application sub-menu</strong> oavsett viket du väljer.
+
+
+<p>De resterande två flikarna <strong>Autoscroll</strong> och <strong>Miscellaneous</strong> låter dig justera diverse aspekter av hur <strong>E17</strong>'s menyer beter sig. Det bästa sättet att lära sig vad dessa olika inställningar gör är att prova och leka runt lite med dom.
+
+<h2><a name="Further Information">Ytterligare Information</a></h2>
+
+<p>Vissa inslag i undermenyerna är tillräckligt inveklade för att motivera egna artiklar som beskriver deras användande:
+<ul>
+    <li><a href="settings.html">Enlightenment Settings:</a> En djupdykning i alla E17's inställningar.</li>
+
+    <li><a href="everything.html">Everything Modulen:</a> En grundläggande genomgång av hur man använder Run Everything Modulen.</li>
+
+    <li><a href="other_settings.html">LXAppearance:</a> Denna applikation styr utseendet av GTK applikationer.</li>
+</ul>
+
+En del något mer avancerade ämnen har inte tagits upp här:
+<ul>
+    <li>Ändra i eller skapa .desktop filer för att starta applikationer, inklusive terminalapplikationer.</li>
+
+    <li>Administrera undermenyer i E17's Huvudmeny application "sub-menu".</li>
+    <li>Kanske annat...</li>
+</ul>
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Föregående:</a></td>
+<td align="center" width="33%"> Innehåll:</td>
+
+<td align="right" width=33%">Nästa:</td>
+</tr>
+<tr>
+<td align="left" width="33%"><a href="intro.html">Inledning</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+<td align="right" width="33%"><a href="virtual_desktops.html">Virtuella Skrivbord</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+
+

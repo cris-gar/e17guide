@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Bodhi-Guiden till Enlightenment</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+        <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png">
+
+   
+    </head>
+    <body>
+<div id="content">
+        <div id="maincontent">
+<h1> Bodhi - Guiden till Enlightenment<br>
+Moduler</h1>
+
+<hr>
+
+<p>Denna sida förklarar ingående vad <strong>Enlightenment (E17) Moduler</strong> är, hur de förhåller sig till <a href="gadgets.html">Gadgets</a>, hur man laddar <strong>Moduler</strong> från lagringsmedia och hur man hittar <strong>Moduler</strong> i <strong>Bodhi Linux</strong> repository (programförvaring).
+
+
+<h2>Vad är en Modul?</h2>
+<p>En <strong>Modul</strong> är ett litet <strong>E17</strong> program som kan användas för att utöka ditt skrivbords funktionalitet. De kan installeras på datorn och  <em>laddas</em> till RAM vid uppstart. Genom att inte som grundbeteende <em>ladda</em> alla sina <strong>Moduler</strong> minimerar <strong>E17</strong> mängden RAMminne som används vid varje given tidpunkt. Ju fler <strong>Moduler</strong> du <em>laddar</em>, desto mer RAM tas i anspråk. På datorer med 512 MB RAM eller mindre är detta en viktig detalj att beakta. På grund av <strong>Enlightenment Foundation Libraries (EFL)</strong>, höga verkningsgrad åtgår det mycket lite ytterligare minne för varje <strong>Modul</strong>. Många <strong>Moduler</strong>, när de väl <em>laddats</em> till RAM, ger tillgång till <strong>Gadgets</strong> som kan placeras på skrivbordet eller i en <a href="shelves.html">Hylla</a>. 
+
+
+<h2>Hur man laddar Moduler</h2>
+<p>Gå till <em>Menu -> Settings -> Modules</em> så öppnas <strong>Module Settings</strong> rutan:
+
+<br>
+<img src="../images/modules.png">
+<br>
+
+<p>Lägg märke till flikarna i överkant. Det finns <strong>Moduler</strong> för <strong>Utility, System, Look</strong> (verktyg, system, utseende) och så vidare. I bilden ovan visas <strong>Forecasts</strong> (väderprognos-<strong>Modulen</strong>) med en grön indikator (prick) till höger om den vilket indikerar att den redan är <em>laddad</em> (detta är indikatorn i standard-<a href="profiles.html">Profilen</a>; i andra <strong>Profiler</strong> kan indikatorn se annorlunda ut). Det finns en kort beskrivning på vad <strong>Modulen</strong> gör, i rutan under load & unload knapparna. Du har valet att <em>ladda ur</em> den för att minska brukat minne eller rensa upp på skrivbordet. Två <strong>Moduler</strong> ner i listan, <strong>IBox</strong>, är inte <em>laddad</em>. Om du klickar på <strong>IBox</strong> raden, kommer <em>Load</em> (ladda) knappen att markeras och bli klickbar. Skrollisten till höger låter dig skrolla ner för listan för att se andra <strong>Moduler</strong> som är installerade och deras status, antingen <em>laddad</em> till RAM eller klar för att <em>laddas</em>.
+
+
+<h2>Moduler och Gadgets</h2>
+
+<p>Många av <strong>Modulerna</strong> har så kallade "<strong>Gadgets</strong>" som kan läggas till på ditt skrivbord eller i en <strong>Hylla</strong>. Vissa, som t.ex. <strong>Forecasts</strong>, kan endast visas på skrivbordet, medan andra som  <strong>Systray</strong> kan endast visas i en <strong>Hylla</strong>. Många <strong>Moduler</strong> finns endast till för att tillhandahålla en enda <strong>Gadget</strong> som t.ex. <strong>Clock</strong>. I vanliga fall räcker det inta med att bara <em>ladda</em> en <strong>Module</strong> eftersom <strong>E17</strong> låter dig välja var en <em>laddad</em> <strong>Module's Gadgets</strong> skall visas. Vänligen kolla <a href="gadgets.html">Gadgets</a> och/eller <a href="shelves.html">Hyllor</a> avsnittet för detaljer om placering av <strong>Gadgets</strong>.
+
+
+<h2>Installerade Moduler</h2>
+<p>På <a href="module_reference.html">Modul Förteckning</a> sidan finner du en lista på alla <strong>Moduler</strong> som finns installerade från början. 
+
+<h2>Ladda ner Moduler</h2>
+<p>Många <strong>Moduler</strong>, så som <strong>Forecasts</strong>, finns inte med på <strong>Bodhi Linux</strong> installations CD, detta för att hålla datamängden innom lämpliga gränser, i enlighet med <strong>Bodhi Linux</strong> filosofi. <strong>Moduler</strong> som inte finns med som standard kan du finna på <strong>Bodhi Linux</strong> repository via <strong>Synaptic Package Manger</strong> i <em>Main Menu -> Applications -> Preferences</em>. De kan installeras som vilket annat Linux-program som helst. Förutom <strong>Forecasts</strong>, kolla gärna på följande användbara Enlightenment <strong>Moduler</strong> som inte finns installerade från början:
+
+
+<ul>
+  <li>cpu</li>
+  <li>ecomorph</li>
+  <li>forecasts</li>
+  <li>mail</li>
+  <li>mem</li>
+  <li>news</li>
+
+  <li>photo</li>
+</ul>
+
+<p>Sök efter "enlightenment module" i <em>Quick Search</em> på <strong>Synaptic</strong> för att hitta fler.
+
+<p>För en komplett lista på tillgängliga <strong>Moduler</strong> se: <a href="module_reference.html">Modul Förteckning</a>. 
+
+
+<h2>Ta bort en Modul</h2>
+<p>
+På grund av <strong>Modulers</strong> beskaffenhet, är det inte absolut nödvändigt att radera/avinstallera dem. Så länge de inte är <em>laddade</em> kommer de inte att bruka systemresurser som RAM eller processor-kraft, utan kommer endast att ta lite plats på hårddisken.
+<p>
+Om du trots detta finner att du måste avlägsna en (eller fler) <strong>Moduler</strong>, avinstallera helt enkelt dem med <strong>Synaptic Package Manager</strong> precis som andra program eller använd terminalkommandot: 
+<pre class="code">sudo apt-get remove [modul-namn]</pre>
+
+<hr>
+
+<table width="100%">
+<tr>
+<td align="left" width="33%">Föregående:</a></td>
+<td align="center" width="33%"> Innehåll:</td>
+<td align="right" width=33%">Nästa:</td>
+</tr>
+<tr>
+<td align="left" width="33%"><a href="virtual_desktops.html">Virtuella Skrivbord</a></td>
+<td align="center" width="33%"><a href="index.html">Index</a></td>
+
+<td align="right" width="33%"><a href="module_reference.html">Modul Förteckning</a></td>
+</tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
+
