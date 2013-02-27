@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Izmena Menija</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Izmena Menija</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+
+
+Ovo je uvod za početnike o  prilagođavanju <strong>Bodhi Linux</strong> Menija. Napravljen je i testiran za 
+<strong>Bodhi Linux</strong> verzije od 1.0.0 do 1.2.0. Trenutna revizija je napravljena da pokrije promene uvedene u 
+ <strong>Bodhi Linux</strong> verzijama 2.0 do 2.2.
+
+
+
+    <ol>
+<li><a class="normal" href="#Favorite%20Applications">Omiljeni Programi</a></li>
+<li><a class="normal" href="#Customizing%20Bodhi%20Linux's%20Menu">Prilagođavanje Bodhi Linux Menija</a>
+<ul>
+    <li><a class="normal" href="#Adding%20an%20Application">Dodavanje Programa</a></li>
+    <li><a class="normal" href="#Removing%20an%20Application">Uklanjanje Programa</a></li>
+</ul></li>
+<li id="Favorite%20Applications"><a class="normal" href="#Enlightenment's%20Menu%20Settings">Podešavanja Enlightenment Menija</a></li>
+<li><a class="normal" href="#Further%20Information">Dodatne Informacije</a></li>
+	</ol>
+
+
+<div class="contentcontainer">
+<div class="orange eightywidth center changeonlowwidth">
+<h2>Omiljeni Programi</h2>
+
+<p class="clear">Možete dodati programe koje najčešće koristite ili želite na drugi način brzo da im pristupite u <strong>Omlijeni Meni</strong>. 
+Lista omiljenih programa se može naći ili u <strong>Bodhi Linux Glavnom Meniju (Main Menu)</strong> ili desnim klikom na bilo koji prazan prostor na radnu površinu. Na standardnoj(default) instalaciji <strong>Bodhi Linux-a</strong>, 
+ <strong>Omiljena</strong> opcija neće biti prikazana u <strong>Glavnom Meniju</strong> niti će desni klik otvoriti 
+<strong>Omiljeni Meni</strong>. Razlog za to je što programi nisu po standardu(default) dodati u omiljenu listu &#8212; 
+to je filozofija <strong>Bodhi Linux-a</strong> da ne pokušava da pogodi šta korisnik želi i da održava stvari što minimalnije i da pusti da korisnici odluče šta žele.</p>
+
+<hr class="divide" />
+<br />
+<p class="clear">
+	<a class="img normalpicture" href="../images/fav00-lx.png"><img class="fortywidth floatr changeonlowwidth" src="../images/fav00-lx.png" alt="(Adding LXTerminal to Favorites)" /></a>
+	<h3>Npr. Dodavanje LXTerminal-a u Omiljene</h3>
+<p>Postoje dva načina za dodavanje programa u <strong>Omiljeni Meni</strong>. Za prvi, pokrenite program koji želite da dodate, recimo <strong>LXTerminal</strong>, standardni(default)terminal-emulator u <strong>Bodhi Linux-u</strong>. 
+Kliknite desnim klikom na ivicu prozora programa(title bar) na vrhu. Ovo će otvoriti meni. Pređite mišem preko imena programa, zatim izaberite opciju  
+<em>Dodaj u Omiljeni Meni(Add to Favorites Menu)</em>  (sa ikonicom koja predstavlja bookmark), kao što je prikazano na slici. 
+<strong>LXTerminal</strong> će se sada pojaviti u vašem <strong>Omiljenom Meniju</strong>. 
+Neverovatno jednostavno i stvarno elegantno!</p>
+
+
+
+<hr class="divide" />
+<br />
+<p class="clear">
+	<a class="img normalpicture" href="../images/fav02.png"><img class="twentyfivewidth topml floatl imageonlowwidth" alt="(Favorite Applications dialog)" src="../images/fav02.png" /></a>
+Drugi način je takođe jednostavan, samo ima nekoliko koraka više. 
+Iz <strong>Bodhi Linux Glavnog Menija (Main Menu)</strong>, izaberite 
+<small><em>Settings>All>Apps>Favorite Applications</em></small>. 
+Ovo pokreće <strong>E17-ov</strong> prozor  <strong>Omiljenih Programa</strong>. Pod <em>Applications</em> traci(tab), klizite na dole kroz listu dok ne nađete program koji želite da dodate, kliknite na njega da ga istaknete i zatim kliknite na <em>Add</em> dugme. 
+Indikator <small>(u slučaju na slici, narandžasti popunjavač polja)</small> 
+će se pojaviti pored imena programa kao što je slučaj na slici sa <strong>Midori</strong>. Kliknite <em>Apply</em> 
+a zatim <em>OK</em>. Program će sada biti dodat u vašu listu 
+<strong>Omiljenih</strong> i pojaviti se u 
+<strong>Omiljenom Meniju</strong>.</p>
+<p class="smalltext"><code>Napomena:</code> 
+Indikator varira od <strong>teme</strong> do <strong>teme</strong>. Plava tačka je indikator na Standardnoj(Default) Temi i samim tim, najčešći.</p>
+
+
+
+<hr class="divide" />
+<br>
+<p class="clear">
+	<a class="img normalpicture" href="../images/fav03.png"><img class="twentyfivewidth floatr imageonlowwidth" alt="(Removing an App from Favorites Menu)" src="../images/fav03.png" /></a>
+Da uklonite program iz <strong>Omiljenog Menija</strong>, pokrenite prozor 
+<strong>Omiljeni Programi (Favorite Applications)</strong> kao gore. Idite na polje <em>Order</em>. Nađite program koji želite da uklonite, kliknite da ga naglasite i zatim kliknite <em>Remove</em> dugme. 
+Sada kliknite <em>Apply</em> a zatim <em>OK</em>. 
+Program je sada uklonjen iz vašeg <strong>Omiljenog Menija</strong>.
+</p>
+<hr class="divide" />
+<br />
+<p>Ako ste strastven korisnik <strong>Omiljenog Menija</strong> i često koristite mnogo programa, možete primetiti da vaša lista u <strong>Omiljenom Meniju</strong> postaje duga i možete da poželite drugačiji raspored, možda da one programe koje najviše koristite postavite na vrh liste. Naravno, <strong>E17</strong> 
+omogućava način na koji možete promeniti raspored programa u listi. Ponovo pokrenite 
+<strong>E17 Omiljeni Programi (Favorite Applications)</strong>, i još jednom kliknite na polje <em>Order</em> , 
+kao na slici gore. Nađite program koji želite da pomerite i kliknite da ga naglasite. 
+Sada kliknite bilo <em>Up</em> ili <em>Down</em> dugme da ga pozicionirate gde želite da vam se nalazi u meniju. Ako je potrebno, isto možete ponoviti za jedan ili više programa. Jednom kada je izabran željeni raspored, kliknite <em>Apply</em> a zatim <em>OK</em>.</p>
+
+
+
+<div  class="clear" id="Customizing%20Bodhi%20Linux's%20Menu">&nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green eightywidth center changeonlowwidth">
+<h2>Prilagođavanje Bodhi Linux Menija</h2>
+<p id="Adding%20an%20Application"><strong>E17</strong> ima jedinstven pristup za poslove ispravljanja, dodavanja i uklanjanja polja u meniju. Umesto da ponudi poseban program za promenu polja u meniju, mogućnost grafičke ispravke polja u meniju je ugrađena u sam <strong>E17</strong>. 
+Da bi videli kako, hajde da proučimo proces dodavanja programa u <strong>Glavni Meni (Main Menu)</strong>.</p>
+<hr />
+<br />
+
+<h3 class="inline">Dodavanje Programa</h3>
+
+<p>Postoji nekoliko slučajeva kada ćete možda morati ručno da dodate program u <strong>Glavni Meni (Main Menu)</strong>. Najčešće se to odnosi na većinu komandno-linijskih (command-line) programa, jer oni obično ne moraju imati meni ulaze. Još ređe, možete da instalirate program sa grafičkim korisničkim interfejsom koji se ne pojavljuje u meniju, verovatno zbog razloga na koji je program spakovan. Ovo se, međutim, retko dešava, tako da ćemo o ovome diskutovati kasnije a sada ćemo usmeriti pažnju na dodavanje komandno-linijskog programa, što je češći slučaj. Primer koji ćemo mi uzeti je nano, jednostavan tekst editor za rad u terminalima.</p>
+<p>Prvo, dodaćemo meni unos za <strong>nano</strong>, što se radi kreiranjem .desktop fajla(pokretača) za njega. Idite na 
+<span class="smalltext"><em>Main Menu>Settings>All>Apps>Personal Application Launchers</em></span>. 
+Izaberite <em>Add</em>, što će otvoriti prozor <strong>Uređivač Unosa za Radnu Površinu (Desktop Entry Editor)</strong>, 
+i popunite sledeće:</p>
+
+<ul>
+    <li><h3><em>Osnovno Polje (The Basic Tab)</em></h3>
+        <ul>
+        <li>Ime: Nano <small>(ime koje želite da se pojavi u Meniju)</small><br></li>
+        <li>Komentar: Komandno-linijski tekst-editor <small>(ovo može biti šta god želite)</small><br></li>
+        <li>Program (Aplikacija): nano <small>(komanda koja će se koristiti za pokretanje programa iz terminala)</small><br /><br /></li>
+		</ul></li>
+    <li><h3><em>Polje za Ikonicu (The Icon Tab)</em></h3>
+        <ul>
+        <li>Ikonica: ako znate ime ikonice koju želite da koristite iz seta ikonica koji trenutno koristite, možete je jednostavno uneti ovde. Međutim, ako želite da izaberete vašu ličnu ikonicu, kliknite na prazan kvadratić. 
+        Ovo će otvoriti prozor <strong>Izaberite Ikonicu (Select an Icon)</strong>. Odatle, možete upravljati i izabrati sliku koju želite da koristite. Za sada, samo otkucajte <em>tekst-editor</em> za standardnu(default) sliku tekst-editora iz vašeg seta ikonica.<br /><br /></li>
+        </ul></li>
+    <li><h3><em>Opšte Polje (The General Tab)</em></h3>
+        <ul>
+        <li>Opšte ime: Editor<br></li>
+        <li>Kategorije: Uslužni Program (Utility); Editor;<br></li>
+        <li>MIME Type: text/plain;<br /><br /></li>
+        </ul></li>
+    <li><h3><em>Polje za Opcije (The Options Tab)</em></h3>
+        <ul>
+        <li>Čekirajte Pokreni u Terminalu ("Run in Terminal") i Prikaži u Menijima ("Show in Menus").<br /><br /></li>
+        </ul></li>
+</ul>
+<p>Kada ste završili sa pravljenjem ulaza, kliknite <em>Apply</em>, zatim <em>Close</em>. 
+Ovo kreira .desktop fajl za <strong>nano</strong> na lokaciji 
+<small>/.local/share/applications</small> vašeg <strong>home</strong> direktorijuma, 
+koji daje instrukcije da se pojavi u Menijima i da se pokrene u terminalu kada se klikne.
+Sada će <strong>Nano</strong> biti u meniju pod Accessories. 
+(Možda ćete morati da izaberete <em>Restart</em> iz <em>Main Menu>Enlightenment</em> 
+da bi osvežili <strong>Enlightenment</strong> i videli odmah sve promene.)</p>
+<hr class="divide" />
+<p>Sada ćemo prodiskutovati o tome kako dodati program koji ima grafički korisnički interfejs. Prvo, moramo otvoriti program. Za naš primer, uzećemo Leafpad, vrlo jednostavan, grafički tekst-editor koji je instaliran u <strong>Bodhi Linux-u</strong>. 
+Postoje tri ili više načina za otvaranje programa, čak iako se program ne pojavljuje u <strong>Glavnom Meniju (Main Menu)</strong>. 
+Program možete pokrenuti iz terminala ili naći fajl za program i pokrenuti ga kliktanjem na njega. Ali, mi ćemo upotrebiti modul <strong>Everything</strong> da ga otvorimo:</p>
+<p>
+
+<a class="img normalpicture" href="../images/everything_ar.png">
+<img class="center thirtysixwidth imageonlowwidth" alt="(everything ar typed)" src="../images/everything_ar.png" /></a>
+
+Prvo, moramo da pokrenemo <strong><a class="normal" href="everything.html">Pokreni Sve (Run Everything)</a></strong>. 
+Može se naći u <strong>Glavnom Meniju (Main Menu)</strong> ili pokrenuti preko prečica na tastaturi sa <em>Alt+Esc</em>,
+<em>Ctrl+Alt+Space</em>, ili <em>Win+Space</em>. 
+Kada se pokrene, počnite da kucate 'Leafpad' i čim se pojavi, upravljajte do njega strelicama i pritisnite enter da ga pokrenete.
+<br /><br />Kada se Leafpad pokrene, desni klik na njegovu ivicu prozora(title bar) na vrhu. 
+Izaberite <em>Leafpad>Edit Ikonicu</em>. Iskočiće vam prozor <strong>Uređivač Unosa za Radnu Površinu (Desktop Entry Editor)</strong> kao na slici ispod:</p>
+
+<a class="img normalpicture" href="../images/desktopentry0.png">
+<img class="center thirtythreewidth imageonlowwidth" alt="(desktop entry editor)" src="../images/desktopentry0.png" /></a>
+
+<p>Kliknite na <em>Opcije (Options)</em>, i videćete da je opcija <em>Prikaži u Menijima (Show In Menus)</em> selektovana. 
+Ako dodajete program koji nije automatski dodat u <strong>Glavni Meni (Main Menu)</strong>, 
+možete selektovati opciju <em>Prikaži u Menijima (Show In Menus)</em>, zatim kliknite <em>Apply</em> pa <em>Close</em>. 
+Sada će se vaš program pojaviti u <strong>Glavnom Meniju (Main Menu)</strong> i drugim menijima gde treba da bude vidljiv. (Kao što je ranije rečeno, možda ćete morati da izaberete <em>Restart</em> iz <em>Main Menu>Enlightenment</em> 
+da bi videli promene.)</p>
+<div class="clear" id="Removing%20an%20Application">&nbsp;</div>
+
+<br /><hr /><br />
+
+<h3 class="inline">Uklanjanje Programa</h3>
+
+<p>Sada kada ste videli kako da upotrebite <strong>Uređivač Unosa za Radnu Površinu (Desktop Entry Editor)</strong> 
+trebalo bi da bude očigledno kako da uklonite ulaz iz menija. Pokrenite program koji želite da uklonite, desni klik na njegovu ivicu prozora (title bar), i izaberite <em>[ime-programa]([application-name])>Edit Icon</em>. Iskočiće vam <strong>Uređivač Unosa za Radnu Površinu (Desktop Entry Editor)</strong>, pa kliknite na <em>Opcije (Options)</em> i zatim dečekirajte <em>Prikaži u Menijima (Show In Menus)</em> 
+a zatim kliknite <em>Apply</em> pa <em>Close</em>.</p>
+<div id="Enlightenment's%20Menu%20Settings">&nbsp;</div>
+</div>
+</div>
+
+<div class="contentcontainer">
+<div class="orange eightywidth center changeonlowwidth">
+<h2>Podešavanja Enlightenment Menija</h2><br class="onmobile" />
+
+<a class="img normalpicture" href="../images/e17_menu_settings.png">
+<img class="floatr thirtywidth imageonlowwidth" alt="(Menu Settings)" src="../images/e17_menu_settings.png" /></a>
+<p>Postoji još jedna alatka za promenu podešavanja <strong>Bodhi Linux</strong> menija
+u <strong>E17</strong> koju ćemo da razmotrimo. To je <strong>Podešavanje Menija (Menu Settings)</strong> 
+dijalog, prikazan na slici desno. Da otvorite ovaj prozor, otvorite <strong>Glavni Meni (Main Menu)</strong> 
+i zatim izaberite <em>Settings>All>Menus>Menu Settings.</em></p>
+<p>Prozor <strong>Podešavanje Menija (Menu Settings)</strong> ima četiri trake(tabs): <strong>Meniji (Menus)</strong>, 
+<strong>Programi (Applications)</strong>, <strong>Autoklizač (Autoscroll)</strong>, i <strong>Raznovrsno(Ostalo) (Miscellaneous)</strong>. 
+Traka (tab) <strong>Meniji (Menus)</strong> je otvorena po standardu(default). Ova traka(tab) je podeljena na tri podsekcije:</p>
+<ul>
+    <li><h3><em>Glavni Meni (Main Menu)</em></h3> 
+    Odabir ili uklanjanje unosa ovde će prikazati ili neće prikazati izabranu podsekciju u <strong>Glavnom Meniju (Main Menu)</strong>.<br /></li>
+
+    <li><h3><em>Prikaz Programa (Applications Display)</em></h3> 
+    Odabir ili uklanjanje unosa ovde će izmeniti na koji način je program prikazan u 
+    <strong>E17</strong> menijima. Možete izabrati ime programa, njegovo generičko ime, i/ili programov komentar. Ovi unosi su isti kao oni koji se pojavljuju u 
+    <strong>Uređivaču Unosa za Radnu Površinu (Desktop Entry Editor)</strong> i naravno mogu se izmeniti tamo ako je potrebno.<br /></li>
+   
+    <li><h3><em>Gedžeti (Gadgets)</em></h3> 
+    Ova osobina (feature) je zastarela i nema razlike da li je uključena ili isključena.</li>
+</ul>
+
+<p class="smalltext"><code>Napomena:</code> Da bi bili sigurni da su promene izvršene nakon bilo kojih izmena u traci(tab) 
+<strong>Meni (Menu)</strong> ili bilo kojoj drugoj traci(tab) u prozoru <strong>Podešavanje Menija (Menu Settings)</strong> proverite da li ste kliknuli na
+<em>Apply</em> ili promene neće imati efekta.</p>
+
+<p>Kliktanjem na traku(tab) <strong>Programi (Applications)</strong> u prozoru <strong>Podešavanje Menija (Menu Settings)</strong> 
+omogućava vam da izaberete koji izvor menija sistem koristi da prikaže podmeni <strong>Programi (Applications)</strong>. 
+Na standardnoj (default) instalaciji <strong>Bodhi Linux-a</strong>, izbori su <strong>Enlightenment</strong> i 
+<strong>Lxde Programi (Applications)</strong>. Jedina razlika je u xml fajlu koji koristi za prikaz menija Programi (Applications menu); 
+Nema nikakve vidljive razlike, pošto je krajnji rezultat isti.</p>
+<p>Preostale dve trake(tabs), <strong>Autoklizač (Autoscroll)</strong> i <strong>Raznovrsno(Ostalo) (Miscellaneous)</strong>, 
+vam omogućavaju da podesite različite aspekte ponašanja <strong>E17</strong> menija. 
+Najbolji način da vidite šta rade ova različita podešavanja je da se poigrate sa njima.</p>
+<div class="clear" id="Further%20Information">&nbsp;</div>
+</div>
+</div>
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Dodatne Informacije</h2>
+
+<p>Neka polja u podmeniju su prilično kompleksna da garantuju poseban članak koji opisuje njihovo korišćenje:</p>
+<ul>
+    <li><a class="normal" href="settings.html">Podešavanja za Enlightenment (Enlightenment Settings):</a> Detaljan pregled svih <strong>E17</strong> Podešavanja.</li>
+    <li><a class="normal" href="everything.html">Sve Modul (The Everything Module):</a> Pregled osnovne upotrebe Pokreni Sve Modula (the Run Everything Module).</li>
+    <li><a class="normal" href="other_settings.html">Tema Programa (Application Theme):</a> Kontroliše izgled GTK programa i omogućava izmenu između setova ikonica.</li>
+</ul>
+<p>Neke malo naprednije teme nisu ovde bile pokrivene:</p>
+<ul>
+    <li>Organizovanje podmenija pod podmenijima menija Programa.</li>
+    <li>Možda više.</li>
+</ul>
+</div>
+</div>
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="main_menu.html">Glavni Meni</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>
