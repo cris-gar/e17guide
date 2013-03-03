@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Glavni Meni</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Glavni Meni</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+
+
+Ovo je uvod o <strong>E17</strong> Menijima za početnike. 
+Ova revizija je napravljena kako bi pokrila Menije u <strong>Bodhi Linux-u</strong> 
+od verzija 2.0 do 2.2. <strong>E17</strong> ima dva menija i svoj jedinstveni metod prilagođavanja menija vašim potrebama. Meni koji se pojavi kada kliknete na Start dugme ili levim klikom miša na prazan prostor radne površine se zove Glavni Meni. On će biti u potpunosti predstavljen ovde, a ostatak će biti predstavljen na stranici <em>Izmena Menija</em>.
+Dok se meni, koji se pojavi desnim klikom miša na prazan prostor radne površine, naziva Omiljeni Meni. Na standardnoj(default) instalaciji Bodhi Linux-a, Omiljeni Meni je prazan, ali, kao što ćete videti na stranici <em>Izmena Menija</em>, vrlo je lako dodati vaše omiljene programe ovom meniju.
+
+    <ol>
+<li><a class="normal" href="#Introduction">Predstavljanje</a></li>
+<li id="Introduction"><a class="normal" href="#Where%20Did%20It%20Go?">Gde je nestao?</a></li>
+<li><a class="normal" href="#Menu%20Structure">Struktura Menija</a></li>
+	</ol>
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Predstavljanje</h2>
+
+<p><strong>Meni</strong> je sveprisutni deo modernih Grafičkih Operativnih sistema i obično mu se pristupa kliktanjem na dugme ili ikonicu na panelu ili taskbaru. Na primer, grozno Windows Start dugme.</p>
+<p><strong>Enlightenment (E17)</strong> obezbeđuje ovaj uobičajen korisnički interfejs kroz upotrebu 
+<strong>Start</strong> <a class="normal" href="gadgets.html">Gedžeta</a> koji se može postaviti bilo gde na radnu površinu, obično se nalazi na <a class="normal" href="shelves.html">Polici.</a> 
+Većina <a class="normal" href="profiles.html">Profila</a> koji se nalaze u <strong>Bodhi Linux-u</strong> 
+imaju <em>"Start Dugme"</em>, i u većini 
+<a class="normal" href="themes.html">Tema</a>, izgleda kao <strong>Bodhi Linux</strong> list.</p>
+<p>Međutim, moguće je ukloniti <strong>Start</strong> dugme. 
+Ovo će možda zvučati čudno ljudima nenaviknutim na <strong>E17</strong>. 
+Ali ne plašite se, ovo ne uklanja Glavni Meni, već samo njegovo dugme. 
+<strong>E17</strong> meniji će se pojaviti levim klikom bilo gde na praznom prostoru radne površine. 
+</p>
+<p><img src="../images/shortcut-menu-key.png" alt="(Menu Key Image)" class="floatr" />
+Kao dodatak pristupanja <strong>E17 Glavnom Meniju</strong> bilo preko 
+<strong>Start</strong> dugmeta ili levim klikom na radnu površinu,u <strong>Bodhi Linux-u</strong> postoji standardni(default) 
+<a class="normal" href="key_bindings.html">taster-vez(key-binding)</a> za otvaranje 
+<strong>Glavnog Menija</strong> preko tastature. To je taster Meni! Na većini tastatura ovaj taster se nalazi desno od tastera space, između <em>Alt</em> i <em>Ctrl</em> tastera i izgleda kao slika desno. Naravno, ova prečica na tastaturi se može izmeniti od strane korisnika ili kompletno ukloniti.</p>
+<div class="clear" id="Where%20Did%20It%20Go?">&nbsp;</div>
+</div>
+</div>
+
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Gde je nestao?</h2>
+
+<p>Mala digresija sa aspekta menija u <strong>E17</strong> koja može zbuniti nove korisnike <strong>Bodhi Linux-a</strong>: Kada klizite na dole kroz listu <strong>Glavnog Menija</strong>, pod-meniji se uvek otvaraju na desno od menija. Uobičajeno, ovo ne predstavlja problem, ali šta ako otvorite <strong>Glavni Meni</strong> 
+blizu desne ivice ekrana? U tom slučaju, pod-meni se može otvoriti i delimično ili kompletno da bude van ekrana. Moguće da je to smicalica u implementaciji menija u <strong>E17</strong>, ali ta misao je možda malo preuranjena. U ovom scenariju, prosto morate da pomerite pokazivač(cursor) prema desnoj ivici ekrana, i cela struktura menija se pomera u levo da pokaže skrivena polja pod-menija. Još jedan primer elegancije i lepote <strong>Enlightenment-a</strong>!
+</p>
+<div id="Menu%20Structure">&nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Struktura Menija</h2>
+
+<p>Ovaj deo kratko opisuje strukturu 
+<strong>Glavnog Menija u BodhiLinux-u</strong>, iako stvarno najbolji način da se upoznate sa menijem je da ga otvorite i istražite. 
+Bez obzira na to, <strong>Glavni Meni</strong> u standardnoj(default) instalaciji <strong>Bodhi Linux-a</strong> je izlistan, od vrha ka dnu:</p>
+
+
+<a class="img normalpicture" href="../images/bodhi_menu.png">
+<img alt="(Main Menu}" src="../images/bodhi_menu.png" class="floatr thirtythreewidth imageonlowwidth" /></a>
+<ul>
+    <li><h3>Programi (Applications)</h3>
+	Sadrži većinu GKI(GUI) programa instaliranih na vašem sistemu, uređenih u pod-menijima prema kategorijama. Većina komandno-linijskih(command-line)programa nije prikazana u Meniju Programa po standardu(default-u). Oni, međutim, mogu da se dodaju.
+	<span id="Navigate">&nbsp;</span><br /><br /></li>
+
+
+
+    <li><h3>Upravljanje (Navigate)...</h3>
+	<strong>Upravljanje</strong> je u stvari struktura integrisanog menija za <strong>Enlightenment Fajl Menadžer (EFM)</strong>, 
+	standardnog(default) <strong>Bodhi</strong> fajl menadžera od verzije 2.1.0.
+	Omogućava vam otvaranje mnogih direktorijuma direktno iz menija. On ima jedinstvenu opciju da može da prikaže pod-menije direktorijuma <em>unutar</em> direktorijuma, takođe.<br /><br />
+	Da bi <span class="boldtext">EFM</span> 
+	funkcionisao, potrebno je da <span class="boldtext">EFM (Starter)</span> <a class="normal" href="modules.html">Modul</a> bude uključen. 
+	Ovaj modul je uključen po standardu(default-u), sa modulom <span class="boldtext">Mesta(Places)</span> kao alternativu koji takođe ima strukturu integrisanog menija. Može biti isključen(unloaded), u tom slučaju će nestati iz menija, kao i prestati da radi.<br /><br /></li>
+
+    <li><h3>Pokreni Sve (Run Everything)</h3>
+    Pokreće <a class="normal" href="everything.html">Pokreni Sve(Run Everything)</a> Aplikaciju. 
+    Nož Švajcarske vojske(Swiss Army Knife) <strong>Enlightenment-a</strong>!<br /><br /></li>
+
+    <li><h3>Pokreni snimak ekrana (Take Screenshot)</h3><div class="fiftywidth floatl changeonlowwidth">
+    Snimak ekrana jednim klikom. Ovu opciju omogućava <strong>Snimak(Shot)</strong> 
+    <a class="normal" href="modules.html">Modul</a>, koji je uključen po standardu(default-u). 
+    Kao i <strong>EFM (Starter)</strong> i <strong>Mesta(Places)</strong> 
+    <a class="normal" href="modules.html">Moduli</a>, <strong>Snimak(Shot)</strong> može biti isključen, 
+    u kom slučaju će opcija <strong>Pokreni snimak ekrana(screenshot)</strong> nestati iz <strong>Glavnog Menija</strong>.
+    </div><br class="onmobile" />
+    <span class="smallertext green fortywidth floatr changeonlowwidth"><span class="greentext">Napomena:</span>
+    Snimak ekrana radne površine se takođe može pokrenuti pritiskom na taster Štampaj Ekran(Print Screen), a snimak ekrana samo nekog prozora može se uraditi desnim klikom na većini ivica-prozora(window-borders) i odabirom 
+    <strong>Pokreni Snimak(Take Shot)</strong>.</span>
+    <br class="clear" /><br /></li>
+   
+    <li class="clear"><h3>Radna Površina (Desktop)</h3>
+    Omogućava lako prebacivanje na bilo koju <a class="normal" href="virtual_desktops.html">virtualnu radnu površinu</a> 
+    kao i brz pristup <strong>Podešavanjima Virtualnih Radnih Površina(Virtual Desktops Settings)</strong> i <strong>Podešavanja Polica(Shelves Settings)</strong>. 
+    Takođe imate i opciju prikaza ili skrivanja svih otvorenih prozora na trenutnoj Radnoj Površini.<br /><br /></li>
+
+
+
+    <li><h3>Prozori (Windows)</h3>
+    Pruža mogućnost pospremanja prozora, opciju za nalaženje izgubljenih prozora i omogućava brz pristup bilo kom otvorenom prozoru.<br /><br /></li> 
+
+    <li><h3>Bodhi Linux</h3>
+    Ovde ćete naći <strong>Bodhi Linux-ovo</strong> proširenje za <strong>E17</strong> Glavni Meni. 
+    Postoje četiri sekcije:<br />
+        <ul class="smalltext smalllh">
+		<li><h4>O (About)</h4>
+		Otvara prozor <em>O Bodhi Linux-u(About Bodhi Linux)</em>.
+		<br /></li>
+
+        <li><h4>Brz Početak (Quick Start)</h4> 
+        Otvara lokalno uskladištenu <a class="normal" href="../../quickstart/quickstartEN/index.html">Brz Početak(Quick Start)</a> 
+        web stranicu u standardnom(default) web pregledaču(browseru).<br /></li>
+
+        <li><h4>Dodaj Program (Add Software)</h4> 
+        Otvara <a class="normal" href="http://appcenter.bodhilinux.com/">Bodhi Linux AppCenter</a> 
+        web stranicu u standardnom(default) web pregledaču(browseru). Ovde možete lako i ugodno instalirati korisne programe i više.<br /></li>
+
+        <li><h4>Umetničko Delo (Artwork)</h4> 
+        Otvara <a class="normal" href="http://www.bodhilinux.com/art/doku.php">Bodhi Art</a> 
+        web stranicu gde možete dobiti ekstra ukrase za vašu radnu površinu. Većina saradnika na umetničkim delima su korisnici <strong>Bodhi Linux-a</strong> pre nego što su profesionalni grafički umetnici.<br /></li>
+        </ul><br /></li>
+        
+
+    <li><h3>Enlightenment</h3><br />
+	<ul class="smalltext smalllh">
+        <li><h4>O (About)</h4>Otvara <em>O Enlightenment-u (About Enlightenment)</em> prozor.<br /></li>
+
+        <li><h4>Tema (Theme)</h4>Otvara <em>O Temi(About Theme)</em> prozor koji prikazuje informacije o trenutnoj <strong>E17</strong> temi.<br /></li>
+
+		
+        <li><h4>Ponovno Pokretanje (Restart)</h4>Odabir ovoga ponovno pokreće <strong>E17</strong>, 
+        ponekad neophodno ako podešavanja ne daju efekta ili u malo verovatnom događaju da <strong>E17</strong> ne radi kako treba. Ovo ne zatvara bilo koje otvorene fajlove ili vas loguje napolje(log out), on samo ponovno pokreće vaš interfejs!<br /></li>
+
+        <li><h4>Izlaz (Exit)</h4>Zatvara (Shuts down) <strong>E17</strong>.</li>
+        </ul><br /></li>
+        
+    <li><h3>Podešavanja (Settings)</h3>
+    Otvara <strong>E17</strong> Panel za Podešavanja i druge opcije za podešavanje, kao i strukturu integrisanog menija Panela za Podešavanja. Raj za one koji vole da se igraju sa ovim!<br /><br /></li>
+
+
+    <li><h3>Sistem (System)</h3>
+    Ovde su poznate Shutdown, Reboot, Suspend, Lock, itd. funkcije.<br /><br /></li>
+</ul>
+</div>
+</div>
+
+<div class="contentcontainer">
+<p>Trebalo bi dalje istaći da učitavanje određenih 
+<a class="normal" href="modules.html">Modula</a> ili promena nekih  
+<strong>E17 Podešavanja (Settings)</strong> mogu dodati ili ukloniti neka polja menija, 
+kao što je diskutovano gore za <strong>Upravljanje (Navigate)</strong> i 
+<strong>Mesta (Places)</strong>. Čak štaviše, dodavanje programa u 
+<strong>Omiljeni Meni (Favorites Menu)</strong> će dodati 
+<strong>Omiljene Programe (Favorite Applications)</strong> na vrh liste 
+<strong>Glavnog Menija (Main Menu)</strong>, što nas dovodi do našeg sledećeg poglavlja!
+</p></div>
+
+<!-- Trebalo bi dalje istaći da učitavanje određenih Modula ili promena nekih podešavanja E17 mogu dodati ili ukloniti neka polja menija, kao što je diskutovano gore za Upravljanje(Navigate) i Mesta (Places). Čak štaviše, dodavanje programa u Omiljeni Meni će dodati Omiljene Programe(FA) na vrh liste Glavnog Menija, što nas dovodi do naše sledeće teme! -->
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="index.html#Introduction">Predstavljanje</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="modifying_menus.html">Izmena Menija</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+
+</div>
+</body></html>
