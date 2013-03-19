@@ -99,6 +99,9 @@ The types of bindings covered here are:
 	<li id="General%20Info"><a class="normal" href="#ACPI%20Bindings">ACPI Bindings</a><br /><span class="smalltext boldtext">- Input from events.</span></li>
 	<li><a class="normal" href="#Edge%20Bindings">Edge Bindings</a><br /><span class="smalltext boldtext">- Input from edges of screen.</span></li>
 </ol>
+<ul>
+	<li><a class="normal" href="#Program%20Bindings">Programming Bindings</a><br /><span class="smalltext boldtext">- General how-to for programming bindings.</span></li>
+</ul>
 
 <h2 class="inline">General Info:</h2><div class="block">
 Each Binding dialog shares some basic things in common. There are two sections. The left section, <strong>Bindings</strong>, 
@@ -111,6 +114,7 @@ Because the process of modifying/creating bindings is so similar for the four ty
 <a class="normal" href="#Program%20Bindings">how to program bindings</a>, 
 located at the bottom of the page.
 <div id="Key%20Bindings">&nbsp;</div></div>
+
 
 <div class="contentcontainer">
 <div class="orange ninetywidth center">
@@ -554,14 +558,15 @@ add new & modify existing <strong>Key Bindings</strong>.</p>
 
 <ul class="smalltext smalllh">
 <li><h4 class="inline">Adding a Binding</h4>
-<p>Suppose you want to program <em>Alt+L</em>, which is not bound by default, 
+<p>Suppose you want to program <em>Alt+L</em>, a key combination that is not bound by default, 
 to open <strong>Leafpad</strong>.</p>
 <p>In the left column, click on <em>Add Binding</em>. 
 A small window pops up asking you to enter the desired key sequence. 
 Press the <em>Alt+L</em> keys together. This will create the binding in the 
 <strong>Key Bindings</strong> section. Be sure you have the <strong>Key Binding</strong> 
-you just created selected, and then in the right column, click on <em>Command</em> 
-in the <strong>Launch</strong> category. Enter <code>leafpad</code> in the 
+you have just created selected because now you have to assign it to an <strong>Action</strong>. 
+For this example, in the <strong>Actions</strong> column, navigate to and click <em>Command</em> 
+from the <strong>Launch</strong> category. Enter <code>leafpad</code> in the 
 <strong>Action Params</strong> section at the bottom of the right column. 
 Click <em>OK</em> or <em>Apply</em>. Now press <em>Alt+L</em>, 
 and you will see the <strong>Leafpad</strong> application open. </p>
