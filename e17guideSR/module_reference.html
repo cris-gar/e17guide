@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Reference o Modulima</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Reference o Modulima</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p>Sledeći moduli su uključeni u standardnu(default) instalaciju Bodhi Linux-a:
+
+<hr />
+
+
+
+<div class="contentcontainer">
+
+<table class="displaytnormal addborder eightp">
+<tr><td colspan="3" class="doubleborder"><h2>Korisni Programi (Utilities)</h2></td></tr>
+
+<tr class="greentext">
+<td class="doubleborder" >Modul</td><td class="doubleborder" >Gedžet</td><td class="doubleborder" >Opis</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Pozadinsko Osvetljenje (Backlight)</td><td class="addborder"><a href="../images/backlight.png"><img src="../images/backlight.png" alt="(backlight)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet kontrole klizača Pozadinskog Osveteljenja</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder" style="vertical-align:middle">Calendar</td><td class="addborder"><a href="../images/calendar.png"><img src="../images/calendar.png" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Calendar sheet showing the current day, mouseover for month</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sat (Clock)</td><td class="addborder"><a href="../images/clock.png"><img src="../images/clock.png" alt="(clock)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Analogni sat po standardu(by default), ali takođe ima i digitalnu alternativu.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Aktivator (Engage)</td><td class="addborder"><a href="../images/engage.png"><img src="../images/engage.png" alt="(engage)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Dok koji podržava kombinovanje(compositing) i ne kombinovanje (no compositing) za Enlightenment radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">IBar</td><td class="addborder"><a href="../images/systray2.png"><img src="../images/systray2.png" alt="(ibar)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Ikonski pokretač programa (dok)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">IBox</td><td class="addborder"><a href="../images/systray2.png"><img src="../images/systray2.png" alt="(ibox)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Dom za vaše programe sa ikonicom</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Pejdžer (Pager)</td><td class="addborder"><a href="../images/pager.png"><img src="../images/pager.png" alt="(pager)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet koji vam omogućava da vidite vaše Virtualne Radne Površine i prozore koji se nalaze u njima</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Snimak (Shot)</td><td class="addborder"><a href="../images/shot.png"><img src="../images/shot.png" alt="(shot)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Jednostavan snimak ekrana+sačuvaj/uploaduj Modul sa unosom Glavnog Menija (Main Menu entry)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Start</td><td class="addborder"><a href="../images/start.png"><img src="../images/start.png" alt="(start)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Ekvivalent E17-ovom "Start" dugmetu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sistem Podmetač (Systray)</td><td class="addborder"><a href="../images/systray2.png"><img src="../images/systray2.png" alt="(systray)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Sistem podmetač na kome stoje ikonice za programe kao što su Skype, Pidgin, Kopete i drugi</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Poslovi (Tasks)</td><td class="addborder"><a href="../images/tasks.png"><img src="../images/tasks.png" alt="(tasks)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet koji vam omogućava promenu između poslova</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">iTask</td><td class="addborder"><a href="../images/itask.png"><img src="../images/itask.png" alt="(itask)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">On će držati sve vaše otvorene programe za brzu promenu između istih</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Prognoze Vremena (Forecasts)</td><td class="addborder"><a href="../images/forecasts.png"><img src="../images/forecasts.png" alt="(forecasts)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Vremenske prognoze za vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Tastatura (Keyboard)</td><td class="addborder"><a href="../images/forecasts.png"><img src="../images/keyboard.png" alt="(keyboard)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Konfigurisanje izgleda tastature i menjač za druge jezike</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Sistem (System)</h2></td></tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Baterija (Battery)</td><td class="addborder"><a href="../images/batter.png"><img src="../images/battery.png" alt="(battery)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet koji vam omogućava da vidite status baterije</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder" style="vertical-align:middle">Bluetooth Manager</td><td class="addborder"><a href="../images/bluetooth.png"><img src="../images/bluetooth.png" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Manage bluetooth devices</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Connection Manager</td><td class="addborder"><a href="../images/connman.png"><img src="../images/connman.png" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Control wifi, wired and mobile connections</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Frekvencija CPU (CPUfreq)</td><td class="addborder"><a href="../images/cpufreq.png"><img src="../images/cpufreq.png" alt="(cpufreq)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet za praćenje i promenu frekvencije CPU</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Mikser (Mixer)</td><td class="addborder"><a href="../images/mixer.png"><img src="../images/mixer.png" alt="(mixer)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul koji vam obezbeđuje mikser za promenu jačine zvuka</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder" style="vertical-align:middle">Mobile Modems Manager</td><td class="addborder"><a href="../images/mobilemodemsman.png"><img src="../images/mobilemodemsman.png" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Control mobile modems</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Temperatura (Temperature)</td><td class="addborder"><a href="../images/temperature.png"><img src="../images/temperature.png" alt="(temperature)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Nadgledanje temperature</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">DBus Ekstenzija (DBus Extension)</td><td class="addborder"><a href="../images/dbus.png"><img src="../images/dbus.png" alt="(dbus extension)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle"></td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Izgled (Look)</h2></td></tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Kombinovanje (Composite)</td><td class="addborder"><a href="../images/composite.png"><img src="../images/composite.png" alt="(composite)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Enlightenment menadžer kombinovanja (Enlightenment Composite manager)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Pad Senke (DropShadow)</td><td class="addborder"><a href="../images/dropshadow.png"><img src="../images/dropshadow.png" alt="(dropshadow)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul za dodavanje pad senke (dropshadow) za programe</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder" style="vertical-align:middle">Penguins</td><td class="addborder"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Module to display fancy penguins walking around your desktop</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Postepeno smanjivanje prozora (Scale Windows)</td><td class="addborder"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Postepeno smanjivanje prozora da bi ih videli sve jedne pored drugih</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Fajlovi (Files)</h2></td></tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">EFM (Starter)</td><td class="addborder"><a href="../images/efm-starter.png"><img src="../images/efm-starter.png" alt="(efm starter)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Enlightenment-ov ugrađeni fajl menadžer</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Informacije o Operacijama EFM-a (EFM Operation Info)</td><td class="addborder"><a href="../images/efm-opinfo.png"><img src="../images/efm-opinfo.png" alt="(efm operation info)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Može se postaviti samo na radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Mesta, Položaji (Places)</td><td class="addborder"><a href="../images/places.png"><img src="../images/places.png" alt="(places)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Prikazuje status vaših diskova, postavljanje (mount) i uklanjanje (unmount/eject) istih</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Pokretač (Launcher)</h2></td></tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sve starter (Everything (starter))</td><td class="addborder"><a href="../images/everything.png"><img src="../images/everything.png" alt="(everything starter)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Komandni modul koji obezbeđuje dijalog za pokretanja programa</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Brz Pristup (Quickaccess)</td><td class="addborder"><a href="../images/quickaccess.png"><img src="../images/quickaccess.png" alt="(quickaccess)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Enlightenment-ov pokretač Brzog Pristupa (Quickaccess Launcher)</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Jezgro (Core)</h2></td></tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Bodhi Zatvori (Bodhi Close)</td><td class="addborder"><a href="../images/systemcontrols.png"><img src="../images/systemcontrols.png" alt="(bodhi close)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet koji obezbeđuje brz pristup za zatvaranje trenutno aktivnog programa</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Gedžeti (Gadgets)</td><td class="addborder"><a href="../images/gadgets.png"><img src="../images/gadgets.png" alt="(gadgets)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul za manipulaciju Gedžetima na radnoj površini</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Obaveštavanje (Notification)</td><td class="addborder"><a href="../images/notification.png"><img src="../images/notification.png" alt="(notification)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Alternativa za samostartujući program za obaveštavanje (notification-daemon); Iskoči ako se događaj desi</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Panel za Podešavanja (Settings Panel)</td><td class="addborder"><a href="../images/settings.png"><img src="../images/settings.png" alt="(settings)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Opšti Enlightenment Panel za Podešavanja</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Kontrola Sistema (System Controls)</td><td class="addborder"><a href="../images/systemcontrols.png"><img src="../images/systemcontrols.png" alt="(system controls)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Ovaj modul obezbeđuje jedinstveni iskačući dijalog za sve akcije sistema u Enlightenment-u</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Popločavanje (Tiling)</td><td class="addborder"><a href="../images/tiling.png"><img src="../images/tiling.png" alt="(tiling)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Pločasto pozicionira/preuređuje dimenzije vaših prozora</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Menjač Prozora (Window Switcher)</td><td class="addborder"><a href="../images/windowswitcher.png"><img src="../images/windowswitcher.png" alt="(window switcher)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul za prikaz liste klijent programa koji su trenutno u upotrebi</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Mobilni (Mobile)</h2></td></tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Elfe</td><td class="addborder"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Pokretač za Tablet profil</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje Bluetooth (Illume-Bluetooth)</td><td class="addborder"><a href="../images/illume-bluetooth.png"><img src="../images/illume-bluetooth.png" alt="(illume bluetooth)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Kontrola Bluetooth uređaja u Osvetljenju (Illume)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje-Dom (Illume-Home)</td><td class="addborder"><a href="../images/illume-home.png"><img src="../images/illume-home.png" alt="(illume home)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Standardni(default) dom pokretač za osvetljenje(illume). Nije ubačen po standardu(by default) u Bodhi Tablet profilu.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje-Dom-Prekidač (Illume-Home-Toggle)</td><td class="addborder"><a href="../images/illume-home.png"><img src="../images/illume-home.png" alt="(illume home toggle)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Dugme za povratak na dom ekran osvetljenja (home screen of illume)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje-Indikator (Illume-Indicator)</td><td class="addborder"><a href="../images/systray2.png"><img src="../images/systray2.png" alt="(illume indicator)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gornji panel za osvetljenje (the top panel of illume).</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje-Tastatura (Illume-Keyboard)</td><td class="addborder"><a href="../images/illume-keyboard.png"><img src="../images/illume-keyboard.png" alt="(illume keyboard)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Tastatura na ekranu.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje-Tastatura-Prekidač (Illume-Keyboard-Toggle)</td><td class="addborder"><a href="../images/illume-keyboard.png"><img src="../images/illume-keyboard.png" alt="(illume keyboard toggle)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Dugme za pozivanje tastature na ekran.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje-Mod-Prekidač (Illume-Mode-Toggle)</td><td class="addborder"><a href="../images/illume-modetoggle.png"><img src="../images/illume-modetoggle.png" alt="(illume mode toggle)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet za postavku osvetljenja radne površine u podeljen-mod (A gadget to put the Illume desktop into split-mode).  Nije ubačen po standardu(by default) u Bodhi Tablet profilu.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje-Meki Taster (Illume-Softkey)</td><td class="addborder"><a href="../images/illume-softkey.png"><img src="../images/illume-softkey.png" alt="(illume softkey)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Donja ploča (bar) za Osvetljenje (Illume). Nije ubačen po standardu(by default) u Bodhi Tablet profilu.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Osvetljenje2 (Illume2)</td><td class="addborder"><a href="../images/illume2.png"><img src="../images/illume2.png" alt="(illume2)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul koji je zadužen za skidanje ivica prozora i maksimiziranje svih prozora.</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Podešavanja (Settings)</h2></td></tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Programi (Applications)</td><td class="addborder"><a href="../images/everything.png"><img src="../images/everything.png" alt="(applications)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Omogućava konfigurisanje Ibar, Restart, i Startup Programa.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Dijalozi (Dialogs)</td><td class="addborder"><a href="../images/dialogs.png"><img src="../images/dialogs.png" alt="(dialogs)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Konfigurisanje osobina standardnog (default) dijaloga.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Vezivanja Ivica (Edge Bindings)</td><td class="addborder"><a href="../images/illume-keyboard.png"><img src="../images/illume-keyboard.png" alt="(edge bindings)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Ovde možete konfigurisati vaša vezivanja ivica. </td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Ulazna Kontrola Podešavanja (Input Control Settings)</td><td class="addborder"><a href="../images/input-control.png"><img src="../images/input-control.png" alt="(input control settings)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Kontrola Podešavanja za Taster, Miš i Dugme (Key, Mouse and Button Control settings)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Interakcija (Interaction)</td><td class="addborder"><a href="../images/interaction.png"><img src="../images/interaction.png" alt="(interaction)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Konfigurisanje ulaza za Miš i Dodir (Configure Mouse and Touch input).</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Jezik (Language)</td><td class="addborder"><a href="../images/language.png"><img src="../images/language.png" class="fiftyw" alt="(language)" /></a></td><td class="addborder" style="vertical-align:middle">Koristi se za podešavanje standardnog (default) jezika.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Podešavanja Menija (Menu Settings)</td><td class="addborder"><a href="../images/menu-settings.png"><img src="../images/menu-settings.png" alt="(menu settings)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Konfigurisanje ponašanja menija.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Performanse (Performance)</td><td class="addborder"><a href="../images/performance.png"><img src="../images/performance.png" alt="(performance)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Služi za konfigurisanje određenih performansi srodnih stavki kao što su frejmovi i keš podešavanja. </td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Ekran (Screen)</td><td class="addborder"><a href="../images/screen.png"><img src="../images/screen.png" alt="(screen)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Koristi se za konfigurisanje vašeg ekrana.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Pretraživanje Direktorijuma (Search Directories)</td><td class="addborder"><a href="../images/search-directories.png"><img src="../images/search-directories.png" alt="(search directories)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Navodi E17 puteve pretrage i standardne (default) direktorijume.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Podešavanja - Postavka Ekrana (Settings - Screen Setup)</td><td class="addborder"><a href="../images/screen-setup.png"><img src="../images/screen-setup.png" alt="(screen setup)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Koristi se za konfigurisanje rezolucije vašeg ekrana i postavku više monitora.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Police (Shelves)</td><td class="addborder"><a href="../images/engage.png"><img src="../images/engage.png" alt="(shelves)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Dijalog za konfigurisanje Polica.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Tema (Theme)</td><td class="addborder"><a href="../images/theme.png"><img src="../images/theme.png" alt="(theme)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Koristi se za konfigurisanje podešavanja teme.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Manipulacija Prozora (Window Manipulation)</td><td class="addborder"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Konfiguriše prozor politike za podizanje, otpor i maksimiziranje.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Pamćenja Prozora (Window Remembers)</td><td class="addborder"><a href="../images/window-remembers.png"><img src="../images/window-remembers.png" alt="(window remembers)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Brisanje postojećih pamćenja prozora.</td>
+</tr>
+
+<tr>
+<td colspan="3" class="doubleborder">Sledeći Moduli su dostupni za instalaciju iz Bodhi Linux repozitorija:</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Taskbar</td><td class="addborder"><a href="../images/itask.png"><img src="../images/itask.png" alt="(taskbar)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet koji obezbeđuje taskbar koji prikazuje aktivne programe</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">TSat (TClock)</td><td class="addborder"><a href="../images/tclock.png"><img src="../images/tclock.png" alt="(tclock)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet za digitalni sat</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">DiskIO</td><td class="addborder"><a href="../images/diskio.png"><img src="../images/diskio.png" alt="(diskio)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul koji prikazuje aktivnosti na disku</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Memorija (Mem)</td><td class="addborder"><a href="../images/mem.png"><img src="../images/mem.png" alt="(mem)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Ažuriranje memorije na vašoj E17 radnoj površini u realnom vremenu </td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Vesti (News)</td><td class="addborder"><a href="../images/news.png"><img src="../images/news.png" alt="(news)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">RSS snabdevanje za vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Mesec (Moon)</td><td class="addborder"><a href="../images/moon.png"><img src="../images/moon.png" alt="(moon)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Pratite kretanje mesečevih ciklusa na vašoj radnoj površini</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Pošta (Mail)</td><td class="addborder"><a href="../images/mail.png"><img src="../images/mail.png" alt="(mail)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Proveravajte vašu elektronsku poštu na  Enlightenment radnoj površini</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Procesor (CPU)</td><td class="addborder"><a href="../images/cpu.png"><img src="../images/cpu.png" alt="(cpu)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul za  merenje upotrebe procesora (CPU)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sneg (Snow)</td><td class="addborder"><a href="../images/snow.png"><img src="../images/snow.png" alt="(snow)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Savršen za zimsko vreme. Donosi sneg i zabavu na vašu radnu površinu.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Plamen (Flame)</td><td class="addborder"><a href="../images/flame.png"><img src="../images/flame.png" alt="(flame)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Postavite vatru na vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Kiša (Rain)</td><td class="addborder"><a href="../images/rain.png"><img src="../images/rain.png" alt="(rain)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Oblaci i kiša za vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Foto (Photo)</td><td class="addborder"><a href="../images/photo.png"><img src="../images/photo.png" alt="(photo)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul za prikaz slajdova (slideshow) na vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Prikaz slajdova (Slideshow)</td><td class="addborder"><a href="../images/slideshow.png"><img src="../images/slideshow.png" alt="(slideshow)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Enlightenment modul za prikaz slajdova (slideshow).</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Prikaz Deska (Deskshow)</td><td class="addborder"><a href="../images/deskshow.png"><img src="../images/deskshow.png" alt="(deskshow)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Gedžet koji vam omogućava da brzo vidite radnu površinu.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sve-Pratilac (Everything-Tracker)</td><td class="addborder"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Pretraživanje fajlova sa pratiocem(0.8), koji takođe ima i muzički pregledač.</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sve-MPRIS (Everything-MPRIS)</td><td class="addborder"><a href="../images/everything-mpris.png"><img src="../images/everything-mpris.png" alt="(everything plugin)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Manipulacija plejlistom sa muzičkim plejerima koji podržavaju MPRIS (Amarok, Audacious, xmms2, ...)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sve-Mesta (Everything-Places)</td><td class="addborder"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul za proširenje Pokreni Sve (Run Everything)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sve-Pretraživanje Mreže (Everything-Websearch)</td><td class="addborder"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Nađite stvari na Wikipediji, koristite Google<sup>TM</sup>sugestije , prevedite tekst, ili pretražite Youtube</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sve-Tapeta (Everything-Wallpaper)</td><td class="addborder"><a href="../images/everything-wallpaper.png"><img src="../images/everything-wallpaper.png" alt="(everything plugin)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Modul za proširenje Pokreni Sve (Run Everything)</td>
+</tr>
+
+<tr>
+<td class="addborder" style="vertical-align:middle">Sve-Pidgin (Everything-Pidgin)</td><td class="addborder"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Otvorite prozor za ćaskanje ili pošaljite fajlove drugarima sa Pidgin-om.</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder" style="vertical-align:middle">Exalt-client</td><td class="addborder"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="fiftyw" /></a></td><td class="addborder" style="vertical-align:middle">Exalt-client Enlightenment module</td>
+</tr>
+-->
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<table class="addborder onmobile smallonlowwidth">
+<tr>
+<td colspan="3" class="doubleborder"><h2>Korisni Programi (Utilities)</h2></td>
+</tr>
+
+<tr class="greentext">
+<td class="doubleborder" >Modul</td><td class="doubleborder" >Gedžet</td><td class="doubleborder" >Opis</td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Pozadinsko Osvetljenje (Backlight)</td><td class="addborder fiftyh"><a href="../images/backlight.png"><img src="../images/backlight.png" alt="(backlight)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet kontrole klizača Pozadinskog Osveteljenja</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Calendar</td><td class="addborder fiftyh"><a href="../images/calendar.png"><img src="../images/calendar.png" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Calendar sheet showing the current day, mouseover for month</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sat (Clock)</td><td class="addborder fiftyh"><a href="../images/clock.png"><img src="../images/clock.png" alt="(clock)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Analogni sat po standardu(by default), ali takođe ima i digitalnu alternativu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Aktivator (Engage)</td><td class="addborder fiftyh"><a href="../images/engage.png"><img src="../images/engage.png" alt="(engage)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Dok koji podržava kombinovanje(compositing) i ne kombinovanje (no compositing) za Enlightenment radnu površinu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">IBar</td><td class="addborder fiftyh"><a href="../images/systray2.png"><img src="../images/systray2.png" alt="(ibar)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Ikonski pokretač programa (dok)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">IBox</td><td class="addborder fiftyh"><a href="../images/systray2.png"><img src="../images/systray2.png" alt="(ibox)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Dom za vaše programe sa ikonicom</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Pejdžer (Pager)</td><td class="addborder fiftyh"><a href="../images/pager.png"><img src="../images/pager.png" alt="(pager)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet koji vam omogućava da vidite vaše Virtualne Radne Površine i prozore koji se nalaze u njima</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Snimak (Shot)</td><td class="addborder fiftyh"><a href="../images/shot.png"><img src="../images/shot.png" alt="(shot)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Jednostavan snimak ekrana+sačuvaj/uploaduj Modul sa unosom Glavnog Menija (Main Menu entry)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Start</td><td class="addborder fiftyh"><a href="../images/start.png"><img src="../images/start.png" alt="(start)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Ekvivalent E17-ovom "Start" dugmetu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sistem Podmetač (Systray)</td><td class="addborder fiftyh"><a href="../images/systray2.png"><img src="../images/systray2.png" alt="(systray)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Sistem podmetač na kome stoje ikonice za programe kao što su Skype, Pidgin, Kopete i drugi</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Poslovi (Tasks)</td><td class="addborder fiftyh"><a href="../images/tasks.png"><img src="../images/tasks.png" alt="(tasks)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet koji vam omogućava promenu između poslova</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">iTask</td><td class="addborder fiftyh"><a href="../images/itask.png"><img src="../images/itask.png" alt="(itask)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">On će držati sve vaše otvorene programe za brzu promenu između istih</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Prognoze Vremena (Forecasts)</td><td class="addborder fiftyh"><a href="../images/forecasts.png"><img src="../images/forecasts.png" alt="(forecasts)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Vremenske prognoze za vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Tastatura (Keyboard)</td><td class="addborder fiftyh"><a href="../images/forecasts.png"><img src="../images/keyboard.png" alt="(keyboard)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Konfigurisanje izgleda tastature i menjač za druge jezike</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Sistem (System)</h2></td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Baterija (Battery)</td><td class="addborder fiftyh"><a href="../images/batter.png"><img src="../images/battery.png" alt="(battery)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet koji vam omogućava da vidite status baterije</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Bluetooth Manager</td><td class="addborder fiftyh"><a href="../images/bluetooth.png"><img src="../images/bluetooth.png" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Manage bluetooth devices</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Connection Manager</td><td class="addborder fiftyh"><a href="../images/connman.png"><img src="../images/connman.png" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Control wifi, wired and mobile connections</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Frekvencija CPU (CPUfreq)</td><td class="addborder fiftyh"><a href="../images/cpufreq.png"><img src="../images/cpufreq.png" alt="(cpufreq)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet za praćenje i promenu frekvencije CPU</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Mikser (Mixer)</td><td class="addborder fiftyh"><a href="../images/mixer.png"><img src="../images/mixer.png" alt="(mixer)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul koji vam obezbeđuje mikser za promenu jačine zvuka</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Mobile Modems Manager</td><td class="addborder fiftyh"><a href="../images/mobilemodemsman.png"><img src="../images/mobilemodemsman.png" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Control mobile modems</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Temperatura (Temperature)</td><td class="addborder fiftyh"><a href="../images/temperature.png"><img src="../images/temperature.png" alt="(temperature)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Nadgledanje temperature</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">DBus Ekstenzija (DBus Extension)</td><td class="addborder fiftyh"><a href="../images/dbus.png"><img src="../images/dbus.png" alt="(dbus extension)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle"></td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Izgled (Look)</h2></td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Kombinovanje (Composite)</td><td class="addborder fiftyh"><a href="../images/composite.png"><img src="../images/composite.png" alt="(composite)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Enlightenment menadžer kombinovanja (Enlightenment Composite manager)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Pad Senke (DropShadow)</td><td class="addborder fiftyh"><a href="../images/dropshadow.png"><img src="../images/dropshadow.png" alt="(dropshadow)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul za dodavanje pad senke (dropshadow) za programe</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Penguins</td><td class="addborder fiftyh"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Module to display fancy penguins walking around your desktop</td>
+</tr>
+-->
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Postepeno smanjivanje prozora (Scale Windows)</td><td class="addborder fiftyh"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Postepeno smanjivanje prozora da bi ih videli sve jedne pored drugih</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Fajlovi (Files)</h2></td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">EFM (Starter)</td><td class="addborder fiftyh"><a href="../images/efm-starter.png"><img src="../images/efm-starter.png" alt="(efm starter)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Enlightenment-ov ugrađeni fajl menadžer</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Informacije o Operacijama EFM-a (EFM Operation Info)</td><td class="addborder fiftyh"><a href="../images/efm-opinfo.png"><img src="../images/efm-opinfo.png" alt="(efm operation info)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Može se postaviti samo na radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Mesta, Položaji (Places)</td><td class="addborder fiftyh"><a href="../images/places.png"><img src="../images/places.png" alt="(places)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Prikazuje status vaših diskova, postavljanje (mount) i uklanjanje (unmount/eject) istih</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Pokretač (Launcher)</h2></td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sve starter (Everything (starter))</td><td class="addborder fiftyh"><a href="../images/everything.png"><img src="../images/everything.png" alt="(everything starter)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Komandni modul koji obezbeđuje dijalog za pokretanja programa</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Brz Pristup (Quickaccess)</td><td class="addborder fiftyh"><a href="../images/quickaccess.png"><img src="../images/quickaccess.png" alt="(quickaccess)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Enlightenment-ov pokretač Brzog Pristupa (Quickaccess Launcher)</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Jezgro (Core)</h2></td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Bodhi Zatvori (Bodhi Close)</td><td class="addborder fiftyh"><a href="../images/systemcontrols.png"><img src="../images/systemcontrols.png" alt="(bodhi close)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet koji obezbeđuje brz pristup za zatvaranje trenutno aktivnog programa</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Gedžeti (Gadgets)</td><td class="addborder fiftyh"><a href="../images/gadgets.png"><img src="../images/gadgets.png" alt="(gadgets)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul za manipulaciju Gedžetima na radnoj površini</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Obaveštavanje (Notification)</td><td class="addborder fiftyh"><a href="../images/notification.png"><img src="../images/notification.png" alt="(notification)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Alternativa za samostartujući program za obaveštavanje (notification-daemon); Iskoči ako se događaj desi</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Panel za Podešavanja (Settings Panel)</td><td class="addborder fiftyh"><a href="../images/settings.png"><img src="../images/settings.png" alt="(settings)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Opšti Enlightenment Panel za Podešavanja</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Kontrola Sistema (System Controls)</td><td class="addborder fiftyh"><a href="../images/systemcontrols.png"><img src="../images/systemcontrols.png" alt="(system controls)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Ovaj modul obezbeđuje jedinstveni iskačući dijalog za sve akcije sistema u Enlightenment-u</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Popločavanje (Tiling)</td><td class="addborder fiftyh"><a href="../images/tiling.png"><img src="../images/tiling.png" alt="(tiling)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Pločasto pozicionira/preuređuje dimenzije vaših prozora</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Menjač Prozora (Window Switcher)</td><td class="addborder fiftyh"><a href="../images/windowswitcher.png"><img src="../images/windowswitcher.png" alt="(window switcher)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul za prikaz liste klijent programa koji su trenutno u upotrebi</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Mobilni (Mobile)</h2></td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Elfe</td><td class="addborder fiftyh"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Pokretač za Tablet profil</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje Bluetooth (Illume-Bluetooth)</td><td class="addborder fiftyh"><a href="../images/illume-bluetooth.png"><img src="../images/illume-bluetooth.png" alt="(illume bluetooth)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Kontrola Bluetooth uređaja u Osvetljenju (Illume).</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje-Dom (Illume-Home)</td><td class="addborder fiftyh"><a href="../images/illume-home.png"><img src="../images/illume-home.png" alt="(illume home)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Standardni(default) dom pokretač za osvetljenje(illume). Nije ubačen po standardu(by default) u Bodhi Tablet profilu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje-Dom-Prekidač (Illume-Home-Toggle)</td><td class="addborder fiftyh"><a href="../images/illume-home.png"><img src="../images/illume-home.png" alt="(illume home toggle)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Dugme za povratak na dom ekran osvetljenja (home screen of illume)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje-Indikator (Illume-Indicator)</td><td class="addborder fiftyh"><a href="../images/illume-systray2.png"><img src="../images/systray2.png" alt="(illume indicator)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gornji panel za osvetljenje (the top panel of illume).</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje-Tastatura (Illume-Keyboard)</td><td class="addborder fiftyh"><a href="../images/illume-keyboard.png"><img src="../images/illume-keyboard.png" alt="(illume keyboard)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Tastatura na ekranu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje-Tastatura-Prekidač (Illume-Keyboard-Toggle)</td><td class="addborder fiftyh"><a href="../images/keyboard.png"><img src="../images/illume-keyboard.png" alt="(illume keyboard toggle)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Dugme za pozivanje tastature na ekran.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje-Mod-Prekidač (Illume-Mode-Toggle)</td><td class="addborder fiftyh"><a href="../images/illume-modetoggle.png"><img src="../images/illume-modetoggle.png" alt="(illume mode toggle)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet za postavku osvetljenja radne površine u podeljen-mod (A gadget to put the Illume desktop into split-mode). Nije ubačen po standardu(by default) u Bodhi Tablet profilu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje-Meki Taster (Illume-Softkey)</td><td class="addborder fiftyh"><a href="../images/illume-softkey.png"><img src="../images/illume-softkey.png" alt="(illume softkey)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Donja ploča (bar) za Osvetljenje (Illume). Nije ubačen po standardu(by default) u Bodhi Tablet profilu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Osvetljenje2 (Illume2)</td><td class="addborder fiftyh"><a href="../images/illume2.png"><img src="../images/illume2.png" alt="(illume2)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul koji je zadužen za skidanje ivica prozora i maksimiziranje svih prozora.</td>
+</tr>
+
+
+<tr><td colspan="3" class="doubleborder"><h2>Podešavanja (Settings)</h2></td></tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Programi (Applications)</td><td class="addborder fiftyh"><a href="../images/everything.png"><img src="../images/everything.png" alt="(applications)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Omogućava konfigurisanje Ibar, Restart, i Startup Programa.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Dijalozi (Dialogs)</td><td class="addborder fiftyh"><a href="../images/dialogs.png"><img src="../images/dialogs.png" alt="(dialogs)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Konfigurisanje osobina standardnog (default) dijaloga.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Vezivanja Ivica (Edge Bindings)</td><td class="addborder fiftyh"><a href="../images/illume-keyboard.png"><img src="../images/illume-keyboard.png" alt="(edge bindings)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Ovde možete konfigurisati vaša vezivanja ivica.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Ulazna Kontrola Podešavanja (Input Control Settings)</td><td class="addborder fiftyh"><a href="../images/input-control.png"><img src="../images/input-control.png" alt="(input control settings)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Kontrola Podešavanja za Taster, Miš i Dugme (Key, Mouse and Button Control settings)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Interakcija (Interaction)</td><td class="addborder fiftyh"><a href="../images/interaction.png"><img src="../images/interaction.png" class="thirtyw" alt="(interaction)" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Konfigurisanje ulaza za Miš i Dodir (Configure Mouse and Touch input).</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Jezik (Language)</td><td class="addborder fiftyh"><a href="../images/language.png"><img src="../images/language.png" class="thirtyw" alt="(language)" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Koristi se za podešavanje standardnog (default) jezika.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Podešavanja Menija (Menu Settings)</td><td class="addborder fiftyh"><a href="../images/menu-settings.png"><img src="../images/menu-settings.png" alt="(menu settings)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Konfigurisanje ponašanja menija.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Performanse (Performance)</td><td class="addborder fiftyh"><a href="../images/performance.png"><img src="../images/performance.png" alt="(performance)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Služi za konfigurisanje određenih performansi srodnih stavki kao što su frejmovi i keš podešavanja.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Ekran (Screen)</td><td class="addborder fiftyh"><a href="../images/screen.png"><img src="../images/screen.png" alt="(screen)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Koristi se za konfigurisanje vašeg ekrana.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Pretraživanje Direktorijuma (Search Directories)</td><td class="addborder fiftyh"><a href="../images/search-directories.png"><img src="../images/search-directories.png" alt="(search directories)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Navodi E17 puteve pretrage i standardne (default) direktorijume.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Podešavanja - Postavka Ekrana (Settings - Screen Setup)</td><td class="addborder fiftyh"><a href="../images/screen-setup.png"><img src="../images/screen-setup.png" alt="(screen setup)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Koristi se za konfigurisanje rezolucije vašeg ekrana i postavku više monitora.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Police (Shelves)</td><td class="addborder fiftyh"><a href="../images/engage.png"><img src="../images/engage.png" alt="(shelves)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Dijalog za konfigurisanje Polica.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Tema (Theme)</td><td class="addborder fiftyh"><a href="../images/theme.png"><img src="../images/theme.png" alt="(theme)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Koristi se za konfigurisanje podešavanja teme.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Manipulacija Prozora (Window Manipulation)</td><td class="addborder fiftyh"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Konfiguriše prozor politike za podizanje, otpor i maksimiziranje.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Pamćenja Prozora (Window Remembers)</td><td class="addborder fiftyh"><a href="../images/window-remembers.png"><img src="../images/window-remembers.png" alt="(window remembers)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Brisanje postojećih pamćenja prozora.</td>
+</tr>
+
+
+<tr>
+<td colspan="3" class="doubleborder">Sledeći Moduli su dostupni za instalaciju iz Bodhi Linux repozitorija:</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Taskbar</td><td class="addborder fiftyh"><a href="../images/itask.png"><img src="../images/itask.png" alt="(taskbar)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet koji obezbeđuje taskbar koji prikazuje aktivne programe</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">TSat (TClock)</td><td class="addborder fiftyh"><a href="../images/tclock.png"><img src="../images/tclock.png" alt="(tclock)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet za digitalni sat</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">DiskIO</td><td class="addborder fiftyh"><a href="../images/diskio.png"><img src="../images/diskio.png" alt="(diskio)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul koji prikazuje aktivnosti na disku</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Memorija (Mem)</td><td class="addborder fiftyh"><a href="../images/mem.png"><img src="../images/mem.png" alt="(mem)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Ažuriranje memorije na vašoj E17 radnoj površini u realnom vremenu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Vesti (News)</td><td class="addborder fiftyh"><a href="../images/news.png"><img src="../images/news.png" alt="(news)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">RSS snabdevanje za vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Mesec (Moon)</td><td class="addborder fiftyh"><a href="../images/moon.png"><img src="../images/moon.png" alt="(moon)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Pratite kretanje mesečevih ciklusa na vašoj radnoj površini</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Pošta (Mail)</td><td class="addborder fiftyh"><a href="../images/mail.png"><img src="../images/mail.png" alt="(mail)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Proveravajte vašu elektronsku poštu na Enlightenment radnoj površini</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Procesor (CPU)</td><td class="addborder fiftyh"><a href="../images/cpu.png"><img src="../images/cpu.png" alt="(cpu)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul za merenje upotrebe procesora (CPU)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sneg (Snow)</td><td class="addborder fiftyh"><a href="../images/snow.png"><img src="../images/snow.png" alt="(snow)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Savršen za zimsko vreme. Donosi sneg i zabavu na vašu radnu površinu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Plamen (Flame)</td><td class="addborder fiftyh"><a href="../images/flame.png"><img src="../images/flame.png" alt="(flame)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Postavite vatru na vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Kiša (Rain)</td><td class="addborder fiftyh"><a href="../images/rain.png"><img src="../images/rain.png" alt="(rain)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Oblaci i kiša za vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Foto (Photo)</td><td class="addborder fiftyh"><a href="../images/photo.png"><img src="../images/photo.png" alt="(photo)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul za prikaz slajdova (slideshow) na vašu radnu površinu</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Prikaz slajdova (Slideshow)</td><td class="addborder fiftyh"><a href="../images/slideshow.png"><img src="../images/slideshow.png" alt="(slideshow)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Enlightenment modul za prikaz slajdova (slideshow).</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Prikaz Deska (Deskshow)</td><td class="addborder fiftyh"><a href="../images/deskshow.png"><img src="../images/deskshow.png" alt="(deskshow)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Gedžet koji vam omogućava da brzo vidite radnu površinu.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sve-Pratilac (Everything-Tracker)</td><td class="addborder fiftyh"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Pretraživanje fajlova sa pratiocem(0.8), koji takođe ima i muzički pregledač.</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sve-MPRIS (Everything-MPRIS)</td><td class="addborder fiftyh"><a href="../images/everything-mpris.png"><img src="../images/everything-mpris.png" alt="(everything plugin)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Manipulacija plejlistom sa muzičkim plejerima koji podržavaju MPRIS (Amarok, Audacious, xmms2, ...)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sve-Mesta (Everything-Places)</td><td class="addborder fiftyh"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul za proširenje Pokreni Sve (Run Everything)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sve-Pretraživanje Mreže (Everything-Websearch)</td><td class="addborder fiftyh"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Nađite stvari na Wikipediji, koristite Google<sup>TM</sup>sugestije , prevedite tekst, ili pretražite Youtube</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sve-Tapeta (Everything-Wallpaper)</td><td class="addborder fiftyh"><a href="../images/everything-wallpaper.png"><img src="../images/everything-wallpaper.png" alt="(everything plugin)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Modul za proširenje Pokreni Sve (Run Everything)</td>
+</tr>
+
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Sve-Pidgin (Everything-Pidgin)</td><td class="addborder fiftyh"><a href="../images/start.png"><img src="../images/start.png" alt="(everything plugin)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Otvorite prozor za ćaskanje ili pošaljite fajlove drugarima sa Pidgin-om.</td>
+</tr>
+
+<!--
+<tr>
+<td class="addborder fiftyh" style="vertical-align:middle">Exalt-client</td><td class="addborder fiftyh"><a href="../images/void.png"><img src="../images/void.png" alt="(void)" class="thirtyw" /></a></td><td class="addborder fiftyh" style="vertical-align:middle">Exalt-client Enlightenment module</td>
+</tr>
+-->
+
+</table>
+
+</div>
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="modules.html">Informacije o Modulima</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="shelves_and_gadgets.html">Police & Gedžeti</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>
