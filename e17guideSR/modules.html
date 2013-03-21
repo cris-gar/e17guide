@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Informacije o Modulima</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Informacije o Modulima</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+	
+
+<p>Ova stranica objašnjava, malo detaljnije, šta su <strong>Enlightenment (E17) Moduli</strong> , 
+kako su povezani sa <a class="normal" href="shelves_and_gadgets.html">Gedžetima</a>, 
+kako uključiti instalirane <strong>Module</strong>, 
+i kako instalirati <strong>Module</strong> iz <strong>Bodhi Linux</strong> repozitorija.</p>
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Šta je Modul?</h2>
+<p> <strong>Modul</strong> je mali <strong>E17</strong> program koji se može koristiti za proširenje funkcionalnosti vaše radne površine. Oni mogu biti instalirani na PC i <em>učitani</em> u RAM  na početku. Pošto ne <em>učitava</em> 
+sve svoje <strong>Module</strong> po standardu(default), <strong>E17</strong> minimalizuje iznos RAM-a koji se koristi u svakom trenutku. Što više <strong>Modula</strong> 
+ <em>učitate/uključite</em>, to će se više RAM-a koristiti. Na PC-ima sa 256MB RAM-a ili manje, to malo postaje briga. Ali, zbog efikasnosti 
+<strong>Enlightenment Osnovnih Biblioteka (EFL) (Enlightenment Foundation Libraries (EFL))</strong>, svaki 
+<strong>Modul</strong> koristi vrlo malo dodatne memorije. 
+Programi (programi za rad sa tekstom, internet pregledači, itd) koje izaberete za rad, su mnogo važniji aspekt za razmatranje zbog ograničenja sa RAM-om.
+Mnogi <strong>Moduli</strong>, jednom <em>učitani</em> u RAM, obezbeđuju pristup <strong>Gedžetima</strong> koji se mogu postaviti na radnu površinu ili na <a class="normal" href="shelves_and_gadgets.html#Shelves">Policu(Shelf)</a>. 
+</div>
+</div>
+
+
+
+<div class="contentcontainer"><br class="onmobile" />
+	
+<a class="img normalpicture displaynormal" href="../images/modules.png">
+<img class="thirtywidth floatr botml" alt="(Module Settings)" src="../images/modules.png"></a>
+	
+<div class="green sixtywidth changeonlowwidth">
+<h2>Kako uključiti/učitati Module</h2><br class="onmobile" />
+
+<a class="img normalpicture displaysmall" href="../images/modules.png">
+<img class="imageonlowwidth" alt="(Module Settings)" src="../images/modules.png"></a>
+
+<p>Idite na <small><em>Menu>Settings>Modules</em></small> i dijalog 
+<strong>Podešavanja Modula (Module Settings)</strong> prikazan desno, se pojavljuje.</p>
+<p>Obratite pažnju na trake(tabs) na vrhu. <strong>Moduli</strong> su kategorizovani kao 
+<strong>Korisni Programi (Utilities)</strong>, <strong>Sistem (System)</strong>, <strong>Izgled (Look)</strong> i tako dalje. U ovom snimku ekrana, 
+ <strong>iBar</strong> modul ima narandžasti indikator (kružić) kojim je označen.
+<span class="smalltext">(indikator se menja u zavisnosti od <a class="normal" href="themes.html">Teme</a>)</span>, 
+što znači da je on već <em>učitan</em>. Postoji i mali opis šta istaknut (highlighted)
+<strong>Modul</strong> radi, na dnu prozora <strong>Podešavanja Modula (Modules Settings)</strong>. Imate opciju da ga 
+<em>isključite</em> da bi uštedeli malo memorije koju koristi. 
+Sledeći <strong>Modul</strong> na listi, <strong>iBox</strong>, 
+nije <em>učitan</em>. Ako kliknete na liniju gde se nalazi <strong>iBox</strong> , 
+the <em>Load</em> dugme će postati atkivno, kao što je prikazano na slici. Klizač na desnoj strani vam omogućava da klizite na dole da bi videli ostale <strong>Module</strong> 
+koje ste instalirali i koji je njihov status - ili su <em>učitani</em> u RAM ili nisu 
+<em>učitani</em>.</p>
+</div>
+</div>
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Moduli i Gedžeti</h2>
+<p>Mnogi <strong>Moduli</strong> obezbeđuju <strong>Gedžete</strong> 
+koji se mogu dodati na vašu radnu površinu ili na <strong>Policu</strong>. Neki, kao <strong>Informacije o Operacijama EFM-a (EFM Operation Info)</strong>, mogu biti prikazani samo na radnoj površini, dok drugi kao  <strong>Sistem Podmetač (Systray)</strong> mogu biti prikazani samo na 
+<strong>Polici (Shelf)</strong>. Postoji nekoliko <strong>Modula</strong> čija je jedina funkcija da obezbede <strong>Gedžete</strong>, kao što je <strong>Sat (Clock)</strong> modul. 
+U većini slučajeva, <strong>Gedžet</strong> neće biti prikazan samo ako je učitan njegov odnosni <strong>Modul</strong>, zato što vam 
+<strong>E17</strong> dopušta da odlučite gde da postavite 
+<strong>Gedžete</strong>, bilo da je to radna površina ili polica. Molimo pogledajte stranicu 
+<a class="normal" href="shelves_and_gadgets.html">Police i Gedžeti (Shelves and Gadgets)</a> 
+za detaljnija obaveštenja oko postavljanja <strong>Gedžeta</strong> na jednu ili drugu lokaciju.</p>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Instalirani Moduli</h2>
+<p>Molimo pogledajte stranicu  <a class="normal" href="module_reference.html">Reference o Modulima (Module Reference)</a> 
+gde se nalazi lista svih <strong>Modula</strong> koji su instalirani po standardu (by default). </p>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Preuzimanje Modula</h2>
+<p>Mnogi <strong>Moduli</strong>, kao što je <strong>Prognoza Vremena (Forecasts)</strong>, 
+nije uključen u instalacioni CD <strong>Bodhi Linux-a</strong> da bi bio u granicama minimalnog, u skladu sa 
+<strong>Bodhi Linux</strong> filozofijom. <strong>Moduli</strong> koji nisu instalirani po standardu (by default) se mogu naći u <strong>Bodhi Linux</strong> 
+repozitoriju. Možete ih instalirati preko <strong>Synaptic Menadžera Paketa (Synaptic Package Manager)</strong> na 
+<small><em>Main Menu>Applications>Preferences</em></small> ili sa <code>apt-get</code> komandno-linijskim alatom:</p>
+<pre> sudo apt-get install -y &lt;name-of-module&gt;</pre>
+<p>Pored <strong>Prognoza Vremena (Forecasts)</strong>, pogledajte i sledeće korisne Enlightenment <strong>Module</strong> 
+koji nisu instalirani po standardu (by default):</p>
+
+<ul>
+  <li>procesor (cpu)</li>
+  <li>prognoza vremena (forecasts)</li>
+  <li>pošta (mail)</li>
+  <li>memorija (mem)</li>
+  <li>vesti (news)</li>
+  <li>mreža (net)</li>
+  <li>tsat (tclock)</li>
+</ul>
+
+<p>Potražite "enlightenment module" u polju za <em>Brzo Pretraživanje (Quick Search)</em> 
+ <strong>Synaptic-a</strong> da nađete i druge.</p>
+<p>Za kompletnu listu dostupnih <strong>Modula</strong> 
+pogledajte <a class="normal" href="module_reference.html">Reference o Modulima (Module Reference)</a>. 
+</div>
+</div>
+
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Uklanjanje Modula</h2>
+<p>Zbog prirode <strong>Modula</strong>, nije neophodno da ih obrišete/uklonite (uninstall). Dok god nisu <em>uključeni</em>, oni uopšte neće koristiti sistemske resurse (RAM & CPU na primer). Plus, prostor na disku koji zauzimaju je vrlo mali.</p>
+<p>Ali, ako dođete u situaciju da morate kompletno da uklonite jedan (ili više) 
+<strong>Modula</strong>, jednostavno ih uklonite (uninstall) iz 
+<strong>Synaptic Menadžera Paketa (Synaptic Package Manager)</strong> kao bilo koji drugi program, ili pokrenite sledeću komandu u terminalu: 
+
+
+<!--
+or run the following command in <strong>Terminology</strong>
+<span class="smalltext"><small>(or whichever subpar terminal emulator 
+you decided to use instead)</small></span>: 
+--></p>
+
+<pre>sudo apt-get remove -y &lt;name-of-module&gt;</pre>
+</div>
+</div>
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="module_reference.html">Reference o Modulima</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>
