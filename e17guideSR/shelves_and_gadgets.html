@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Police i Gedžeti</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">Terminology & EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Police & Gedžeti</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+	
+
+<p>Ovaj deo kombinuje vodiče za <strong>Police</strong> & <strong>Gedžete</strong> 
+zbog njihove povezanosti. </p>
+	
+
+	
+<ol>
+<li><a class="normal" href="#Shelves">Police</a></li>
+<li id="Shelves"><a class="normal" href="#Gadgets">Gedžeti</a></li>
+</ol>
+
+<br />
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Police</h2>
+<p><strong>Police</strong> u <strong>Enlightenment (E17)</strong> 
+su slične "Panelima" koji se koriste u drugim okruženjima kao što su Gnome, LXDE, i 
+KDE. Njihova glavna namena je da ugoste gedžete.
+</p>
+
+<p>Standardna (default) <strong>Polica (Shelf)</strong> će sadržati različite gedžete u zavisnosti koji <a class="normal" href="profiles.html">Profil</a> je izabran, ali neki zajednički su: 
+<em>Start</em>, <em>Taskbar</em>, <em>Sistem Podmetač (Systray)</em>, <em>Sat (Clock)</em>, itd. Moguće je dodati još gedžeta. Takođe je moguće koristiti policu kao "dok", uz malu pomoć <strong>Gedžeta</strong> po imenu <em>iBar </em>(objašnjen dole u gedžet delu). Takođe je moguće da imate više od jedne <strong>Police</strong>.
+</p>
+
+<a class="img normalpicture" href="../images/e17_panel.png">
+<img class="sixtywidth center" alt="(E17%20Panel)" src="../images/e17_panel.png" /></a>
+
+<br /><br />
+<h3 class="inline"> Dodavanje nove Police</h3>
+<p>
+Da dodate novu <strong>Policu</strong>, izaberite <small><em>Main 
+Menu>Desktop>Shelves>Add A Shelf</em></small>. 
+Nova polica će se pojaviti u sredini leve ivice ekrana.
+</p><br />
+
+<h3 class="inline">Konfigurisanje Police</h3>
+<p>
+Možete konfigurisati <strong>Policu</strong> iz grafičkog korisničkog interfejsa: <em>desni-klik</em> na <strong>Policu</strong>, 
+i zatim izaberite <small><em>Shelf>Settings</em></small>.
+</p>
+
+<div class="smalltext">
+<a class="img normalpicture" href="../images/shelf_settings.png">
+<img alt="(Shelf%20Settings)" class="floatr twentyfivewidth imageonlowwidth" src="../images/shelf_settings.png" /></a>
+
+<h4 class="inline">Slaganje/Položaj</h4>
+<br />
+Ova traka(tab) sadrži podešavanja da definiše da li će <strong>Polica</strong> 
+ostati ispod ili iznad drugih prozora i da li će drugim prozorima biti dozvoljeno da je prekriju.<br /><br />
+<span class="orangetext boldtext"><small>Važno:</small></span> Ako <strong>Polica</strong> sadrži 
+<strong>Gedžet Sistem Podmetač (Systray Gadget)</strong>, <strong>Polica</strong> mora biti "<em>Iznad Svega (Above Everything)</em>".
+<br /><br />
+
+<h4 class="inline">Pozicioniranje</h4>
+<br />
+Ovde možete izabrati u kom uglu ili na kojoj ivici ekrana će se 
+<strong>Polica</strong> nalaziti.
+<br /><br />
+
+<h4 class="inline">Veličina</h4>
+<br />
+Ovde možete izabrati veličinu <strong>Police</strong> i definisati da li će se smanjiti na sadržaj širine ili će biti razvučena po jednoj ivici.
+<br /><br />
+
+<h4 class="inline">Stil</h4>
+<br />
+Ovo podešavanje vam omogućava da izaberete da li će <strong>Polica</strong> 
+biti vidljiva ili nevidljiva.
+<br /><br />
+
+<h4 class="inline">Automatsko Skrivanje (Auto Hide)</h4>
+<br />
+Ako želite da se <strong>Polica</strong> sakrije iza ivice kada je ne koristite morate da čekirate opciju <em>Auto-hide the Shelf</em>. 
+Možete takođe da izaberete sakrij/prikaži ponašanje police. Preporučljivo je da izaberete opciju <em>Iznad Svega (Above All)</em> na traci (tab) <em>Slaganje/Položaj (Stacking)</em> ako koristite automatsko skrivanje (autohide) opciju.
+<br /><br />
+
+<h4 class="inline">Radna Površina</h4>
+<br />
+Ova traka (tab) vam omogućava da odredite da li će se <strong>Polica</strong> pojaviti na svim&nbsp;<a class="normal" href="virtual_desktops.html">Virtualnim Radnim Površinama</a> 
+ili samo na nekim.
+<br /><br /><br /></div>
+</div>
+<div class="clear" id="Gadgets">&nbsp;</div>
+</div>
+
+
+
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Gedžeti</h2>
+<p> <strong>Gedžet</strong> je skoro sve što vidite na radnoj površini. Gedžeti su ono što neki operativni sistemi nazivaju "Apleti" ili "Vidžeti". To su mali programi koji rade jednu stvar i to rade dobro. Neki obezbeđuju specifične informacije o vašem PC-ju ili vašem okruženju.</p> 
+
+
+<p>Ovaj deo opisuje neke korisne gedžete, pokazuje kako dodati nove gedžete iz 
+<strong>E17-ovog</strong> repertoara, i kratko objašnjava kako su gedžeti povezani sa 
+<a class="normal" href="modules.html">Modulima</a> 
+(koji su tema zasebne stranice ovog vodiča). 
+Nekoliko gedžeta se verovatno nalazi na vašoj standardnoj (default) radnoj površini <strong>Bodhi Linux-a</strong>, 
+u zavisnoti koji <a class="normal" href="profiles.html">Profil</a> 
+ste izabrali prilikom instalacije <strong>Bodhi Linux-a</strong>.
+</p>
+
+<p>Imajte na umu da većina gedžeta može biti postavljena direktno na radnu površinu ili na <strong>Policu</strong>. 
+Postoji nekoliko gedžeta (kao <em>Sistem Podmetač (Systray)</em>)
+koji se može postaviti <strong>samo</strong> na 
+<strong>Policu</strong>.
+</p>
+<br />
+
+
+<h3 class="inline">Primeri Gedžeta</h3><br /><br />
+
+<div class="picture clear" style="box-shadow: none; text-shadow: none;">
+<div class="hundredwidth smalltext lefttext center" style="border-radius: 5px; box-shadow: none; border-width: 2px;"> 
+<!--
+<div class="addborder">
+<div class="hundredwidth floatl"><span class="orangetext boldtext">Calendar</span> <div class="twentywidth floatr"><div class="thirtywidth center imageonlowwidth"><a class="img" href="../images/calendar.png"><img class="noborder" alt="(Calendar)" src="../images/calendar.png" /></a></div></div><br /><span class="greentext">(A graphic calendar)</span></div><br class="clear" />
+</div>
+-->
+<div class="addborder">
+<div class="hundredwidth floatl"><span class="orangetext boldtext">Sat (Clock)</span> <div class="twentywidth floatr"><div class="thirtywidth center imageonlowwidth"><a class="img" href="../images/clock.png"><img class="noborder" alt="(Clock)" src="../images/clock.png" /></a></div></div><br /><span class="greentext">(Analogni sat)</span></div><br class="clear" />
+</div>
+<div class="addborder">
+<div class="hundredwidth floatl"><span class="orangetext boldtext">Prognoze Vremena (Forecasts)</span> <div class="twentywidth floatr"><div class="thirtywidth center imageonlowwidth"><a class="img" href="../images/forecasts.png"><img class="noborder" alt="(Forecasts)" src="../images/forecasts.png" /></a></div></div><br /><span class="greentext">(Graficki prikaz vremena u zadatom regionu)</span></div><br class="clear" />
+</div>
+<div class="addborder">
+<div class="hundredwidth floatl"><span class="orangetext boldtext">Pejdžer (Pager)</span> <div class="twentywidth floatr"><div class="thirtywidth center imageonlowwidth"><a class="img" href="../images/pager.png"><img class="noborder" alt="(Pager)" src="../images/pager.png" /></a></div></div><br /><span class="greentext">(Menjač za Virtualne Radne Površine)</span></div><br class="clear" />
+</div>
+</div></div>
+
+
+
+
+
+<br /><br /><br />
+
+
+<h3 class="inline">Dodavanje Novih Gedžeta na Radnu Površinu</h3>
+
+<div class="floatr sixteenwidth displaynormal"> 
+<div>
+<a class="img normalpicture" href="../images/change-gadgets.png">
+<img alt="(Desktop%20Gadgets-Simple)" class="ninetywidth center" src="../images/change-gadgets.png" /></a>
+</div>
+<span class="block clear">&nbsp;</span>
+<div>
+<a class="img normalpicture" href="../images/gadget-move.png">
+<img alt="(Desktop%20Gadgets-Complex)" class="ninetywidth center" src="../images/gadget-move.png" /></a>
+</div>
+</div>
+
+<p>Postoji više načina za dodavanje gedžeta na radnu površinu. Najčešći su:
+<br /><br />
+1. Idite na <small><em>Main Menu>Desktop>Change Gadgets</em></small>. 
+Izaberite koji <strong>Gedžet</strong> iz liste želite da dodate. Zatim kliknite <em>Dodaj Gedžet (Add Gadget)</em>. Ovo je najjednostavniji i najlakši način.<br /><br />
+
+<a class="img normalpicture displaysmall" href="../images/change-gadgets.png">
+<img alt="(Desktop%20Gadgets-Simple)" class="fiftywidth center" src="../images/change-gadgets.png" /></a>
+
+<br class="onmobile" /><br class="onmobile" />
+2. Idite na <small><em>Main Menu>Settings>Gadgets</em></small> i otvoriće se 
+<strong>Menadžer Gedžeta(Gadgets Manager)</strong> sa selektovanom 
+<strong>Lejeri(Layers)</strong> trakom(tab). Opcija 
+<strong>Pozadina(Background)</strong> stavlja vidljivi gedžet na radnu površinu <small>(<em>Hover (Key Toggle)</em> opcija je van okvira ovog Vodiča)</small>. Selektujte opciju 
+<strong>Pozadina(Background)</strong> zatim kliknite dugme 
+<strong>Konfiguriši Lejer(Configure Layer)</strong> na dnu 
+<strong>Menadžera Gedžeta(Gadgets Manager)</strong>. Ovo otvara 
+<strong>Gedžeti Radne Površine (Desktop Gadgets)</strong> pop-up, kao u prvom metodu. Izaberite 
+<strong>Gedžet</strong> iz liste i pritisnite 
+<em>Dodaj Gedžet(Add Gadget)</em>. 
+<br class="onmobile" /><br class="onmobile" />
+
+<a class="img normalpicture displaysmall" href="../images/gadget-move.png">
+<img alt="(Desktop%20Gadgets-Complex)" class="fiftywidth center" src="../images/gadget-move.png" /></a>
+
+<br /><br />
+U oba slučaja <strong>Gedžet</strong>
+se pojavljuje u gornjem levom uglu radne površine sa unakrsnim zasenčenjem, pokazujući da može biti pomeran ili promenjene veličine prema vašim zahtevima. 
+Kada se <strong>Gedžet</strong> nađe na željenom mestu, 
+<em>desni-klik</em> na <strong>Gedžet</strong> da ga zaključate.
+</p><span class="block clear">&nbsp;</span>
+
+
+<h3 class="inline">Podešavanja Gedžeta (Gadget Settings)</h3>
+
+<p>Jednom kada se nađu na radnoj površini ili 
+<strong>Polici (Shelf)</strong>, na svaki <strong>Gedžet</strong> 
+možete kliknuti <em>desnim-klikom</em> za konfigurisanje njegovog izgleda i ponašanja. Na primer, kada prvi put instalirate 
+<strong>Gedžet</strong> <em>Prognoza Vremena (Forecasts)</em> , daje vam vremenske podatke za Sofiju, Bugarska. Verovatno to nije ono što želite, osim naravno, ako ne živite tu. Zato <em>desni-klik</em> na njega, 
+i upravljajte do <small><em>Gadget Forecasts>Forecasts Settings</em>
+</small>. U dijalog boksu koji se pojavi, videćete instrukcije kako da nađete i unesete kod za vaš grad.
+</p><br />
+
+
+<a class="img normalpicture displaynormal" href="../images/shelf-contents.png">
+<img alt="(Shelf%20Contents)" class="floatl topml twentywidth" src="../images/shelf-contents.png" /></a><br />
+<h3 class="inline">Dodavanje Gedžeta na Policu</h3><br class="onmobile" /><br class="onmobile" />
+
+<a class="img normalpicture displaysmall" href="../images/shelf-contents.png">
+<img alt="(Shelf%20Contents)" class="center fiftywidth" src="../images/shelf-contents.png" /></a>
+
+<p>Dodavanje <strong>Gedžeta</strong> na <strong>Policu</strong> 
+zahteva malo drugačiji postupak. 
+</p>
+<p>Možete dodati nove gedžete ako kliknete 
+<em>desnim-klikom</em> na <strong>Policu</strong> 
+i onda selektujete <em><small>Shelf>Contents</small></em>. Sada možete izabrati <strong>Gedžet</strong> koji želite na vašoj 
+<strong>Polici</strong> i kliknite <em>Dodaj Gedžet (Add Gadget)</em>.
+</p>
+<p>Kliknite desnim-klikom na <strong>Gedžet</strong> da promenite mod gde možete da ga pomerate i menjate veličinu. Nakon što ovo odradite trebalo bi da ponovo kliknete <em>desni-klik</em> i izaberete opciju da zaključate veličinu i lokaciju <strong>Gedžeta</strong>.
+</p>
+<p><small><code>*Napomena:</code> gedžet <strong>Sistem Podmetač (Systray)</strong> može imati samo jednu instancu učitanu, ukupno.</small>
+</p>
+<span class="block clear">&nbsp;</span>
+
+<h3 class="inline">Dok preko iBar-a (Dock via iBar)</h3>
+
+<p>Možete da napravite dok od <strong>E17</strong> police. 
+Da uradite ovo, dodajte <strong>Gedžet</strong> <em>iBar</em>, 
+zatim dodajte nove ikonice na njega. <em>Desni-klik</em> na 
+<strong>Gedžet</strong> pokazuje <em>Gedžet iBar</em> podmeni. 
+Tu možete dodati vaš pokretač programa preko 
+<em>Kreiraj Novu Ikonu (Create new Icon)</em> ili koristite već definisane pokretače programa sa 
+<em>Sadržajem (Contents)</em>. U <em>Podešavanjima (Settings)</em> i <em>Izgledu (Look)</em> 
+možete da podesite dizajn.
+</p><br />
+
+
+<h3 class="inline">Gedžetima trebaju njihovi Moduli (Gadgets Need Their Modules)</h3>
+
+<p>Koji gedžeti su vam dostupni za dodavanje je odlučeno time koji <strong>Moduli</strong> su vam 
+<em>Uključeni (Loaded)</em>. <em>Uključivanje (Loading)</em>  <strong>Modula</strong> 
+se čita sa diska i postavlja u RAM, ali neće biti prikazani na ekranu dok ih ne dodate kao
+<strong>Gedžete</strong> na radnu površinu ili 
+<strong>Policu</strong>. Da <em>Uključite/Isključite (Load/Unload)</em> 
+<strong>Module</strong> idite na 
+<small><em>Main Menu>Settings>Modules</em></small>. 
+Pogledajte <a class="normal" href="modules.html">Sekciju Moduli</a> 
+ovog Vodiča za više detalja.
+</p><br />
+
+
+<h3 class="inline">Još više Gedžeta (Still More Gadgets)</h3>
+
+<p>Da bi održali preuzimanje i instalaciju 
+<strong>Bodhi Linux-a</strong> što kompaktnijom, 
+neki odlični <strong>Moduli</strong> nisu uključeni, ali se mogu preuzeti i instalirati preko 
+<strong>Synaptic Menadžera Paketa (Synaptic Package Manager)</strong> 
+baš kao i ostali Linux programi.
+</p>
+<p>Za kompletnu listu dostupnih gedžeta proverite <a class="normal" href="module_reference.html">Reference o Modulima</a>. 
+Pogledajte <a class="normal" href="modules.html">Sekciju Modula</a> 
+ovog Vodiča za više detalja o <strong>Modulima</strong>.</p>
+<br />
+</div>
+</div>
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="module_reference.html">Reference o Modulima</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="themes.html">Informacije o Temi</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>
+
