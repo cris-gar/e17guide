@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Sve (Everything) Modul</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">Terminology & EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Sve (Everything) Modul</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+
+
+<p>Kada su inženjeri/razvijatelji <strong>Enlightenment (E17)</strong> napravili ovaj 
+<a class="normal" href="modules.html">Modul</a>, pokušali su da nađu ime koje bi opisalo šta on radi. Sve što su mogli da smisle bilo je 
+<strong>Sve(Everything)</strong>.</p>
+<p>Ukratko, <strong>Sve(Everything)</strong> je potpuno indeksirana baza podataka za sve programe i fajlove na vašem PC-ju.
+</p>
+
+<a class="img normalpicture" href="../images/evry.png">
+<img class="thirtythreewidth center imageonlowwidth" src="../images/evry.png" alt="(Everything Module)" /></a>
+
+<p>Drugi operativni sistemi imaju sličnu karakteristiku/funkciju. Windows ima "Pretraži Radnu Površinu (Desktop Search)". Mac OS X ima "Reflektor (Spotlight)". Ako pratite Linux verovatno ste upoznati sa "Gnome-Uradi (Gnome-Do)". Ono što izdvaja 
+<strong>Sve(Everything)</strong> je njegova plugin arhitektura koja mu omogućava da ide iznad samog nalaženja programa i fajlova.
+</p>
+	
+<ol>
+<li><a class="normal" href="#How%20to%20Run%20Everything">Kako Pokrenuti Sve (Everything)</a></li>
+<li><a class="normal" href="#Everything%20Does%20Anything">Sve (Everything) Radi Svašta (Anything)</a></li>
+<li><a class="normal" href="#Plugins">Plugin-ovi</a></li>
+<li><a class="normal" href="#Beyond%20Everything">Iznad Sve (Everything)</a></li>
+<li id="How%20to%20Run%20Everything"><a class="normal" href="#Keyboard%20Navigation">Upravljanje Tastaturom</a></li>
+</ol>
+
+<br /> <br /><br /> 
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Kako Pokrenuti Sve (Everything)</h2>
+
+<p><strong>Sve(Everything)</strong> je vrlo sofisticiran. Ne zbog svega onoga što može da uradi, već kako lako to može da uradi. Standardni (default) 
+<strong>E17</strong> metod za otvaranje <strong>Sve(Everything)</strong> 
+je da pritisnete <em>Alt+Esc</em>. Zatim samo počnite da kucate šta želite da uradite. Dok kucate, <strong>Sve(Everything)</strong> će početi da pokazuje sugestije onoga što on misli da pokušavate da uradite. Kada vidite šta želite, možete to selektovati i pritisnuti <em>Enter</em> ili ga pokrenuti duplim klikom. Ako se predomislite i želite da izađete iz <strong>Sve(Everything)</strong>, 
+jednostavno pritisnite <em>Esc</em> ili kliknite negde van 
+<strong>Sve(Everything)</strong> prozora.
+</p>
+
+<p>Po standardu(default), <strong>Bodhi Linux</strong> obezbeđuje 
+<em>Win+Space</em> i <em>Alt+Esc</em> kao prečice do <strong>Sve(Everything)</strong>,
+ali mu takođe možete pristupiti preko <small><em>Main Menu>Run 
+Everything</em></small>.
+</p>
+<p><strong>Sve(Everything)</strong> se takođe prilagođava vašim kompjuterskim navikama. Svaki put kada koristite <strong>Sve(Everything)</strong> on pamti ono što najčešće radite. Vremenom će se vaši najčešće korišćeni fajlovi, programi, itd, pojavljivati sa manjim pritiskanjem tastera. Na primer, kada prvi put koristite <strong>Sve(Everything)</strong> i samo ukucate slovo 
+<code>M</code> , videćete nekoliko programa u nekom redosledu kao što su 
+<strong>Podešavanja Menija (Menu Settings)</strong>, <strong>Midori</strong>, 
+<strong>Mikser (Mixer)</strong>, i tako dalje. Sada pretpostavimo da ste nastavili sa kucanjem i da ste otkucali <code>Midori</code> , i pokrenuli ga. Nakon što ovo ponovite nekoliko puta, samo ćete morati da otkucate <code>M</code>  i 
+<strong>Midori</strong> će se pojaviti prvi na listi.
+</p>
+<div id="Everything%20Does%20Anything" class="clear">&nbsp;</div>
+</div>
+</div>
+
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Sve (Everything) Radi Svašta (Anything)</h2>
+
+<p>Pretpostavimo da imate prilagođen bash skript po imenu <code>myscript</code>, 
+i želite da ga izmenite. Pokrenete <strong>Sve(Everything)</strong> i otkucate <code>myscript</code> . Sada, kada ga selektujete, kako će 
+<strong>Sve(Everything)</strong> da zna da li želite da ga pokrenete ili ga izmenite?
+</p>
+<p>Ako pogledate na vrh <strong>Sve(Everything)</strong> prozora, 
+videćete dve trake(tabs). Prva je standardni(default) pogled koji izlistava moguća poklapanja sa vašim odabirom. Drugi je zavistan od teksta i podložan je promeni u zavisnosti od toga šta je selektovano. Tipično prikazuje različite 
+<em>Akcije (Actions)</em> koje možete izvršiti sa izabranom stavkom(item).
+</p>
+
+<p>Da se vratimo na naš <code>myscript</code>  primer, ako kliknete da na drugu traku(tab), videćete listu mogućnosti šta sve možete da uradite sa vašim skriptom kao što su <em>Otvori sa... (Open with...)</em> ili <em>Iskopiraj u... (Copy to...)</em> 
+Takođe je moguće da će da izlista i tekst editor kao što je <em>Leafpad</em> i opciju  
+<em>Pokreni iz Terminala (Run in Terminal)</em>. Izaberite <em>Leafpad</em> i vaš skript će se otvoriti za izmene/editovanje.
+</p>
+<p>Šlag na torti je da <strong>Sve(Everything)</strong> 
+ne samo da prati šta najčešće selektujete, on prati i šta najčešće radite sa njima. Tako da sledeći put, kada otkucate 
+<code>myscript</code>  u <strong>Sve(Everything)</strong> prva 
+<em>Akcija (Action)</em> koju izabere će najverovatnije biti da ga otvorite sa 
+<strong>Leafpad-om</strong>.
+</p>
+<div id="Plugins" class="clear">&nbsp;</div>
+</div>
+</div>
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Plugin-ovi</h2>
+
+<p>Kao što je pomenuto ranije, jedna od najmoćnijih karakteristika/funkcija <strong>Sve(Everything)</strong> je njegova plugin arhitektura. Sve što vidite u 
+<strong>Sve(Everything)</strong> je rezultat nekog plugin-a. Najčešće korišćeni i shvaćeni su <strong>Programi (Applications)</strong>, 
+<strong>Fajlovi (Files)</strong>, i <strong>Skorašnji Fajlovi (Recent Files)</strong>. Ako otvorite <strong>Podešavanja Sve(Everything)</strong> preko <small><em>Main Menu>Settings>All>Launcher>Everything Configuration</em></small>, 
+i izaberete traku(tab) <em>Pluginovi (Plugins)</em> , videćete da postoje tri vrste plugin-ova: <em>Subjekt (Subject), Akcija (Action), </em> i <em>Objekt (Object)</em>. 
+</p>
+
+<a class="img normalpicture" href="../images/e17-guide-everything-settings-plugins.png">
+<img class="fortywidth center imageonlowwidth" alt="(everything settings)" src="../images/e17-guide-everything-settings-plugins.png"></a>
+
+<p>Oni su organizovani preko traka(tabs) koje vidite na vrhu 
+<strong>Sve(Everything)</strong> prozora. Prva traka(tab) prikazuje rezultate iz upotrebnih <em>Subjekt (Subject)</em> plugin-ova. Druga traka(tab) prikazuje bilo koje upotrebne <em>Akcija (Action)</em> plugin-ove, stvari koje možete raditi sa selektovanim <em>Subjektom (Subject)</em>. Ako je potrebno, pojaviće se i treća traka(tab) koja prikazuje upotrebne <em>Objekt (Object)</em> plugin-ove, na šta primeniti izabranu <em>Akciju (Action)</em> . (Na primer, ako izaberete 
+<em>Iskopiraj u... (Copy To...)</em> <em>Akciju (Action)</em>, on mora da zna gde to da iskopira). 
+Sitniji tekst u gornjem desnom uglu svake trake(tab) prikazuje koji plugin generiše trenutni rezultat.
+</p>
+
+<a class="img normalpicture" href="../images/e17-guide-everything-window-top-tabs.png">
+<img class="fortywidth center imageonlowwidth" alt="(everything settings)" src="../images/e17-guide-everything-window-top-tabs.png"></a>
+
+<p>Na dnu <strong>Sve(Everything)</strong> prozora, možete videti još traka(tabs) koje prikazuju dostupne plugin-ove sa svaku vrstu: <em>Subjekt(Subject), Akcija(Action),</em> ili <em>Objekt(Object)</em>. Oni su takođe zavisni od teksta u odnosu na ono šta je trenutno seletkovano. Po standardu(default), prikazana je svaka opcija za svaki plugin. Trake izlistane na dnu vam omogućavaju da filtrirate izbor po plugin-u.
+</p>
+
+<a class="img normalpicture" href="../images/e17-guide-everything-window-bottom-tabs.png">
+<img class="fortywidth center imageonlowwidth" alt="(everything settings)" src="../images/e17-guide-everything-window-bottom-tabs.png"></a>
+<br /><br /><br />
+<h3> Standardni(Default) Plugin-ovi </h3><br />
+
+<table class="displaytnormal fivep" border="1">
+<tr>
+<td><h3>Plugin</h3></td>
+<td><h3>Opis</h3></td>
+</tr>
+<tr>
+<td>Programi(Applications)</td>
+<td>Kao što je ranije rečeno, jedan od najčešće korišćenih i shvaćenih plugin-ova je Programi (Applications) plugin. Ovaj plugin je ono što omogućava <strong>Sve(Everything)</strong> da pokrene program.</td> 
+</tr>
+<tr>
+<td>Fajlovi & Skorašnji Fajlovi(Files & Recent Files)</td>
+<td>Često korišćeni plugin-ovi koji dopuštaju <strong>Sve(Everything)</strong> da nađe fajlove i pregleda direktorijeme na vašem filesystem-u.</td>
+</tr>
+<tr>
+<td>Prozori(Windows)</td>
+<td>Plugin koji vam omogućava manipulaciju sa otvorenim prozorima.</td>
+</tr>
+<tr>
+<td>Exebuf</td>
+<td>Plugin za pokretanje CLI komandi.</td> 
+</tr>
+<tr>
+<td>Podešavanja(Settings)</td>
+<td>Plugin za pretragu raznih dijaloga Podešavanja za E17.</td>
+</tr>
+<tr>
+<td>Plugin-ovi(Plugins)</td> 
+<td>Plugin za pristup plugin-ovima!</td>
+</tr>
+<tr>
+<td>Kalkulator(Calculator)</td>
+<td>Jednostavan plugin za izvršenje osnovnih funkcija kalkulatora (okidač (trigger <code>=</code>).</td>
+</tr>
+<tr>
+<td>Tekst(Text)</td>
+<td>Jednostavan plugin za kopiranje isečaka teksta u privremeno skladište (clipboard).</td>
+</tr>
+</table>
+
+<table border="1" class="smallonlowwidth fivep displaysmall">
+<tr>
+<td><h3>Plugin</h3></td>
+<td><h3>Opis</h3></td>
+</tr>
+<tr>
+<td>Programi(Applications)</td>
+<td>Kao što je ranije rečeno, jedan od najčešće korišćenih i shvaćenih plugin-ova je Programi (Applications) plugin. Ovaj plugin je ono što omogućava <strong>Sve(Everything)</strong> da pokrene program.</td> 
+</tr>
+<tr>
+<td>Fajlovi & Skorašnji Fajlovi(Files & Recent Files)</td>
+<td>Često korišćeni plugin-ovi koji dopuštaju <strong>Sve(Everything)</strong> da nađe fajlove i pregleda direktorijeme na vašem filesystem-u.</td>
+</tr>
+<tr>
+<td>Prozori(Windows)</td>
+<td>Plugin koji vam omogućava manipulaciju sa otvorenim prozorima.</td>
+</tr>
+<tr>
+<td>Exebuf</td>
+<td>Plugin za pokretanje CLI komandi.</td> 
+</tr>
+<tr>
+<td>Podešavanja(Settings)</td>
+<td>Plugin za pretragu raznih dijaloga Podešavanja za E17.</td>
+</tr>
+<tr>
+<td>Plugin-ovi(Plugins)</td> 
+<td>Plugin za pristup plugin-ovima!</td>
+</tr>
+<tr>
+<td>Kalkulator(Calculator)</td>
+<td>Jednostavan plugin za izvršenje osnovnih funkcija kalkulatora (okidač (trigger <code>=</code>).</td>
+</tr>
+<tr>
+<td>Tekst(Text)</td>
+<td>Jednostavan plugin za kopiranje isečaka teksta u privremeno skladište (clipboard).</td>
+</tr>
+</table>
+
+<br />
+<div id="Beyond%20Everything" class="clear">&nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Iznad Sve (Everything)</h2>
+
+<p>Gornji plugin-ovi su standardni koji dolaze sa 
+<strong>Sve(Everything)</strong>. Možete instalirati dodatne plugin-ove da bi poboljšali funkcionalnost <strong>Sve(Everything)</strong>. 
+Ispod se nalazi primer:
+</p><br />
+
+
+<h3 class="inline">Pretraga Web-a</h3>
+<p><strong>Websearch</strong> je u stvari kolekcija plugin-ova koji vam omogućavaju brzu pretragu interneta. Trenutno se još uvek nalazi u fazi razvoja. 
+<br /><br />
+Da li koristite Youtube ili Wikipedia-u?
+Pretražite njihove baze podataka direktno iz <strong>Sve(Everything)</strong>.
+<!--
+It can even translate text!
+-->
+</p>
+
+
+<p>Prvo, morate da instalirate <strong>websearch</strong> 
+<a class="normal" href="modules.html">Modul</a> . Da instalirate <strong>websearch</strong> plugin, potražite 
+<code>everything-websearch</code>  u <strong>Synaptic-u</strong> 
+(<small><em>Main Menu>Applications>Preferences</em></small>), 
+ili pokrenite ovu komandu iz terminala, kao što je <strong>Terminology</strong>:
+</p>
+<code>sudo apt-get install -y everything-websearch</code>
+<br />
+<p>Kada instalirate <strong>websearch</strong> 
+<a class="normal" href="modules.html">Modul</a>, morate da ga učitate u memoriju pre nego što počnete da ga koristite.
+</p>
+
+<!--
+<p>To google, run <strong>Everything</strong>, then type:
+<br /><br />
+<code>g [search phrase]</code>
+<br /><br />
+and press <em>Enter</em>. Your browser will automatically open and 
+show the result of your Google search.
+</p>
+-->
+<p>Hitno vam treba YouTube video 'Keyboard Cat'? 
+Nema problema. Otvorite <strong>Sve(Everything)</strong> i unesite:
+<br /><br />
+<code>y keyboard cat</code>
+<br /><br />
+Rezultati, <i>sa</i> thumbnails, će krenuti brzo da se pojavljuju.
+Upravljajte do onog koji želite i pritisnite <em>Enter</em>.
+</p>
+<p>Slično možete uraditi i sa pretragom Wikipedia koristeći okidač 
+<code>w</code>. 
+<!--
+and Google translations with the trigger 
+<code>t</code>.
+-->
+</p>
+<div id="Keyboard%20Navigation" class="clear">&nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Upravljanje Tastaturom</h2>
+
+<p>Iako možete koristiti miša dok upravljate kroz 
+<strong>Sve(Everything)</strong>, on je napravljen sa magom tastature na umu. Evo nekih osnova.
+</p>
+
+
+<table class="displaytnormal fivep" border="1">
+<tr>
+<td><h3>Tasteri(Keys)</h3></td>
+<td><h3>Akcija(Action)</h3></td>
+</tr>
+<tr>
+<td>Traka(Tab)</td>
+<td>Kruži kroz trake na vrhu (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+<td>gore/dole/levo/desno</td>
+<td>Kretanje kroz moguće izbore</td>
+</tr>
+<tr>
+<td>Unesi(Enter)</td>
+<td>Selektuj stavku/akciju</td>
+</tr>
+<tr>
+<td>Ctrl+levo/desno</td>
+<td>Kretanje kroz donje trake(tabs) (plugin filteri)</td>
+</tr>
+</table>
+
+
+<table border="1" class="fivep displaysmall smallonlowwidth">
+<tr>
+<td><h3>Tasteri(Keys)</h3></td>
+<td><h3>Akcija(Action)</h3></td>
+</tr>
+<tr>
+<td>Traka(Tab)</td>
+<td>Kruži kroz trake na vrhu (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+<td>gore/dole/levo/desno</td>
+<td>Kretanje kroz moguće izbore</td>
+</tr>
+<tr>
+<td>Unesi(Enter)</td>
+<td>Selektuj stavku/akciju</td>
+</tr>
+<tr>
+<td>Ctrl+levo/desno</td>
+<td>Kretanje kroz donje trake(tabs) (plugin filteri)</td>
+</tr>
+</table>
+
+
+<p>Ako vas posezanje za tasterima sa strelicama plaši, postoje dve opcije, bazirano na Vi (standard(default)) i bazirano na Emacs koje se može podesiti u <strong>Podešavanjima Sve(Everything)</strong> radi brže navigacije.
+</p>
+
+<table class="displaytnormal fivep" border="1">
+<tr>
+<td><h3>Vi</h3></td>
+<td><h3>Emacs</h3></td>
+<td><h3>Akcija(Action)</h3></td>
+</tr>
+<tr>
+<td>Alt+h</td>
+<td>Alt+b</td>
+<td>Pomeri/idi u levo</td>
+</tr>
+<tr>
+<td>Alt+j</td>
+<td>Alt+n</td> 
+<td>Pomeri/idi dole</td>
+</tr>
+<tr>
+<td>Alt+k</td> 
+<td>Alt+p</td> 
+<td>Pomeri/idi gore</td>
+</tr>
+<tr>
+<td>Alt+l</td> 
+<td>Alt+f</td> 
+<td>Pomeri/idi u desno</td>
+</tr>
+<tr>
+<td>Alt+i</td>
+<td>Alt+i</td> 
+<td>Kruži kroz trake na vrhu (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+<td>Alt+Shift+n</td>
+<td>Alt+Shift+f</td> 
+<td>Sledeći plugin filter</td> 
+</tr>
+<tr>
+<td>Alt+Shift+p</td>
+<td>Alt+Shift+b</td> 
+<td>Prethodni plugin filter</td> 
+</tr>
+</table>
+
+
+<table border="1" class="fivep displaysmall smallonlowwidth">
+<tr>
+<td><h3>Vi</h3></td>
+<td><h3>Emacs</h3></td>
+<td><h3>Akcija(Action)</h3></td>
+</tr>
+<tr>
+<td>Alt+h</td>
+<td>Alt+b</td>
+<td>Pomeri/idi u levo</td>
+</tr>
+<tr>
+<td>Alt+j</td>
+<td>Alt+n</td> 
+<td>Pomeri/idi dole</td>
+</tr>
+<tr>
+<td>Alt+k</td> 
+<td>Alt+p</td> 
+<td>Pomeri/idi gore</td>
+</tr>
+<tr>
+<td>Alt+l</td> 
+<td>Alt+f</td> 
+<td>Pomeri/idi u desno</td>
+</tr>
+<tr>
+<td>Alt+i</td>
+<td>Alt+i</td> 
+<td>Kruži kroz trake na vrhu (<em>Subject, Action, Object</em>)</td>
+</tr>
+<tr>
+<td>Alt+Shift+n</td>
+<td>Alt+Shift+f</td> 
+<td>Sledeći plugin filter</td> 
+</tr>
+<tr>
+<td>Alt+Shift+p</td>
+<td>Alt+Shift+b</td> 
+<td>Prethodni plugin filter</td> 
+</tr>
+</table>
+
+</div>
+</div>
+
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="profiles.html">Profili</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="compositing.html">Kombinovanje</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Kombinovanje</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">Terminology & EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Kombinovanje</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+
+
+<p><strong>Kombinovanje</strong> je karakteristika/funkcija koja dodatno "ulepšava" vašu radnu površinu. U ovom članku će biti reči o tome šta je <strong>Kombinovanje</strong>, kako radi i opisuje metod  za njegovo korišćenje u <strong>E17</strong>.</p> 
+<!--
+<strong>Compositing</strong> is a feature which adds extra “eye-candy" for your desktop. There are 2 
+methods to achieve  <strong>Compositing</strong> in the <strong>Bodhi Linux Enlightenment (E17)</strong> 
+window manager. This article will explain what <strong>Compositing</strong> is and does, and describe the 
+two methods for utilizing it in <strong>E17</strong>. 
+-->
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2 id="what_is_compositing">Šta je Kombinovanje?</h2>
+<p>
+Možda bi bilo korisno početi sa definicijom korena reči "kombinacija". 
+</p>
+<pre style="font-weight: bold; font-family: Arial;">Mešavina; sastavljena od različitih elemenata/komponenti.</pre>
+<p>
+Ovo se odnosi na Menadžer Prozora tako da se različiti vizualni elementi mogu kombinovati radi stvaranja raznovrsnih vizualnih efekata. Ovo uključuje (ali nije ograničeno na): transparentost, 3D efekte, iskrivljenje, skaliranje, i rotaciju. </p>
+<p>
+Postoji iscrpan članak o istoriji i implementaciji <strong>Kombinovanja</strong> na 
+<a href="http://en.wikipedia.org/wiki/Compositing_window_manager" class="normal" target="_blank" title="http://en.wikipedia.org/wiki/Compositing_window_manager" rel="nofollow"> 
+Wikipedia-i</a> za one koji žele da saznaju više. 
+</p>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green hundredwidth topcomposite changeonlowwidth">
+<h2 id="compositing_transparency">Kombinovanje - Transparentnost <span class="onmobile">Part 1</span></h2>
+<p>
+Postoji <strong>E17</strong> <a class="normal" href="modules.html">Modul</a> za 
+<strong>Kombinovanje</strong> koji je instaliran po standardu(default) u <strong>Bodhi Linux-u</strong>. 
+Zove se, čudno, <strong>Kombinacija (Composite)</strong>. <br />Jedina dva
+<a class="normal" href="profiles.html">Profila</a> u kojima je <em>učitan</em> po standardu(default) su 
+<strong>Profil Kombinovanje (Compositing Profile)</strong> i <strong>Profil Fensi (Fancy Profile)</strong>, 
+mada se može dodati na bilo koji. 
+Samo idite na <small><em>Main Menu&gt;Settings&gt;Modules</em></small>.
+Tamo ćete ga naći pod <em>Izgled (Look)</em> trakom(tab).
+</p>
+
+<p>
+Ovo <strong>Kombinovanje</strong> primarno radi dve stvari. Prva je da obezbedi transparentne/neprovidne efekte prozora. Generalno, ovo će biti primenjeno na neaktivne/nefokusirane prozore. U snimku ekrana, možete videti da prozor Midori-ja nije u fokusu, i kao takav, radna površina je delimično vidljiva. 
+</p>
+
+</div>
+<a class="img normalpicture" href="../images/transparent-desktop.png">
+<img src="../images/transparent-desktop.png" alt="(Transparent Desktop image)" class="floatr fiftywidth changeonlowwidth" style="margin-top: 20px;" /></a>
+
+<div class="green fortywidth bottomcomposite changeonlowwidth clearonlowwidth">
+<h2 class="onmobile">Kombinovanje - Transparentnost, Drugi Deo</h2>
+<p class="bottomspecialp">	
+<br class="indexonsmallwidth" />
+Neki programi (npr. Terminology, standradni(default) <strong>Bodhi</strong> terminal emulator) podržava transparentnost kada je aktivan/u fokusu. Isti snimak ekrana prikazuje pokrenut i u fokusu Terminology, ali ste i dalje u mogućnosti da vidite Midori prozor iza njega <span class="boldtext">kao i</span>
+radnu površinu iza <span class="italictext">njega!</span>
+"Dubina" te transparentnosti u takvom programu će biti podešena u karakteristikama (preferences) tog programa (lokacija će zavisiti od programa) a <strong>ne</strong> u opštim podešavanjima <strong>Kombinovanja</strong>.
+</p>
+<p>Samo da kažemo da je u nekim <strong>Temama</strong>, podešavanje <strong>Kombinovanja</strong> 
+potrebno prebaciti na aktivnu transparentnost. Idite na <em>Main Menu&gt;Settings&gt;All&gt;Look&gt; Composite</em>. 
+U donjem delu prozora, sa aktivnom trakom(tab) <em>Standard (Default)</em>, promenite na "Miruj (Still)" podešavanje i zatim kliknite <em>Primeni (Apply)</em>.
+</p>
+</div>
+</div>
+
+
+<div class="contentcontainer"><br />
+<div class="thirtywidth floatl imageonlowwidth">
+<video class="videowidth" controls="controls">
+    <source src="../videos/bouncy.mp4" type="video/mp4"><source src="../videos/bouncy.ogv" type="video/ogg">
+		<p>Vaš pregledač ne podržava HTML5 video.</p>
+</video>
+</div>
+<div class="orange sixtywidth floatr changeonlowwidth clearonlowwidth">
+	<h2 id="compositing_bouncy">Kombinovanje - Poskakivanje</h2>
+
+<p>Drugi efekat, koji se ne možete uhvatiti snimanjem ekrana, uzrokuje da prozor "poskakuje" pri promeni. Pošto se ne može uhvatiti snimanjem ekrana, evo snimka radne površine da vidite o čemu se radi!<br /><!-- <br /> -->
+Ako vaš pregledač (browser) ne podržava HTML5 video, onda, u suštini, ovaj efekat daje lep vizuelni signal o tome koji prozor je u fokusu kada je otvoreno više prozora. </p>
+<!-- <br /><br /> -->
+
+<h3 style="font-size:0.8em;">Onemogućavanje "Poskakivanja" Prozora</h3>
+
+<p>Mnogi korisnici vole opšti efekat Kombinovanja. U isto vreme, ne vole efekat "poskakivanja" koji se pojavljuje prilikom promene prozora.<!-- <br />--><br /> 
+Da onemogućite ovaj efekat, idite na <small><em>Main Menu&gt;Settings&gt;All&gt;Look&gt;Compositing</em></small>. Kliknite na 
+<span class="italictext">Napredno (Advanced)</span>.
+U donjem delu prozora, izaberite sve <u>osim</u> <em>standard (default)</em>, kliknite <em>Primeni (Apply)</em>, 
+i više nećete imati "poskakivanje" prozora. </p>
+<!-- <br /> -->
+</div><br /> 
+</div>
+
+<!--
+<div class="contentcontainer"><br />
+<div class="green ninetywidth center">
+<h2 id="ecomorph">Ecomorph</h2>
+
+<p>
+<strong>Ecomorph</strong> is an <strong>E17</strong> port of the popular compositing manager <strong>Compiz</strong>. 
+It is an <strong>E17</strong> <a class="normal" href="modules.html">Module</a>.
+Since <strong>Ecomorph</strong> is not part of the standard <strong>Bodhi Linux</strong>
+installation, and because it causes problems on some hardware
+configurations, this article will only direct you through a link on how to get <strong>Ecomorph</strong> installed and running. 
+<br /><br />
+Users who are interested in information on setting up <strong>Ecomorph</strong> are recommended to read the relevant section in the 
+<a href="http://pclosmag.com/html/Issues/201103/page09.html" class="normal" target="_blank" title="http://pclosmag.com/html/Issues/201103/page09.html" rel="nofollow"> 
+PCLinuxOS Guide</a> <span class="smalltext">(internet connection required)</span>.
+</p>
+</div>
+</div>
+-->
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="everything.html">Sve (Everything) Modul</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="bindings.html">Vezovi</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+
+</div>
+</body></html>

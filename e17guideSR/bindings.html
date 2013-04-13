@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Vezovi</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body id="Bindings">
+		
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">Terminology & EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Vezovi </h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+
+<p>U <strong>Enlightenment (E17)</strong> žargonu, <strong>Vezovi (Bindings)</strong> se odnose na <em>Prečice (Shortcuts)</em> 
+koje možete konfigurisati radi lakše navigacije i mnoštva akcija koristeći bilo tastaturu, miš, događaj, ili ivični unos. Možete čak konfigurisati bilo koji vez da pokrenete neki skript ili program.</p>
+
+<p>
+Tipovi vezova koji su ovde opisani su:
+<ol>
+	<li><a class="normal" href="#Key%20Bindings">Taster Vezovi (Key Bindings)</a><br /><span class="smalltext boldtext">- Unos preko tastature.</span></li>
+	<li><a class="normal" href="#Mouse%20Bindings">Miš Vezovi (Mouse Bindings)</a><br /><span class="smalltext boldtext">- Unos preko miša i tastera za promenu.</span></li>
+	<li id="General%20Info"><a class="normal" href="#ACPI%20Bindings">ACPI Vezovi (ACPI Bindings)</a><br /><span class="smalltext boldtext">- Unos preko događaja.</span></li>
+	<li><a class="normal" href="#Edge%20Bindings">Ivični Vezovi (Edge Bindings)</a><br /><span class="smalltext boldtext">- Unos preko ivica ekrana.</span></li>
+</ol>
+<ul>
+	<li><a class="normal" href="#Program%20Bindings">Programiranje Vezova (Programming Bindings)</a><br /><span class="smalltext boldtext">- Opšta uputstva za programiranje vezova.</span></li>
+</ul>
+</p>
+
+<h2 class="inline">Opšte informacije:</h2><div class="block">
+<p>Svaki dijalog Veza ima neke zajedničke osnovne stvari. Postoje dve sekcije. Leva sekcija, <strong>Vezovi (Bindings)</strong>, 
+je lista kombinacija za unos koje su već dodeljene. Ovo vam omogućava da promenite vezove i dodate dostupne kombinacije tako da možete da im dodelite akciju. 
+Desna sekcija, <strong>Akcija (Action)</strong>, je lista svih mogućih akcija koje mogu biti dodeljene i okinute. 
+Sekcija <strong>Vezova (Bindings)</strong> varira u zavisnosti od tipa vezivanja, dok sekcija <strong>Akcija (Action)</strong> ostaje nepromenjena za sva četiri tipa vezivanja. </p>
+
+<p>Iz razloga što je proces modifikacije/kreiranja vezova tako sličan između četiri tipa, postoji sekcija koja je nezavisna od vezivanja o tome 
+<a class="normal" href="#Program%20Bindings">kako programirati vezove</a>, 
+a nalazi se na dnu stranice. </p>
+<div id="Key%20Bindings">&nbsp;</div></div>
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>Taster Vezovi (Key Bindings)</h2><br class="onmobile" />
+<a class="img normalpicture" href="../images/settings-keybindings.png">
+<img class="twentywidth floatr imageonlowwidth" alt="(Image of Key Bindings Settings" src="../images/settings-keybindings.png"></a>
+
+<p><strong>Taster Vezovi (Key Bindings)</strong> se mogu konfigurisati preko 
+<span class="italictext smalltext">Main Menu>Settings>All>Input>Key Bindings</span>, 
+što otvara dijalog <strong>Podešavanja Taster Vezova (Key Bindings Settings)</strong> , prikazan na slici desno.</p>
+<p>Mnogi tasteri su konfigurisani po standardu (default) <span class="smalltext">(pogledati pod <em>Standardni Taster Vezovi (Default Key Bindings)</em> na dnu sekcije)</span>, ali, kao i ostali vezovi, možete promeniti akciju bilo kog tastera, i dodati novu kombinaciju tastera i akcija po potrebi.
+<span id="Explore%20Key%20Binding%20Settings"> &nbsp;</span></p>
+
+<div class="contentcontainer">
+<h3 class="inline floatl">Istraživanje Podešavanja Taster Vezova (Key Binding Settings)</h3>
+
+<div class="fortysevenwidth floatl clear hundredheight doublecolumn">
+<p>Da dobili "osećaj" kako <strong>Podešavanja Taster Vezova (Key Binding Settings)</strong> rade, kliknite na neki od tastera iz kolone <strong>Taster Vezovi (Key Bindings)</strong> , i posmatrajte šta se događa u koloni <strong>Akcija (Action)</strong> sa desne strane.</p>
+<p>Na primer, sa leve strane, pod <strong>Jedini Taster (Single Key)</strong>, 
+postoji taster koji se zove <em>Meni (Menu)</em>. Kliktanjem na taj <strong>Taster Vez (Key Binding)</strong>, 
+će prouzrokovati da njegova konifugrisana akcija iskoči u pogled na desno, <em>Prikaži Glavni Meni (Show Main Menu)</em>.<br /><br />
+<span class="block smalltext smalllh"><code>Napomena:</code> Taster Meni (Menu) na većini tastatura ima simbol "Meni (Menu)" i nalazi se na dva ili tri tastera desno od tastera Space.</span></p>
+<p>Ostali <strong>Jedini Tasteri (Single Keys)</strong> su izlistani ispod <em>Menija (Menu)</em>. 
+XF86* serija tastera postoji na mnogim tastaturama za kontrolu funkcija hardware-a kao što su jačina zvuka, osvetljenje ekrana i tako dalje. Kliknite na <em>XF86 Mutiraj Audio (XF86AudioMute)</em>, na primer, i videćete da je on mapiran do akcije <em>Mutiraj Jačinu (Mute Volume)</em>.</p>
+<p class="centertext">Ispod Jedinih Tastera (Single Keys), ostatak <strong>Taster Vezova (Key Bindings)</strong> je grupisan po kategorijama:</p>
+
+
+<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../e17guideEN/extra/lists-b1.html"><img alt="(Image of List-Key Combos)" src="../images/lists-b1.png" />
+</a>
+<small><small>Kliknite na sliku za uvećanje.</small><br /><span><code>*Napomena:</code> Bilo koja od gornjih kombinacija, sa izuzetkom "Win" tastera, ne moze biti programirana da sama proizvede akciju; moraju biti uparene sa još jednim tasterom. Takođe, taster "Win" je taster sa windows logom.</span></small>
+</div>
+</div>
+
+<div class="floatl fortysevenwidth doublecolumn hundredheight" style="border-right: none;border-left: 1px solid #AAAAAA;">
+<p class="clear">Kao što je rečeno u <a class="normal" href="#General%20Info">Opštim Informacijama</a>, 
+sekcija sa leve strane prikazuje unos koji je već dodeljen. Kliktanjem na prikazanu taster kombinaciju će pokazati njegovu dodeljenu akciju. Na primer, pod kategorijom <strong>Promeni (Shift)</strong>, kombinacija <em>Promeni+F10 (Shift+F10)</em> 
+je jedina <strong>Promeni (Shift)</strong> taster kombinacija koja je konfigurisana po standardu (default). Kliktanjem na <em>Promeni+F10 (Shift+F10)</em> u koloni sa leve strane će istaći akciju 
+<em>Maksimiziraj Vertikalno (Maximize Vertically)</em> u koloni sa desne strane. Ova akcija povećava veličinu prozora u fokusu do njegove maksimalne visine u vertikalnom pravcu. <br /><br />
+<span class="block smalllh smalltext"><code>Napomena:</code> Postoji mnogo drugih mogućih taster kombinacija koje se mogu programirati sa tasterom Promeni(Shift) uključujući (ali nije ograničeno na): Promeni (Shift) + A do Z, 1 do 9, F1 do F9, F11, i F12.</span></p>
+<p class="centertext">Dostupne akcije su uslovljene time, koji <a class="normal" href="modules.html">Moduli</a> su uključeni/učitani i grupisani su po kategorijama. Za razliku od kliktanja na taster kombinaciju, kliktanje na bilo koju <strong>Akciju (Action)</strong> <strong>neće</strong> prikazati da li je ona dodeljena. Slika dole prikazuje primer najčešće prikazanih kategorija:</p>
+
+<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../e17guideEN/extra/lists-b2.html"><img alt="(Image of List-Actions)" src="../images/lists-b2.png" />
+</a>
+<small><small>Kliknite na sliku za uvećanje.</small><br /><span><code>*Napomena:</code> 
+Ovo su samo kategorije za akcije. Možete konsultovati tabelu na dnu ove sekcije za standardne akcije koje su programirane u vašoj <strong>Bodhi Linux</strong> instalaciji.</span></small>
+</div></div></div>
+
+<div class="contentcontainer" id="Default%20Key%20Bindings">
+	<br /><br />
+
+<h3 class="inline">Standardni Taster Vezovi (Default Key Bindings)</h3>
+<br class="onmobile" /><br class="onmobile" />
+<a class="img normalpicture" href="../e17guideEN/extra/keybindings.html">
+<img class="twentywidth floatr tallimageonlowwidth" alt="(Image of default Keybindings)" src="../images/kbtable.png" /></a>
+
+<p class="smalltext centertext"><span class="orangetext"><strong>Važno</strong>: </span>
+Ovo će takođe ukloniti sve dodatne <strong>Taster Vezove (Key Bindings)</strong> 
+koje ste možda podesili.</p>
+<p>Ako u bilo kom trenutku odlučite da ste napravili nered sa vašim 
+<strong>Taster Vezovima (Key Bindings)</strong> i želite da sve vratite na standardnu (default) konfiguraciju, samo otvorite dijalog <strong>Podešavanja Taster Vezova (Key Bindings Settings)</strong> i kliknite 
+<em>Vrati na Standardne Vezove (Restore Default Bindings)</em> na dnu. Kliknite <em>OK</em> ili 
+<em>Primeni (Apply)</em> da to snimite.
+<br /></p>
+<p>Slika <span class="indexonsmallwidth">sa desne strane</span><span class="onmobile">iznad</span> 
+služi kao link prema stvarnoj i kompletnoj listi standardnih (default) Taster Vezova, kao i prikaz uzoraka standardnih (default) prečica za tastaturu za <strong>Bodhi Linux</strong> 2.2.0 i iznad. Da bi videli kompletnu, uvećanu sliku, kliknite na nju. </p>
+<p class="centertext clear"><strong>*Da se vratite na vrh stranice, kliknite, 
+<a class="normal boldtext" href="#Bindings">ovde</a></strong>.</p>
+</div>
+<div id="Mouse%20Bindings"> &nbsp;</div>
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Miš Vezovi (Mouse Bindings)</h2><br class="onmobile" />
+<a class="img normalpicture" href="../images/settings-mousebindings.png">
+<img class="topml sixteenwidth floatl imageonlowwidth" alt="(Image of Mouse Bindings Settings" src="../images/settings-mousebindings.png"></a>
+
+<p><strong>Miš Vezovi (Mouse Bindings)</strong> se mogu konfigurisati preko 
+<span class="italictext smalltext">Main Menu>Settings>All>Input>Mouse Bindings</span>, 
+što otvara dijalog <strong>Podešavanja Miš Vezova (Mouse Bindings Settings)</strong> koji je prikazan na slici levo.</p>
+<p>Mnoštvo miš+taster kombinacija je konfigurisano po standardu (default) <span class="smalltext">(pogledajte pod <em>Standardni Miš Vezovi (Default Mouse Bindings)</em> 
+na dnu sekcije)</span>. Kao i drugi vezovi, možete promeniti bilo koju miš+taster kombinovanu akciju i dodati nove miš+taster kombinacije i akcije po potrebi.</p>
+<div id="Explore%20Mouse%20Binding%20Settings"> &nbsp;</div>
+
+
+<div class="contentcontainer">
+<h3 class="inline floatl">Istraživanje Podešavanja Miš Vezova (Mouse Binding Settings)</h3>
+
+<div class="fortysevenwidth floatl clear hundredheight doublecolumn">
+<p>Isto kao i u sekciji <strong>Taster Vezovi (Key Bindings)</strong> kliknite na neku od kolona <strong>Miš Vezovi (Mouse Bindings)</strong> i posmatrajte šta se dešava u koloni <strong>Akcija (Action)</strong> sa desne strane. Ovo je najbolji način da se upoznate sa tim.</p>
+<p>Na primer, sa leve strane, pod <strong>Miš Dugmići (Mouse Buttons)</strong>, 
+postoji dugme koje se zove <em>Levo Dugme (Left Button)</em>. Kliknite na taj <strong>Miš Vez (Mouse Binding)</strong>, 
+i njegova konfigurisana akcija će iskočiti u pogled na desnoj strani, <em>Prikaži Glavni Meni (Show Main Menu)</em>. On obavlja istu akciju kao taster vez
+<strong>Meni (Menu)</strong> iz Taster Vezovi (Key Bindings) primera!</p>
+<p>Ostali <strong>Miš Dugmići (Mouse Buttons)</strong> su izlistani ispod <em>Levog Dugmeta (Left Button)</em>. 
+Konvencinalni miš ima levo dugme, desno dugme, srednje dugme i točkić za gore/dole (skrol). </p>
+
+
+<div class="picture centertext">
+<div class="ninetywidth orange smalltext centertext center" style="border-radius: 5px; box-shadow: none; border-width: 2px;"> 
+<div class="fortysevenwidth floatl">Miš Dugmići (Mouse Buttons)</div>
+<div class="fortysevenwidth floatl">Miš Točkići (Mouse Wheels)</div>
+<div class="clear">&nbsp;</div>
+</div>
+<span class="smalltext"><small><code>*Napomena:</code> Za razliku od <strong>Podešavanja Taster Vezova (Key Bindings Settings)</strong>, 
+ <strong>Miš Vezovi (Mouse Bindings)</strong> su grupisani u samo dve kategorije.</small></span>
+</div>
+</div>
+
+<div class="floatl fortysevenwidth doublecolumn hundredheight" style="border-right: none;border-left: 1px solid #AAAAAA;">
+<p class="clear">Kao što je rečeno u <a class="normal" href="#General%20Info">Opštim Informacijama</a>, 
+sekcija sa leve strane prikazuje unos koji je već dodeljen. Možete primetiti da već postoje neki miš dugmići koji su upareni sa tasterima. Tasteri koje možete koristiti za uparivanje sa mišom su ograničeni na <code>ALT</code>, 
+<code>CTRL</code>, <code>WIN</code>, i <code>SHIFT</code> tastere, koji se zajedno nazivaju <em>tasteri za promenu</em>.</p>
+<p class="smalltext"><code>Napomena:</code> Obratite pažnju na sekciju <em>Kontekst Akcija (Action Context)</em>. 
+Ovo određuje lokaciju gde će Vez morati da bude započet da bi njegova vezivna akcija bila aktivirana.</p>
+<p class="centertext">Dostupne akcije su uslovljene time, koji <a class="normal" href="modules.html">Moduli</a> su uključeni/učitani i grupisani su po kategorijama. Kliktanje na bilo koju <strong>Akciju (Action)</strong> <em>neće</em> prikazati da li je ona dodeljena. Slika dole prikazuje primer najčešće prikazanih kategorija:
+</p>
+
+
+<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../e17guideEN/extra/lists-b2.html"><img alt="(Image of List-Actions)" src="../images/lists-b2.png" />
+</a>
+<small><small>Kliknite na sliku za uvećanje.</small><br /><span><code>*Napomena:</code> 
+Ovo su samo kategorije za akcije. Možete konsultovati tabelu na dnu ove sekcije za standardne akcije koje su programirane u vašoj <strong>Bodhi Linux</strong> instalaciji.</span></small>
+</div></div></div>
+
+<div class="contentcontainer" id="Default%20Mouse%20Bindings">
+	<br /><br />
+
+<h3 class="inline">Standardni Miš Vezovi (Default Mouse Bindings)</h3>
+<br class="onmobile" /><br class="onmobile" />
+<a class="img normalpicture" href="../e17guideEN/extra/mousebindings.html">
+<img class="twentyfivewidth floatr tallimageonlowwidth" alt="(Image of default Mouse-bindings)" src="../images/mbtable.png" /></a>
+
+<p class="smalltext centertext"><span class="orangetext"><strong>Važno</strong>: </span>
+ Ovo će takođe ukloniti sve dodatne <strong>Miš Vezove (Mouse Bindings)</strong> 
+koje ste možda podesili.</p>
+<p>Ako u bilo kom trenutku odlučite da ste napravili nered sa vašim 
+<strong>Miš Vezovima (Mouse Bindings)</strong> i želite da sve vratite na standardnu (default) konfiguraciju, samo otvorite dijalog <strong>Podešavanja Miš Vezova (Mouse Binding Settings)</strong> i kliknite 
+<em>Vrati na Standardne Vezove (Restore Default Bindings)</em> na dnu. Kliknite <em>OK</em> ili 
+<em>Primeni (Apply) </em> da to snimite.
+<br /></p>
+<p>Slika <span class="indexonsmallwidth">sa desne strane</span><span class="onmobile">iznad</span> 
+služi kao link prema stvarnoj i kompletnoj listi standardnih (default) Miš Vezova, kao i prikaz uzoraka standardnih (default) miš vezova za 
+<strong>Bodhi Linux</strong> 2.2.0 i iznad. Da bi videli kompletnu, uvećanu sliku, kliknite na nju. </p>
+<p class="centertext clear"><strong>*Da se vratite na vrh stranice, kliknite <a class="normal boldtext" href="#Bindings">ovde</a></strong>.</p>
+</div>
+<div id="ACPI%20Bindings" class="clear"> &nbsp;</div>
+</div>
+</div>
+
+
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>ACPI Vezovi (ACPI Bindings)</h2><br class="onmobile" />
+<a class="img normalpicture" href="../images/settings-acpibindings.png">
+<img class="sixteenwidth floatr imageonlowwidth" alt="(Image of ACPI Bindings Settings" src="../images/settings-acpibindings.png"></a>
+
+<p><strong>ACPI Vezovi (ACPI Bindings)</strong> se mogu konfigurisati preko 
+<span class="italictext smalltext">Main Menu>Settings>All>Input>ACPI Bindings</span>, 
+što otvara dijalog <strong>Podešavanja ACPI Vezova (ACPI Bindings Settings)</strong> prikazan na slici desno.</p>
+<p>Nekoliko događaja je vezano po standardu(default) <span class="smalltext">(pogledajte pod <em>Standardni ACPI Vezovi (Default ACPI Bindings)</em> 
+na dnu sekcije)</span>. Kao i ostale vezove, možete promeniti bilo koju akciju <strong>ACPI Veza (ACPI Binding)</strong>i dodati nove <strong>ACPI Vezove (ACPI Bindings)</strong> i akcije po potrebi.</p>
+<div id="Explore%20ACPI%20Binding%20Settings"> &nbsp;</div>
+
+<div class="contentcontainer">
+<h3 class="inline floatl">Istraživanje Podešavanja ACPI Vezova (ACPI Binding Settings)</h3>
+
+<div class="fortysevenwidth floatl clear hundredheight doublecolumn">
+<p>Isto kao i u sekcijama <strong>Taster Vezovi (Key Bindings)</strong> & <strong>Miš Vezovi (Mouse Bindings)</strong> kliknite na neki od ACPI Vezova (ACPI bindings) u <strong>ACPI Vezovi (ACPI Bindings)</strong> i posmatrajte šta se dešava u koloni <strong>Akcija (Action)</strong> sa desne strane. Ovo je najbolji način da se upoznate sa tim.</p>
+<p>Na primer, sa leve strane, pod <strong>ACPI Vezovi (ACPI Bindings)</strong>, 
+nalazi se događaj koji se zove <em>Dugme za Napajanje (Power Button)</em>. Kliknite na taj <strong>ACPI Vez (ACPI Binding)</strong>, 
+i njegova konfigurisana akcija će iskočiti u pogled sa desne strane, <em>Isključi Napajanje Sada (Power Off Now)</em>.
+Počeće proces isključivanja kompjutera u slučaju da dugme za napajanje bude pritisnuto.</p>
+<p>Ostali <strong>ACPI Vezovi (ACPI Bindings)</strong> su izlistani oko <em>Dugmeta za Napajanje (Power Button)</em>.</p>
+
+
+
+
+<div class="picture centertext">
+<div class="ninetywidth orange smalltext centertext center" style="border-radius: 5px; box-shadow: none; border-width: 2px;"> 
+<div class="fortysevenwidth center">ACPI Vezovi (ACPI Bindings)</div><div class="clear">&nbsp;</div>
+</div>
+<span class="smalltext"><small><code>*Napomena:</code> Za razliku od Podešavanja za Taster & Miš Vezove (Key & Mouse Bindings Settings), 
+<strong>ACPI Vezovi (ACPI Bindings)</strong> su grupisani samo u jednu kategoriju.</small></span>
+</div>
+</div>
+
+<div class="floatl fortysevenwidth doublecolumn hundredheight" style="border-right: none;border-left: 1px solid #AAAAAA;">
+<p class="clear">Kao što je rečeno u <a class="normal" href="#General%20Info">Opštim Informacijama</a>, 
+sekcija sa leve strane prikazuje unos koji je već dodeljen. Pomenuli smo ranije, kliktanjem na prikazan događaj veza, će prikazati njegovu dodeljenu akciju. </p>
+<p class="centertext">Dostupne akcije su uslovljene time, koji <a class="normal" href="modules.html">Moduli</a> su uključeni/učitani i grupisani su po kategorijama. Kliktanje na bilo koju <strong>Akciju (Action)</strong> <em>neće</em> prikazati da li je ona dodeljena. Slika dole prikazuje primer najčešće prikazanih kategorija:
+</p>
+
+<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../e17guideEN/extra/lists-b2.html"><img alt="(Image of List-Actions)" src="../images/lists-b2.png" />
+</a>
+<small><small>Kliknite na sliku za uvećanje.</small><br /><span><code>*Napomena:</code> 
+Ovo su samo kategorije za akcije. Možete konsultovati tabelu na dnu ove sekcije za standardne akcije koje su programirane u vašoj <strong>Bodhi Linux</strong> instalaciji.</span></small>
+</div></div></div>
+
+<div class="contentcontainer">
+	<br /><br />
+
+<h3 class="inline">Standardni ACPI Vezovi (Default ACPI Bindings)</h3>
+
+<p><strong>Podešavanja ACPI Vezova (ACPI Bindings Settings)</strong> nemaju dugme Vrati na Standardne Vezove (Restore Default Bindings). U svetlu ovoga, ako u bilo kom trenutku odlučite da ste napravili nered sa vašim 
+<strong>ACPI Vezovima (ACPI Bindings)</strong> i želite da sve vratite na standardnu (default) konfiguraciju, samo otvorite dijalog <strong>Podešavanja ACPI Vezova (ACPI Bindings Settings)</strong> i sa grafikona dole koji je naveden kao referenca, obrišite sve dodate ACPI Vezove (ACPI bindings) i propisno ponovo dodelite standardne(default) <strong>Akcije (Actions)</strong> za standradni(default) <strong>Unos (Input)</strong>. Kliknite <em>OK</em> ili <em>Primeni(Apply)</em> da to snimite.
+<br /></p>
+<p>Grafikon na slici dole prikazuje standardne (default) ACPI Vezove (ACPI bindings) za 
+<strong>Bodhi Linux</strong> 2.1.0 i iznad.</p>
+
+
+<div class="picture clear centertext" style="box-shadow: none; text-shadow: none;">
+<div class="hundredwidth orange realspecial smalltext centertext center" style="border-radius: 5px; box-shadow: none; border-width: 2px;"> 
+<div class="addborder">
+<div class="fortysevenwidth boldtext floatl">Unos - Događaj (Input - Event)</div>
+<div class="fortysevenwidth boldtext floatl borderl">Akcija (Action)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">AC Adapter Isključen (AC Adapter Unplugged)</div>
+<div class="fortysevenwidth floatl borderl">Zatamni (Dim)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">AC Adapter Uključen (AC Adapter Plugged)</div>
+<div class="fortysevenwidth floatl borderl">Osvetli (Undim)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">Poklopac Nepoznat (Lid Unknown)</div>
+<div class="fortysevenwidth floatl borderl">Suspenduj (Suspend)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">Dugme za Napajanje (Power Button)</div>
+<div class="fortysevenwidth floatl borderl">Isključi Napajanje Sada (Power Off Now)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">Dugme za "Spavanje" (Sleep Button)</div>
+<div class="fortysevenwidth floatl borderl">Suspenduj (Suspend)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<span class="block clear">&nbsp;</span>
+</div></div>
+
+<p class="centertext clear"><strong>*Da se vratite na vrh stranice, kliknite, 
+ <a class="normal boldtext" href="#Bindings">ovde</a></strong>.</p>
+</div>
+<div id="Edge%20Bindings" class="clear"> &nbsp;</div>
+
+</div>
+</div>
+
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Ivični Vezovi (Edge Bindings)</h2><br class="onmobile" />
+<a class="img normalpicture" href="../images/settings-edgebindings.png">
+<img class="topml sixteenwidth floatl imageonlowwidth" alt="(Image of Edge Bindings Settings" src="../images/settings-edgebindings.png"></a>
+
+<p><strong>Ivični Vezovi (Edge Bindings)</strong> se mogu konfigurisati preko 
+<span class="italictext smalltext">Main Menu>Settings>All>Input>Edge Bindings</span>, 
+što otvara dijalog <strong>Podešavanja Ivičnih Vezova (Edge Bindings Settings)</strong> koji je prikazan na slici levo.</p>
+<p>Nijedna ivica ekrana nije vezana po standardu(default). Kao i ostali vezovi, možete dodati bilo koji <strong>Ivični Vez (Edge Binding)</strong> koji želite. Moći ćete, naravno, da promenite bilo koji <strong>Ivični Vez (Edge Binding)</strong> i njegovu dodeljenu akciju po potrebi.</p>
+<div id="Explore%20Edge%20Binding%20Settings"> &nbsp;</div>
+
+
+<div class="contentcontainer">
+<h3 class="inline floatl">Istraživanje Podešavanja Ivičnih Vezova (Edge Binding Settings)</h3>
+
+<div class="fortysevenwidth floatl clear hundredheight doublecolumn">
+<p>Isto kao i u sekcijama <strong>Taster Vezovi (Key Bindings)</strong>, <strong>Miš Vezovi (Mouse Bindings)</strong>, & <strong>ACPI Vezovi (ACPI Bindings)</strong> kliknite na neki od vezova u koloni <strong>Ivični Vezovi (Edge Bindings)</strong> i posmatrajte šta se dešava u koloni <strong>Akcija (Action)</strong> sa desne strane. Ovo je najbolji način da se upoznate sa tim. </p>
+<p>Na primer, sa leve strane, pod <strong>Ivični Vezovi (Edge Bindings)</strong>, 
+se nalazi vez pod nazivom <em>Leva Ivica 0.30s (Left Edge 0.30s)</em>. Kliknite na taj <strong>Ivični Vez (Edge Binding)</strong>, 
+i njegova konfigurisana akcija će iskočiti u pogled sa desne strane, <em>Preokrenite Radnu Površinu u Pravcu... (Flip Desktop in Direction...)</em>. U ovom slučaju, taj pravac je levo.</p>
+<p>Takođe obratite pažnju na <em>Opšte Opcije (General Options)</em>.
+Postoji opcija koja dozvoljava da <strong>Ivični Vezovi (Edge Bindings)</strong> 
+funkcionišu čak i kada su prozori u punom ekranu(fullscreen) <span class="smalltext">(omogućeno po standardu(default))</span>, 
+i postoji druga opcija koja dozvoljava <strong>Ivične Vezove (Edge Bindings)</strong> 
+na više ekrana(multiple screens) <span class="smalltext">(trenutno eksperimentalna)</span>.</p>
+
+
+<div class="picture centertext">
+<div class="ninetywidth orange smalltext centertext center" style="border-radius: 5px; box-shadow: none; border-width: 2px;"> 
+<div class="fortysevenwidth center">Ivični Vezovi (Edge Bindings)
+</div>
+<div class="clear">&nbsp;</div>
+</div>
+<span class="smalltext"><small><code>*Napomena:</code> Slično kao i Podešavanja ACPI Vezova (ACPI Bindings Settings), 
+ <strong>Ivični Vezovi (Edge Bindings)</strong> su grupisani u samo jednoj kategoriji.</small></span>
+</div>
+</div>
+
+<div class="floatl fortysevenwidth doublecolumn hundredheight" style="border-right: none;border-left: 1px solid #AAAAAA;">
+<p class="clear">Kao što je rečeno u <a class="normal" href="#General%20Info">Opštim Informacijama</a>, 
+sekcija sa leve strane prikazuje unos koji je već dodeljen. Obratite pažnju da postoje trajanja vremena u sekundama u svim <strong>Ivičnim Vezovima (Edge Bindings)</strong>. 
+Ovo je vreme koje je potrebno da se akcija izvrši, jednom kada kursor miša ili prozor ostvari kontakt sa tom konkretnom ivicom. Pomenuli smo ranije, kliktanjem na prikazani <strong>Ivični Vez (Edge Binding)</strong> će prikazati njegovu dodeljenu akciju. </p>
+<p class="centertext">Dostupne akcije su uslovljene time, koji <a class="normal" href="modules.html">Moduli</a> su uključeni/učitani i grupisani su po kategorijama. Kliktanje na bilo koju <strong>Akciju (Action)</strong> <em>neće</em> prikazati da li je ona dodeljena. Slika dole prikazuje primer najčešće prikazanih kategorija:
+</p>
+
+<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../e17guideEN/extra/lists-b2.html"><img alt="(Image of List-Actions)" src="../images/lists-b2.png" />
+</a>
+<small><small>Kliknite na sliku za uvećanje.</small><br /><span><code>*Napomena:</code> 
+Ovo su samo kategorije za akcije. Možete konsultovati tabelu na dnu ove sekcije za standardne akcije koje su programirane u vašoj <strong>Bodhi Linux</strong> instalaciji.</span></small>
+</div></div></div>
+
+<div class="contentcontainer">
+	<br /><br />
+
+<h3 class="inline">Standardni Ivični Vezovi (Default Edge Bindings)</h3>
+
+<p class="smalltext centertext"><span class="orangetext"><strong>Važno</strong>: </span>
+Ovo će takođe ukloniti sve dodatne <strong>Ivične Vezove (Edge Bindings)</strong> 
+ koje ste možda podesili.</p>
+<p>Ako u bilo kom trenutku odlučite da ste napravili nered sa vašim 
+<strong>Ivičnim Vezovima (Edge Bindings)</strong> i želite da sve vratite na standardnu (default) konfiguraciju, samo otvorite dijalog <strong>Podešavanj Ivičnih Vezova (Edge Bindings Settings)</strong> i kliknite 
+<em>Vrati na Standardne Vezove (Restore Default Bindings)</em> na dnu. Kliknite <em>OK</em> ili 
+<em>Primeni (Apply)</em> da to snimite.
+<br /></p>
+<p>Grafikon na slici dole prikazuje standardne (default) ivične vezove (edge bindings) za 
+<strong>Bodhi Linux</strong> 2.1.0 i iznad.  </p>
+
+
+<div class="picture clear centertext" style="box-shadow: none; text-shadow: none;">
+<div class="hundredwidth orange realspecial smalltext centertext center" style="border-radius: 5px; box-shadow: none; border-width: 2px;"> 
+<div class="addborder">
+<div class="fortysevenwidth boldtext floatl">Unos - Ivica (Input - Edge)</div>
+<div class="fortysevenwidth boldtext floatl borderl">Akcija (Action)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">Leva Ivica 0.30s (Left Edge 0.30s)</div>
+<div class="fortysevenwidth floatl borderl">Preokrenite Radnu Površinu u Pravcu... (Flip Desktop in Direction...)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">Desna Ivica 0.30s (Right Edge 0.30s)</div>
+<div class="fortysevenwidth floatl borderl">Preokrenite Radnu Površinu u Pravcu... (Flip Desktop in Direction...)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">Gornja Ivica 0.30s (Top Edge 0.30s)</div>
+<div class="fortysevenwidth floatl borderl">Preokrenite Radnu Površinu u Pravcu... (Flip Desktop in Direction...)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<div class="addborder">
+<div class="fortysevenwidth floatl">Donja Ivica 0.30s (Bottom Edge 0.30s)</div>
+<div class="fortysevenwidth floatl borderl">Preokrenite Radnu Površinu u Pravcu... (Flip Desktop in Direction...)</div><br />
+<span class="block clear">&nbsp;</span>
+</div>
+<span class="block clear">&nbsp;</span>
+</div></div>
+<p class="centertext clear"><strong>*Da se vratite na vrh stranice, kliknite <a class="normal boldtext" href="#Bindings">ovde</a></strong>.</p>
+</div>
+<div id ="Program%20Bindings" class="clear">&nbsp;</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="contentcontainer">
+	<br /><br />
+<div class="orange ninetywidth center">
+<div class="centertext"><h2 class="inline">Programiranje Vezova (Programming Bindings)</h2></div>
+<h3 class="inline">Uopštavanje (Generalizations)</h3><br /><p>Proces izmene i kreiranja, za bilo koju vrstu <strong>Veza (Binding)</strong>, 
+je dovoljno jednostavan da ne zahteva specijalizovane primere za razumevanje procesa. Opšte predstavljanje će biti urađeno u vezi sa kreiranjem i izmenom novih vezova. </p>
+
+<p>U skladu sa tim, proći ćemo nekoliko jednostavnih primera koji objašnjavaju kako dodati nove & izmeniti postojeće <strong>Taster Vezove (Key Bindings)</strong>.</p>
+
+<ul class="smalltext smalllh">
+<li><h4 class="inline">Dodavanje Veza (Adding a Binding)</h4>
+<p>Pretpostavimo da želite da programirate <em>Alt+L</em>, kombinaciju tastera koja nije vezana po standardu(default), da otvorite <strong>Leafpad</strong>.</p>
+<p>U koloni sa leve strane, kliknite na <em>Dodaj Vez (Add Binding)</em>. 
+Iskočiće prozorčić koji će vam tražiti da unesete željeni taster redosled. Pritisnite tastere <em>Alt+L</em> zajedno. Ovo će napraviti vezu u sekciji <strong>Taster Vezovi (Key Bindings)</strong>. Neka vam <strong>Taster Veza (Key Binding)</strong> 
+koju ste upravo napravili bude selektovana jer sada morate da je dodelite <strong>Akciji (Action)</strong>. 
+Za ovaj primer, u koloni <strong>Akcije (Actions)</strong> upravljajte do i kliknite na <em>Komandu (Command)</em> 
+u kategoriji <strong>Pokreni (Launch)</strong>. Unesite <code>leafpad</code> u sekciji 
+<strong>Parametri Akcije (Action Params)</strong> na dnu kolone sa desne strane. Kliknite <em>OK</em> ili <em>Primeni(Apply)</em>. Sada pritisnite <em>Alt+L</em>, 
+i videćete da se program <strong>Leafpad</strong> otvorio. </p>
+</li>
+<li><h4 class="inline">Promena Akcije za Vez (Changing the Action of a Binding)</h4>
+<p>Kao što je prikazano u tabeli ispod, kombinacija <em>Ctrl+Alt+S</em> 
+je programirana po standardu(default) da menja <em>Lepljivi Mod (Sticky Mode)</em> pod kategorijom 
+<strong>Prozor:Stanje (Window:State)</strong>. Možda više volite da tu kombinaciju upotrebite da suspendujete kompjuter. Akcija <em>Suspenduj (Suspend)</em> se nalazi u kategoriji <strong>Sistem (System)</strong>.</p>
+<p>U koloni sa leve strane, klinite na <em>Ctrl+Alt+S</em>. U koloni sa desne strane kliknite na <em>Suspenduj (Suspend)</em> u kategoriji <strong>Sistem (System)</strong>, zatim kliknite <em>OK</em> ili <em>Primeni(Apply)</em> na dnu. Sada pritisnite 
+<em>Ctrl+Alt+S</em>, i prozorčić će iskočiti i pitati vas da li sada želite da suspendujete kompjuter. Kliknite <em>Da (Yes)</em> da suspendujete ili <em>Ne (No)</em> da otkažete.</p>
+</li>
+<li><h4 class="inline">Promena Unosa Veza (Modifying the Input of a Binding)</h4>
+<p>Pretpostavimo da vam se ne dopada da koristite <em>Shift+F10</em> za akciju 
+<em>Vertikalno Maksimiziranje (Maximize Vertically)</em> već bi da radije koristite <em>Shift+0</em>. 
+Selektujte <em>Shift+F10</em> u sekciji <strong>Taster Vezovi (Key Bindings)</strong> , zatim kliknite <em>Promeni Vez (Modify Binding)</em>. Iskočiće vam prozorčić koji će vam tražiti da unese redosled tastera. Pritisnite <em>Shift+0</em>, zatim <em>OK</em> ili <em>Primeni(Apply)</em>.</p>
+<p><code>Napomena:</code> Ako unesete već postojeći <strong>Taster Vez (Key Binding)</strong> dok koristite akciju 
+ <em>Promeni Vez (Modify Binding)</em>, on neće promeniti vez. Umesto toga će skočiti do već postojećeg <strong>Taster Veza (Key Binding)</strong> u koloni sa leve strane.</p>
+</li>
+</ul><br /><br />
+
+<h3 class="inline">Specijalizacija (Specializations)</h3><br /><br />
+Podešavanja ACPI Vezova (ACPI Bindings Settings) nemaju dugme <em>Promeni (Modify)</em>. 
+	<br />
+	<ul>
+	<li>Da promenite:<br /><br />
+	Moraćete da uradite dve stvari, da obrišete vez koji koristi <strong>Unos (Input)</strong> 
+	koji bi želeli <em>i</em> promenite/obrišete vez koristeći <strong>Akciju (Action)</strong> koju želite da dodelite. 
+	Zatim možete da nastavite sa dodavanjem novog veza za njega. </li></ul>
+<p class="centertext clear"><strong>*Da se vratite na vrh stranice, kliknite <a class="normal boldtext" href="#Bindings">ovde</a></strong>.</p>
+</div>
+</div>
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="composting.html">Kombinovanje</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="settings.html">Opšta Podešavanja</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>
