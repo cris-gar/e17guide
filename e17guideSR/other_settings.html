@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Ostala Podešavanja</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">Terminology & EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Ostala Podešavanja</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+<br class="onmobile" />
+<div class="smalltext orange floatr twentywidth changeonlowwidth">
+<span class="orangetext smalltext">Napomena:</span> U ovom članku će biti diskutovano o ostalim opcijama za konfigurisanje koje se ne odnose direktno na 
+<strong>Enlightenment (E17)</strong>, kao što je GTK.
+</div>
+
+<p> Mnogi programi/stavke se ne mogu direktno konfigurisati preko <strong>E17 Tema</strong>
+ili su previše konfigurisani na žalost korisnika. Ovaj deo je namenjen korisnicima koji bi želeli da promene specifične aspekte.</p>
+
+<br class="clear" /><br />
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Osnovno Pravljenje Tema (Basic Theming)</h2>
+
+<p><strong>E17</strong> <u>obezbeđuje</u> način za kontrolu izgleda <strong>GTK/QT</strong> programa. 
+Da mu pristupite, idite na <em><small>Main Menu>Settings>All>Look>Application Theme</small></em>. 
+U standardnoj(default) traci(tab), <em>GTK Programi (GTK Applications)</em>, videćete ekran koji izlistava sve 
+<strong>GTK/QT</strong> teme koje su vam instalirane.
+</p>
+
+<a class="img normalpicture" href="../images/app_settings1.png" >
+<img class="center fiftyfivewidth changeonlowwidth" alt="(Application Theme Settings)" src="../images/app_settings1.png" /></a>
+
+<p>Jednostavno selektujte <strong>GTK/QT</strong> temu koju želite da koristite, zatim kliknite <em>Primeni (Apply)</em>. 
+Kada ste našli temu sa kojom ste zadovoljni, kliknite <em>Zatvori (Close)</em>
+</p><br /><br />
+
+<h3>E17 + GTK/QT Integracija</h3>
+
+<p>Neke <strong>E17</strong> teme imaju definisane <strong>GTK/QT</strong> teme sa kojima se podudaraju. 
+Ovo omogućava da se <strong>GTK/QT</strong> tema automatski promeni kada se promeni 
+<strong>E17</strong> tema (pogledajte <a class="normal" href="themes.html">Teme (Themes)</a> 
+za više informacija). Da omogućite ovu funkcionalnost, otvorite <small><em>Main Menu>Settings>All>Look>Application Theme</em></small> 
+i čekirajte dva polja za <em>Podudari sa Enlightenment temom ako je moguće (Match Enlightenment theme if possible)</em> i <em>Uključi X Podešavanja Programa (Enable X Application Settings)</em>.
+</p>
+<p>Trebalo bi ovde naglasiti da postoje mnoge <strong>E17</strong> teme koje 
+<u>nemaju</u> predefinisanu <strong>GTK/QT</strong>, što znači da promena <strong>E17</strong> teme neće uticati na 
+<strong>GTK/QT</strong> temu. 
+</p>
+</div>
+</div>
+
+<div class="contentcontainer">
+<div class="orange ninetywidth center">
+<h2>E17 + Ikonica Temiranje (Icon Theming)</h2>
+
+<p>Neke <strong>E17</strong> teme dolaze sa ugradjenim ikonicama sa kojima se podudaraju. Mnoge to nemaju. Rešenje? Instaliranje i primena teme za ikonice!
+</p>
+<p>Prvi korak bi bio instaliranje teme za ikonice koju bi želeli da ugradite na vaše <em>platno (canvas)</em>/radnu površinu.
+Srećom po vas, sam Bodhi Linux, nudi pregršt izbora na tom polju. Možete instalirati jednu temu za ikonice ili možete instalirati sve teme za ikonice odjednom u jednom koraku!<br /><br />
+<small>
+Jedna opcija je brza pretraga u <strong>Synaptic-u</strong> (<em>Main Menu>Applications>Preferences>Synaptic Package Manager</em>) ili,
+<em>radije</em>, otvorite <strong>Midori</strong> (<em>Main Menu>Applications>Internet>Midori</em>) , <strong>Bodhi-jev</strong> standardni(default) internet pregledač (web-browser), i idite na
+<a class="normal" href="http://art.bodhilinux.com/doku.php?id=bodhi_icon_themes">Bodhi Art - Icon Themes</a>.
+</small>
+</p>
+
+<p>Jednom kada ste instalirali temu za ikonice, otvorite <small><em>Main Menu>Settings>All>Look>Application Theme</em></small> 
+i idite do <em>Ikonice (Icons)</em> trake(tab). Odatle, klizite(skrolujte) na dole kroz listu dostupnih tema za ikonice i selektujte onu koju želite. E17 ima ugrađen pregled(preview) tema za ikonice u dijalogu, kao što je prikazano ispod, da vam pomogne u odlučivanju.
+<br /><br />
+Da uključite temu za ikonice koju će koristiti vaši programi, čekirajte polje za <em>Uključi temu za ikonice za programe (Enable icon theme for applications)</em>.
+Sada kliknite <em>Primeni (Apply)</em> i <em>OK</em>. To je sve, gotovo! 
+</p>
+
+<a class="img normalpicture" href="../images/app_settings2.png" >
+<img class="center fiftyfivewidth changeonlowwidth" alt="(Application Theme Settings-Icons)" src="../images/app_settings2.png" /></a>
+
+<p>Da poništite uticaj ugrađene ikonice vaše <strong>E17</strong> teme sa vašom novom primenjenom temom za ikonice, čekirajte <em>Uključi temu za ikonice za Enlightenment (Enable icon theme for Enlightenment)</em> 
+i to će poništiti uticaj ikonice <strong>E17</strong> teme.
+</p>
+</div>
+</div>
+
+<div class="contentcontainer">
+<div class="green ninetywidth center">
+<h2>Ostala Prilagođavanja</h2>
+
+<p><strong>E17</strong> ima još mnogo podešavanja za prilagođavanje ukupnog izgleda <strong>Bodhi Linux-a</strong>.
+Da biste ih videli sve, idite na
+<small><em>Main Menu>Settings>All</em></small> i <em><u>kliknite</u></em> <strong>Izgled (Look)</strong>.<br /><br />
+Sledeći dijalog bi trebalo da se pojavi:</p><br />
+
+<a class="img normalpicture" href="../images/look_settings1.png" >
+<img class="center thirtysixwidth imageonlowwidth" alt="(Look Settings)" src="../images/look_settings1.png" /></a>
+
+<br /><br /><hr /><br /><br />
+
+<p>Svaka opcija prilagođava specifičnu odliku vaše radne površine. Ima ih mnogo i, zbog toga, mi ćemo ovde pokriti samo neke:</p>
+
+
+<br class="indexonsmallwidth" />
+
+
+<ul class="displaynormal specialcases">
+	
+<li>
+<div class="addborder contentcontainer pdl pdr"><br class="clear" />
+<div class="eightywidth floatl">
+<h3>Tapet (Wallpaper)</h3> Ovo podešavanje vam omogućava da dodelite tapete na vašu radnu površinu. 
+Čekirajte <em>Koristi Tapet Teme (Use Theme Wallpaper)</em> da koristite tapet vaše teme. Možete ubaciti vaše lične tapete tako što ćete kliknuti na dugme <em>Slika (Picture)</em>. 
+Kliktanjem na dugme <em>Napredno (Advanced)</em> vam omogućava da izaberete da li da primenite tapet na sve radne površine ili samo na vaš trenutni ekran/radnu površinu. Sve je manje-više samoobjašnjivo.
+</div>
+
+<a class="img normalpicture" href="../images/look_settings2.png" >
+<img class="twentywidth floatr" alt="(Wallpaper Settings)" src="../images/look_settings2.png" /></a>
+<br class="clear" /><br /></div></li>
+
+<li class="clear">
+<div class="addborder contentcontainer pdl pdr">
+<br class="clear" />
+<div class="eightywidth floatl">
+<h3>Boje (Colors)</h3> Ova sekcija vam omogućava da izaberete boje koje želite za prozore, widgete, i tako dalje. 
+Dugme <em>Prilagođene Boje (Customized colors)</em> mora biti čekirano kako bi vam opcije bile dostupne.
+</div>
+
+<a class="img normalpicture" href="../images/look_settings3.png" >
+<img class="twentywidth floatr" alt="(Color Settings)" src="../images/look_settings3.png" /></a>
+<br class="clear" /><br /></div></li>
+
+<li class="clear">	
+<div class="addborder contentcontainer pdl pdr">
+<br class="clear" />
+<div class="eightywidth floatl">
+<h3>Fontovi (Fonts)</h3> Ovo vam omogućava da promenite font i prilagodite veličinu fonta. Polje <em>Uključi Prilagođene Font Klase (Enable Custom Font Classes)</em> mora biti čekirano radi prilagođavanja podešavanja.
+Kliktanje na dugme <em>Napredno (Advanced)</em> vam omogućava da izaberete specifičnu stavku kojoj želite da dodelite drugačiji font i ako je moguće, izaberete njegov font-stil (npr, Italic, Bold, Regular, itd).
+</div>
+
+<a class="img normalpicture" href="../images/look_settings4.png" >
+<img class="twentywidth floatr tallimageonlowwidth" alt="(Font Settings)" src="../images/look_settings4.png" /></a>
+<br class="clear" /><br /></div></li>
+
+<li class="clear">
+<div class="addborder contentcontainer pdl pdr">
+<br class="clear" />
+<div class="eightywidth floatl">	
+<h3>Ivice (Borders)</h3> Omogućava vam da izaberete tip-ivice(border-type) koji želite da koristite za sve prozore, bilo da je to bezivično(borderless), dijalog, ne menjanje veličine(noresize), ili druge opcije. Jednostavno i samoobjašnjivo.
+</div>
+
+<a class="img normalpicture" href="../images/look_settings5.png" >
+<img class="twentywidth floatr" alt="(Border Settings)" src="../images/look_settings5.png" /></a>
+<br class="clear" /><br /></div></li>
+
+<li class="clear">	
+<div class="addborder contentcontainer pdl pdr">
+<br class="clear" />
+<div class="eightywidth floatl">
+<h3>Tranzicije (Transitions)</h3> Ovo vam omogućava da izmenite tip tranzicije na vašem sistemu, bilo da je to početak(startup), promena između 
+<a class="normal" href="virtual_desktops.html">Virtualnih Radnih Površina (Virtual Desktops)</a>, ili promena pozadine(background).
+Trenutno dostupni tipovi tranzicije su <em>nijedan (none)</em>, <em>crossfade</em>, i <em>vertikalno ukrasti (vertical swipe)</em>. Prikazuje vam i pregled, tako da možete da vidite kako to izgleda.
+</div>
+
+<a class="img normalpicture" href="../images/look_settings6.png" >
+<img class="twentywidth floatr" alt="(Transition Settings)" src="../images/look_settings6.png" /></a>
+<br class="clear" /><br /></div></li>
+
+<li class="clear">	
+<div class="addborder contentcontainer pdl pdr">
+<br class="clear" />
+<div class="eightywidth floatl">
+<h3>Skaliranje (Scaling)</h3> Ovo vam omogućava da skalirate <strong>celu</strong> radnu površinu: menije, police, stavke/atribute teme, fontove i sve. Vrlo lako za shvatiti i jednostavno za korišćenje.
+</div>
+
+<a class="img normalpicture" href="../images/look_settings7.png" >
+<img class="twentywidth floatr" alt="(Scaling Settings)" src="../images/look_settings7.png" /></a>
+<br class="clear" /><br /></div></li>
+
+</ul>
+<br class="clear" />
+
+
+
+<div class="changeonlowwidth displaysmall centeronlowwidth">
+	
+<div class="hundredwidth">	
+
+<h3>Tapet (Wallpaper)</h3> Ovo podešavanje vam omogućava da dodelite tapete na vašu radnu površinu. Čekirajte <em>Koristi Tapet Teme (Use Theme Wallpaper)</em> da koristite tapet vaše teme. Možete ubaciti vaše lične tapete tako što ćete kliknuti na dugme <em>Slika (Picture)</em>. 
+Kliktanje na dugme <em>Napredno (Advanced)</em> vam omogućava da izaberete da li da primenite tapet na sve radne površine ili samo na vaš trenutni ekran/radnu površinu. Sve je manje-više samoobjašnjivo.
+
+</div>
+<br class="clear"  /><br class="clear" />
+<a class="img normalpicture" href="../images/look_settings2.png" >
+<img class="changeonlowwidth" alt="(Wallpaper Settings)" src="../images/look_settings2.png" /></a>
+<br class="clear" /><hr class="divide" />
+<br class="clear" />
+<div class="changeonlowwidth">
+
+<h3>Boje (Colors)</h3> Ova sekcija vam omogućava da izaberete boje koje želite za prozore, widgete, i tako dalje. 
+Dugme <em>Prilagođene Boje (Customized colors)</em> mora biti čekirano kako bi vam opcije bile dostupne.
+
+</div>
+<br class="clear"  /><br class="clear" />
+<a class="img normalpicture" href="../images/look_settings3.png" >
+<img class="imageonlowwidth" alt="(Color Settings)" src="../images/look_settings3.png" /></a>
+<br class="clear" /><hr class="divide" />
+<br class="clear" />
+<div class="changeonlowwidth">
+	
+<h3>Fontovi (Fonts)</h3> Ovo vam omogućava da promenite font i prilagodite veličinu fonta. 
+ Polje <em>Uključi Prilagođene Font Klase (Enable Custom Font Classes) </em> mora biti čekirano radi prilagođavanja podešavanja. Kliktanje na dugme <em>Napredno (Advanced) </em> vam omogućava da izaberete specifičnu stavku kojoj želite da dodelite drugačiji font i ako je moguće, izaberete njegov font-stil (npr, Italic, Bold, Regular, itd).
+
+</div>
+<br class="clear"  /><br class="clear" />
+<a class="img normalpicture" href="../images/look_settings4.png" >
+<img class="imageonlowwidth" alt="(Font Settings)" src="../images/look_settings4.png" /></a>
+<br class="clear" /><hr class="divide" />
+<br class="clear" />
+<div class="changeonlowwidth">
+	
+<h3>Ivice (Borders)</h3> Omogućava vam da izaberete tip-ivice(border-type) koji želite da koristite za sve prozore, bilo da je to bezivično(borderless), dijalog, ne menjanje veličine(noresize), ili druge opcije. Jednostavno i samoobjašnjivo.
+
+</div>
+<br class="clear"  /><br class="clear" />
+<a class="img normalpicture" href="../images/look_settings5.png" >
+<img class="imageonlowwidth" alt="(Border Settings)" src="../images/look_settings5.png" /></a>
+<br class="clear" /><hr class="divide" />
+<br class="clear" />
+<div class="changeonlowwidth">
+	
+<h3>Tranzicije (Transitions)</h3> Ovo vam omogućava da izmenite tip tranzicije na vašem sistemu, bilo da je to početak(startup), promena između 
+<a class="normal" href="virtual_desktops.html">Virtualnih Radnih Površina (Virtual Desktops)</a>, ili promena pozadine(background). Trenutno dostupni tipovi tranzicije su <em>nijedan (none)</em>, <em>crossfade</em>, and <em>vertikalno ukrasti (vertical swipe)</em>. Prikazuje vam i pregled, tako da možete da vidite kako to izgleda.
+
+</div>
+<br class="clear"  /><br class="clear" />
+<a class="img normalpicture" href="../images/look_settings6.png" >
+<img class="imageonlowwidth" alt="(Transition Settings)" src="../images/look_settings6.png" /></a>
+<br class="clear" /><hr class="divide" />
+<br class="clear" />
+<div class="changeonlowwidth">
+	
+<h3>Skaliranje (Scaling)</h3> Ovo vam omogućava da skalirate <strong>celu</strong> radnu površinu: menije, police, stavke/atribute teme, fontove i sve. Vrlo lako za shvatiti i jednostavno za korišćenje.
+
+</div>
+<br class="clear"  /><br class="clear" />
+<a class="img normalpicture" href="../images/look_settings7.png" >
+<img class="changeonlowwidth" alt="(Scaling Settings)" src="../images/look_settings7.png" /></a>
+<br class="clear" /><hr class="divide" />
+
+</div>
+<br class="clear onmobile" />
+
+
+
+
+<p class="block centeronlowwidth">
+Biće još opisa u budućnosti!</p><br />
+</div>
+</div>
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="settings.html">Opšta Podešavanja</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="eapps.html">Terminology & EFM</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>

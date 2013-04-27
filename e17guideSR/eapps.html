@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8" />
+
+  <title>Bodhi Vodič za Enlightenment - Terminology & EFM</title>
+
+	<script src="../../quickstart/QuickStart_files/modernizr.js"></script><!--[if lt IE 9]><script src="../../quickstart/QuickStart_files/html5shiv/dist/html5shiv.js"></script><![endif]-->
+
+
+  <link href="e17guide.css" rel="stylesheet" type="text/css" media="screen" /><!--[if IE]><link href="../../quickstart/QuickStart_files/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->  
+  <link rel="shortcut icon" href="http://bodhilinux.com/favicon.ico.png" />
+
+</head>
+<body>
+
+<header class="gradient">
+		<a class="img"  href="http://www.bodhilinux.com/" target="_blank"><img class="navbodhi" src="../images/bodhileaf.png" alt="(Bodhi Linux Logo)" /></a>
+		<a class="img"  href="http://www.enlightenment.org" target="_blank"><img class="nave17" src="../images/elogo.png" alt="(e17 Logo)" /></a>
+		<nav>
+			<ul id="nav" class="navonlowwidth">
+				<li><a class="mobile" target="_parent"  href="index.html">Indeks</a><a class="nav" target="_parent"  href="index.html">Indeks</a>
+					
+				</li>
+				<li><a class="mobile" target="_parent"  href="desktop_menu.html">Radna Površina</a><a class="nav" target="_parent"  href="#">Radna Površina</a>
+					<ul>
+						<li><a class="dropdown" target="_parent" href="main_menu.html">Glavni Meni</a></li>
+						<li><a class="dropdown" target="_parent" href="modifying_menus.html">Izmena Menija</a></li>
+						<li><a class="dropdown" target="_parent" href="virtual_desktops.html">Virtualne Radne Površine</a></li>		
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="tools_menu.html">Alati</a><a class="nav" target="_parent"  href="#">Alati</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="modules.html">Informacije o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="module_reference.html">Reference o Modulima</a></li>
+						<li><a class="dropdown" target="_parent"  href="shelves_and_gadgets.html">Police & Gedžeti</a></li>
+						<li><a class="dropdown" target="_parent"  href="everything.html">Sve (Everything) Modul</a></li>
+						<li><a class="dropdown" target="_parent"  href="eapps.html">Terminology & EFM</a></li>
+
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="looks_menu.html">Izgled</a><a class="nav" target="_parent"  href="#">Izgled</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="themes.html">Informacije o Temi</a></li>
+						<li><a class="dropdown" target="_parent"  href="creating_themes.html">Pravljenje Tema</a></li>
+						<li><a class="dropdown" target="_parent"  href="profiles.html">Profili</a></li>
+					</ul>
+				</li>
+				
+				<li><a class="mobile" target="_parent"  href="settings_menu.html">Podešavanja</a><a class="nav" target="_parent"  href="#">Podešavanja</a>
+					<ul>
+						<li><a class="dropdown" target="_parent"  href="settings.html">Opšta Podešavanja</a></li>
+						<li><a class="dropdown" target="_parent"  href="compositing.html">Kombinovanje</a></li>
+						<li><a class="dropdown" target="_parent"  href="bindings.html">Vezovi</a></li>
+						<li><a class="dropdown" target="_parent"  href="other_settings.html">Ostala Podešavanja</a></li>
+					</ul>
+				</li>
+				<li><a class="mobile" target="_parent"  href="appendix.html">Znak Štampara</a><a class="nav" target="_parent"  href="appendix.html">Znak Štampara</a>
+				</li>
+			</ul>
+		</nav>
+</header>
+
+
+
+<div class="body">
+
+
+<!-- Header -->
+<div class="header">
+
+	<a class="img" href="index.html"><img src="../images/e17guide.png" alt="(Bodhi/e17 Linux Logo)" class="floatr e17guidelogo" /></a>
+
+	<div class="h1"><h1>Bodhi Vodič - Terminology & EFM</h1></div>
+
+	<br />
+
+	<hr />
+
+</div>
+<!-- End of Header -->
+
+<!-- Body -->
+<div class="content">
+	
+<p class="underheader">
+[kliknite na bilo koju sliku za uvećanje]
+</p>
+
+<div class="orange smalltext twentyfivewidth floatr displaynormal"><small><span class="orangetext">Napomena:</span> 
+Terminal emulator se takođe naziva program/aplikacija terminala, term, ili tty.</small></div>
+
+<br class="onmobile" /><br class="onmobile" />	
+
+<p>Ovo je informativni uvod o standardnom(default) terminal-emulatoru i standardnom(default) fajl menadžeru. Oni su oboje potpuno maternji <strong>Enlightenment</strong> programi.</p>
+
+<br class="onmobile" /><br class="onmobile" />
+
+<div class="displaysmall orange smalltext ninetywidth center"><span class="orangetext">Napomena:</span> 
+Terminal emulator se takođe naziva program/aplikacija terminala, term, ili tty.</div>
+
+	<br class="onmobile" /><br />
+<ol>
+<li><a class="normal" href="#Terminology">Terminology</a>
+<ul>
+    <li><a class="normal" href="#About%20Terminology">O Terminology-ju<br />
+</a></li>
+    <li><a class="normal" href="#Add%20another%20terminal">Dodavanje još jednog Terminala<br />
+</a></li>
+</ul></li>
+<li><a class="normal" href="#EFM">Enlightenment Fajl Menadžer (EFM)<br />
+</a>
+<ul>
+    <li><a class="normal" href="#About%20EFM">O EFM-u<br />
+</a></li>
+    <li><a class="normal" href="#Alt%20file%20manager">Dodavanje još jednog Fajl Menadžera<br />
+</a></li>
+</ul></li>
+</ol>
+
+<div id="Terminology"><span id="About Terminology">&nbsp;</span></div>
+
+
+
+<div class="contentcontainer">
+	
+<div class="green seventywidth floatl changeonlowwidth">
+
+<h2>Terminology</h2><br />
+<h3>O Terminology-ju</h3>
+<p><span class="boldtext">Terminology</span> je standardni(default) 
+<span class="boldtext">Bodhi Linux</span> terminal emulator, kome možete pristupiti preko <span class=" smalltext italictext">Main Menu>Applications>System Tools</span>. 
+To je nov terminal emulator koji je kompletno baziran na <strong>Enlightenment-u</strong>.
+U stvari, napravljen je 12.juna 2012. 
+</p>
+
+<p>Svrha <span class="boldtext">Terminology-ja</span>, kao i ostalih terminal emulatora, je da vam omogući pristup komandno-linijskom interfejsu ili <span class="boldtext">KLI (CLI)</span>. On to radi savršeno,i KLI (CLI) je vrlo moćan alat, ako naučite kako da ga koristite! 
+Za one koji ne rade toliko sa KLI (CLI), sve što možete da uradite sa programima koji imaju grafičko korisničko okruženje (GUIs) se takođe može uraditi i preko komandno-linijskog alata. 
+Za ljude koji imaju malo iskustva sa KLI (CLI), generalno je skoro sve lakše raditi preko GKO (GUI). Međutim, komandna-linija je mnogo brži, zgodniji način i upoznavanje sa njim se toplo preporučuje. <br /><br /><span class="smalltext">
+<code>Napomena:</code> Objašnjavanje i tutorijal o KLI (CLI) su vrlo opširne teme za pokrivanje u ovom Vodiču. Internet je prepun tutorijala na ovu temu, pa vam pretraga putem vaše omiljene adrese za pretragu može pružiti opširnija objašnjenja o ovome. ;)</span><br /></p>
+
+<p>Način na koji se radi sa <span class="boldtext">Terminology</span> 
+je vrlo jednostavan. Na primer, kada želite da kopirate/nalepite (copy/paste) niz slova u <span class="boldtext">Terminology</span>, to se radi tako što kliknete
+<span class="italictext">desni-klik</span>. Tada se sa desne strane prozora 
+<span class="boldtext">Terminology</span> pojavi meni sa prikazom lako razumljivih kontrola, <em>Kopiraj (Copy)</em>, <em>Nalepi (Paste)</em>,
+<em>Opcije (Options)</em>, i <em>O (About)</em>.
+U stvari, sa <span class="italictext">desnim klikom</span> 
+pristupate svim opcijama koje <span class="boldtext">Terminology</span> nudi: 
+<span class="italictext">desni-klik</span> bilo gde u 
+<span class="boldtext">Terminology</span> prozoru otvara isti prozor sa desne strane. 
+Možete promeniti mnoga podešavanja za <span class="boldtext">Terminology</span> koristeći dugme 
+<span class="italictext">Opcije (Options)</span>.</p>
+
+<p>A sada o stvarima koje ga izdvajaju od ostalih. Terminology je odličan program velikih mogućnosti i stila.
+<ul><li>Može da ima pozadinu u formatima bitmap(npr. jpg, png, bmp), skalarni/vektor(npr. svg, pdf), animirani gif, ili video. 
+Da, dobro ste pročitali. Video! Da dodelite bilo koji od ovih formata, pokrenite ovu jednostavnu komandu u <span class="boldtext">Terminology</span> ili metod za trajni efekat, promenite njegov pokretač  <span class="smalltext">(kao što je opisano
+<a class="normal" href="modifying_menus.html">ovde</a>)</span> da glasi:<br /><br />
+<span class="block smalllh centertext"><code>terminology -b /path/to/file</code></span>
+</li><br /><li>U njemu se lako mogu promeniti fontovi i veličina fontova. Takođe podržava i bitmap fontove, po standardu(default). 
+</li></ul>
+</p>
+
+<br />
+<p>Kao što su razvijatelji <strong>E17</strong> rekli:<br /><br /> <em>Ako želite terminal koji skroluje više od 10 puta brže od gnome-terminala, koji je mnogo brži od Xterm ili Konsole-a i koji je brz kao URXVT, onda je ovo pravi izbor za vas. Ako želite da uštedite na memoriji u poređenju sa terminalima velikih-radnih površina (gnome-terminal i Konsole), onda je ovo pravi izbor za vas.</em>
+</p>
+
+<br class="onmobile" />
+<p class="onmobile">Ovde možete videti kako izgleda <strong>Terminology</strong>:</p>
+<br class="onmobile" /><br class="onmobile" />
+<div class="twentyfivewidth floatr displaysmall imageonlowwidth">
+	<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../images/terminology-standard.png">
+<img class="hundredwidth" src="../images/terminology-standard.png" alt="(Standard Terminology image)" />
+</a> Snimak ekrana standardnog pojavljivanja Terminology-ja, standardnog(default) E17 terminal emulatora.
+</div><br /><br />
+	<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../images/terminology-rightclick.png">
+<img class="hundredwidth" src="../images/terminology-rightclick.png" alt="(Terminology when right-clicked.)" />
+</a> Snimak ekrana koji pokazuje meni koji se pojavljuje na desni klik u Terminology-ju.
+</div><br /><br />
+	<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../images/terminology-options.png">
+<img class="hundredwidth" src="../images/terminology-options.png" alt="(Terminology Options Menu)" />
+</a> Snimak ekrana prikazuje meni Opcije Terminology-ja, ispunjenog do vrha sa opcijama.
+</div><br /><br />
+</div><hr class="divide" />
+
+	<div id="Add%20another%20terminal" style="display: inline;">&nbsp;</div><br /><br class="onmobile" />
+	
+<h3>Dodavanje još jednog Terminal Emulatora</h3>
+<p>Za većinu zadataka, <span class="boldtext">Terminology</span> će vam pružiti sve što vam treba od terminal emulatora. Za one kojima to nije dovoljno, mnogi drugi su vam na raspolaganju. Dok neki ljudi jednostavno imaju svoje omiljene terminal emulatore! Zbog toga, predstavićemo proces instalacije dodatnog terminal emulatora.</p>
+
+
+<p>Instalacija dodatnog terminal emulatora je vrlo jednostavna. Na primer, instaliraćemo LXTerminal, lak ali moćan terminal emulator koji je ranije bio standardan(default) za 
+<span class="boldtext">Bodhi Linux</span>.</p>
+
+
+<p><span class="smalltext"><code>Napomena:</code> Postoji nekoliko alternativnih terminal emulatora koji su dostupni za instalaciju, mada preporučujemo <a class="normal" href="http://appcenter.bodhilinux.com/software/showL2/Terminals">
+terminal emulatore koji se nalaze u Bodhi-jevom Appcenter-u</a>.</span><br /><br /></p>
+
+<p>Da instalirate LXTerminal, 
+otvorite <span class="boldtext">Terminology</span> preko 
+<span class="italictext smalltext">Main Menu>Applications>System Tools</span>. 
+ 
+Unesite sledeću komandu:</p>
+
+<p><pre>sudo apt-get install -y lxterminal</pre></p>
+
+<p><span class="boldtext">Terminology</span> će tražiti da unesete vašu šifru(password); 
+ukucajte je i pritisnite <span class="italictext">Enter</span>. Kada se instalacija završi, odradite <span class="smalltext italictext">Main Menu>Enlightenment>Restart</span> da bi osvežili radnu površinu. Sada bi LXTerminal trebalo da vam se pojavi u meniju pod: 
+<span class="smalltext italictext">Main Menu>Applications>Accessories</span>. 
+Ako želite, možete dodati LXTerminal u vaš <span class="boldtext">Omiljeni (Favorites)</span> meni, 
+kao što je objašnjeno <a class="normal" href="modifying_menus.html">ovde</a>.</p>
+
+<p>Sada imate dva terminal emulatora. Možete koristiti jedan, oba ili instalirati još neki, kako vama odgovara!</p>
+</div>
+
+<div class="twentyfivewidth floatr displaynormal">
+	<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../images/terminology-standard.png">
+<img class="hundredwidth" src="../images/terminology-standard.png" alt="(Standard Terminology image)" />
+</a> Snimak ekrana standardnog pojavljivanja Terminology-ja, standardnog(default) E17 terminal emulatora.
+</div><br /><br />
+	<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../images/terminology-rightclick.png">
+<img class="hundredwidth" src="../images/terminology-rightclick.png" alt="(Terminology when right-clicked.)" />
+</a> Snimak ekrana koji pokazuje meni koji se pojavljuje na desni klik u Terminology-ju.
+</div><br /><br />
+	<div class="picture ninetywidth smalltext centertext center"> 
+<a class="img" href="../images/terminology-options.png">
+<img class="hundredwidth" src="../images/terminology-options.png" alt="(Terminology Options Menu)" />
+</a> Snimak ekrana prikazuje meni Opcije Terminology-ja, ispunjenog do vrha sa opcijama.
+</div><br /><br />
+</div>
+
+<div class="clear" id="EFM"><span id="About%20EFM"> &nbsp;</span></div>
+<!--
+</div>
+-->
+
+
+
+
+<div class="contentcontainer">
+	
+<div class="orange seventywidth floatr changeonlowwidth">
+<h2>Enlightenment Fajl Menadžer (EFM)</h2><br />
+<h3>O EFM-u</h3>
+<p> <span class="boldtext">Enlightenment Fajl Menadžer (EFM)</span>, 
+koji je maternji <span class="boldtext">Enlightenment</span> program, je standardni(default) 
+<span class="boldtext">Bodhi Linux</span> fajl menadžer. Možete mu pristupiti preko 
+<span class="italictext smalltext">Main Menu>Applications>System Tools</span>. 
+Po standardu(default), <span class="boldtext">EFM</span>
+će vam prikazati Dom drajv(Home drive), Radnu Površinu(Desktop), Root folder sistem, i sve postavljene volumes ili drajvove. Prelazak preko foldera ili fajla u prozoru će otvoriti pop-up(koji se zove tooltip) koji vam daje informacije o folderu/fajlu.
+</p>
+
+<p><span class="boldtext">EFM</span> vam nudi veliki broj načina za kretanje kroz fajl sistem. Kao što je opisano <a class="normal" href="main_menu.html#Navigate">ovde</a>, postoji meni-integrisana forma <strong>EFM-a</strong> poznata kao
+<em>Upravljaj (Navigate)</em>. U samom programu postoje strelice za
+<span class="italictext">gore (up)</span>, <span class="italictext">dole (down)</span>, 
+i <span class="italictext">nazad (back)</span> koje vam omogućavaju kretanje korak po korak iz foldera koji je otvoren u prozoru do drugog, ili možete da otvorite bilo koji od pristunih foldera ili fajlova za upravljanje.
+</p>
+
+<p>Kao sa većinom stvari u <span class="boldtext">Enlightenment-u</span>, 
+možete promeniti kako <span class="boldtext">EFM</span> izgleda i radi na više načina. Najdirektniji je da kliknete <span class="italictext">desnim-klikom</span> na prazan prostor u  folder/fajl oknu, što će otvoriti meni za podešavanja. 
+Podešavanjima <span class="boldtext">EFM-a</span> takođe možete pristupiti preko:<br /><br /><small>
+<span class="italictext">Main Menu>Settings>All>Files>File Manager</span><br />
+ili <br /><span class="italictext">Main Menu>Settings>Settings Panel</span>, 
+pod <span class="italictext">Files>File Manager</span></small>
+</p><br />
+
+<p>A sada o stvarima koje ga izdvajaju od ostalih. EFM je odličan program velikih mogućnosti, brzine i stila.
+</p>
+
+<ul><li>On se potpuno može prilagoditi pomoću tema. Bukvalno ga možete podesiti da izgleda kako vi želite. Za opšte upoznavanje sa pravljenjem tema, idite na stranicu <a class="normal" href="creating_themes.html">Pravljenje Tema (Creating Themes)</a>.	
+<br /></li><li>Može dodeliti pojedinačnom direktorijumu bitmap pozadinu(background)(npr.jpg, png, bmp). Da dodelite bitmap, idite do direktorijuma kome želite da dodelite pozadinu(background). Zatim kliknite desnim klikom na prazan prostor EFM-a i idite na <em>View Mode> Set background</em>. Odatle, to se lako radi jednostavnim selektovanjem bitmapa i kliktanjem na <em>OK</em>.
+<br /></li><li>Može da prikaže ikonice na radnoj površini. Da omogućite ovo, otvorite EFM i kliknite desnim klikom na prazan prostor. Odatle, idite na <em>Options> File Manager Settings</em>. 
+U <strong>Podešavanjima fajl menadžera(Fileman Settings)</strong> dijalogu koji iskoči, upravljajte do <em>Prikaži (Display)</em> trake(taba) i čekirajte "Ikonice na Radnoj Površini(Icons on Desktop)".
+Sada, samo iskopirajte ili prebacite fajlove <small>(pokretače programa, tj. pripadajuće fajlove radne površine)</small>
+koje želite da se pojave na vašoj radnoj površini, u <strong>Desktop</strong> folder koji EFM kreira u vašem home direktorijumu.
+<br /></li><li>Njegova traka za alat(toolbar) služi kao neka vrsta police, i omogućava vam dodavanje/uklanjanje određenih gedžeta od/prema njemu tako što kliknete desnim klikom na njega i odete do <em><small>toolbar>toolbar contents</small></em>. 
+<br /></li><li>Njegov tooltip može raditi pregled video fajlova! Da, dobro ste pročitali. Može raditi <i>pregled</i> <b>video</b> fajlova. 
+</li>
+</ul>
+
+<br class="onmobile" />
+<p class="onmobile">Ovde možete videti kako izgleda <strong>EFM</strong>:</p>
+<br class="onmobile" /><br class="onmobile" />
+<div class="twentyfivewidth floatl imageonlowwidth displaysmall">
+	<div class="picture hundredwidth smalltext centertext center"> 
+<a class="img" href="../images/efm-standard.png">
+<img class="hundredwidth" src="../images/efm-standard.png" alt="(Standard Terminology image)" />
+</a> Snimak ekrana standardnog pojavljivanja EFM, E17 standardnog (default) fajl menadžera.
+</div><br /><br />
+	<div class="picture hundredwidth smalltext centertext center"> 
+<a class="img" href="../images/efm-rightclick.png">
+<img class="hundredwidth" src="../images/efm-rightclick.png" alt="(Terminology when right-clicked.)" />
+</a> Snimak ekrana koji pokazuje meni koji se pojavljuje na desni klik u EFM-u.
+</div><br /><br />
+	<div class="picture hundredwidth smalltext centertext center"> 
+<a class="img" href="../images/efm-options.png">
+<img class="hundredwidth" src="../images/efm-options.png" alt="(Terminology Options Menu)" />
+</a> Snimak ekrana menija za Podešavanja EFM-a, gde možete konfigurisati njegovo ponašanje.
+</div><br /><br />
+</div><hr class="divide" />
+
+	<div id="Alt%20file%20manager" style="display: inline;">&nbsp;</div><br /><br class="onmobile" />
+
+<h3>Dodavanje još jednog Fajl Menadžera</h3>
+<p>Iako je <span class="boldtext">EFM</span> vrlo sposoban fajl menadžer, možda odlučite da vam treba neki drugi iz nekog razloga. Nema problema; Bodhi Linux vas ohrabruje da donesete svoje odluke što se tiče softvera.</p>
+
+<p>Instalacija novog fajl menadžera je vrlo jednostavna. Kao što pogađate, postoji više načina za instalaciju još nekog fajl menadžera. 
+Za detaljnu listu različitih metoda, pogledajte stranicu <span class="italictext">Instalacija Programa (Installing Software)</span> u 
+<a class="normal" href="../../quickstart/quickstartEN/index.html" >Bodhi QuickStart Guide</a>. 
+Za ovaj primer, koristićemo komandu apt-get za instalaciju PCManFM, lakog ali moćnog fajl menadžera koji je ranije bio standardni (default) na <span class="boldtext">Bodhi Linux-u</span>.<br /><br />
+
+
+<span class="smalltext"><code>Napomena:</code> Postoji nekoliko alternativnih fajl menadžera koji su vam dostupni za instalaciju, ali vam preporučujemo <a class="normal" href="http://appcenter.bodhilinux.com/software/showL2/File_Manager">
+fajl menadžere koji su dostupni preko Bodhi Appcenter-a</a>.</span><br /><br /></p>
+
+<p>Da instalirate PCManFM, otvorite 
+<span class="boldtext">Terminology</span> preko 
+<span class="smalltext italictext">Main Menu>Applications>System Tools</span>. 
+<!--
+any terminal.
+-->
+Zatim unesite sledeću komandu:</p>
+
+<pre>sudo apt-get install -y pcmanfm</pre>
+
+<p>
+<span class="boldtext">Terminology</span> 
+<!--
+The terminal 
+-->
+će vam tražiti vašu šifru(password);
+ukucajte je i pritisnite <span class="italictext">Enter</span>. Kada se instalacija završi, odradite <span class="smalltext italictext">Main Menu>Enlightenment>Restart</span> da bi osvežili radnu površinu. Sada bi PCManFM trebalo da vam se pojavi na: <span class="smalltext italictext">Main Menu>Applications>Accessories</span>.<br /><br />Uživajte u mogućnostima izbora!</p></div>
+
+
+<div class="twentyfivewidth floatl displaynormal">
+	<div class="picture hundredwidth smalltext centertext center"> 
+<a class="img" href="../images/efm-standard.png">
+<img class="hundredwidth" src="../images/efm-standard.png" alt="(Standard Terminology image)" />
+</a> Snimak ekrana standardnog pojavljivanja EFM, E17 standardnog (default) fajl menadžera.
+</div><br /><br />
+	<div class="picture hundredwidth smalltext centertext center"> 
+<a class="img" href="../images/efm-rightclick.png">
+<img class="hundredwidth" src="../images/efm-rightclick.png" alt="(Terminology when right-clicked.)" />
+</a> Snimak ekrana koji pokazuje meni koji se pojavljuje na desni klik u EFM-u.
+</div><br /><br />
+	<div class="picture hundredwidth smalltext centertext center"> 
+<a class="img" href="../images/efm-options.png">
+<img class="hundredwidth" src="../images/efm-options.png" alt="(Terminology Options Menu)" />
+</a> Snimak ekrana menija za Podešavanja EFM-a, gde možete konfigurisati njegovo ponašanje.
+</div><br /><br />
+</div>
+
+<div class="clear">&nbsp;</div>
+</div>
+
+
+</div>
+<!-- End of Body -->
+
+
+<!-- Nav Table -->
+<div class="navbottomcontainer"><br />
+<hr />
+
+	<div class="navbottomtop">
+		<div class="bottom lefttext">Prethodna:</div>
+		<div class="bottom centertext"> Sadržaj:</div>
+		<div class="bottom righttext">Sledeća:</div>
+    </div>
+    <div class="navbottombottom">
+		<div class="bottom lefttext"><a target="_parent" href="other_settings.html">Ostala Podešavanja</a></div>
+		<div class="bottom centertext"><a target="_parent" href="index.html">Indeks</a></div>
+		<div class="bottom righttext"><a target="_parent" href="creating_themes.html">Pravljenje Tema</a></div>
+    </div>
+
+<br /><br />
+</div>
+<!-- End of Nav Table -->
+
+</div>
+
+</body>
+</html>
